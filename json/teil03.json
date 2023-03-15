@@ -1,0 +1,29 @@
+{
+    "PC__Data": {
+        "pcId": 834,
+        "Description" : "Eingesetzt in der Buchhaltung",
+        "Purpose": "Office",
+        "MainUser": {
+            "userId": 243,
+            "userName": "Asymin Gourie"
+        },
+        "IPAddresses": [
+            {
+                "Value": "192.168.0.26/24",
+                "Type": "v4"
+            },
+            {
+                "Value": "192.168.0.32/24",
+                "Type": "v4"
+            },
+            {
+                "Value": "2012:65:fd85:5712:e0ca:9e50:770e:c4aa",
+                "Type": "v6"
+            },
+            {
+                "Value": "2012:65:ef85:5712:fdfe:11ed:9aba:cd9e",
+                "Type": "v6"
+            }
+        ]
+    }
+}

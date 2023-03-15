@@ -1,0 +1,25 @@
+@startuml name Videodatenbank
+entity Kassetten {
+    * ID primary key 
+    --
+    * Bezeichnung 
+    * Länge 
+}
+entity Film {
+ * ID primary key 
+ --
+ * Titel 
+ * Länge
+ * Jahr 
+}
+entity Schauspieler {
+ * ID
+ --
+ * Vorname
+ * Nachname
+}
+'' Relations
+Kassetten "1" -- "n" Film: hat
+Film "n" -- "m" Schauspieler: spielt
+
+@enduml

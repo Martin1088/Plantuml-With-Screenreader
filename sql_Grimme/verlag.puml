@@ -1,0 +1,21 @@
+@startuml name Verlag
+entity Verlag{
+    * VerlagsName primary key
+    * Vertragsleiter
+    * Verlagsaddresse
+}
+
+entity Zeitschrift {
+    * Titel primary key
+    * Ausgabe
+    * Preis
+}
+entity Abonent {
+    * Name
+    * Addresse 
+    * Nummer primary key 
+}
+
+Verlag "1" -- "n" Zeitschrift : verlegt
+Zeitschrift "n" -- "m" Abonent: bezieht | Dauer | Beginn
+@endeuml

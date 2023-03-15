@@ -1,0 +1,24 @@
+@startuml obp
+entity wp_kid_obp_main {
+* ID int primary key
+--
+* name varchar (255)
+* age int
+* plz int
+* email varchar (255)
+* tel int
+* request text
+* gender tinyint
+* cancer type tinyint
+* created_at timestamp
+* updated at timestamp
+* answer_by_mail tinyint (1)
+* answered at timestamp
+* answer id int
+* attachments tinyint (1)
+* online id varchar (36)
+* professional_circle tinyint (1)
+* state int
+
+}
+@enduml

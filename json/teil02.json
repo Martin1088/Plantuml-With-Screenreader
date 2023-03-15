@@ -1,0 +1,26 @@
+{
+    "PC__Data": {
+        "pcId": 152,
+        "Description": "im First level support. Updaten!",
+        "Purpose": "Office",
+        "MainUser": {
+            "userId": 67,
+            "userName": "Esra Hiliam"
+        },
+        "IPAddresses": [
+            {
+                "Value": "192.168.0.20/24",
+                "Type": "v4"
+            },
+            {
+                "Value": "192.168.0.55/24",
+                "Type": "v4"
+            },
+            {
+                "Value": "2012:65:fd85:5712:fdf4:11ed:9cc3:1234",
+                "Type": "v6"
+            }
+        ]
+    }
+    
+}

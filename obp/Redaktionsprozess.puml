@@ -1,0 +1,28 @@
+@startuml name Redaktionsprozess 
+start
+repeat : Redaktion;
+if (fertig) then (gegenlesen)
+elseif (Unterstützung) then (beauftragt)
+: Recherche beauftragen;
+: in Recherche;
+: nach Recherche;
+else (beauftragt)
+: Telefondienst beauftragen;
+: nach Telefonat;
+end
+endif
+: Zwischenredaktion;
+backward: Rückmeldung mit Kommentaren;
+repeat while(Antwort)
+: vor Endredaktion;
+repeat : Endredaktion;
+if (Antwort) then (überarbeiten)
+: Endkorrektur;
+else (kein Überarbeiten notwendig)
+endif
+: nach Endkorrektur;
+backward: noch überarbeiten;
+repeat while (Antwort)
+: publish;
+end
+@endeuml

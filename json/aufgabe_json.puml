@@ -1,0 +1,24 @@
+@startuml
+entity Pc__Data {
+    * PcId int primary key auto_increment
+    --
+    * Description varchar(255)
+    * Purpose varchar(50)
+}
+
+entity MainUser {
+    * userId int primary key auto_increment
+    --
+    * userName varchar(255)
+}
+
+entity IPAddresses{
+    * userId int foreign key 
+    --
+    * Value varchar(50)
+    * Type ENUM("v4", "v6")
+}
+
+MainUser "1" -- "n" IPAddresses
+Pc__Data "1" -- "1" MainUser
+@enduml

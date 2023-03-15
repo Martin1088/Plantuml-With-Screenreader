@@ -1,0 +1,14 @@
+@startuml name Kurs 
+entity Teilnehmer {}
+
+entity Kurs {}
+
+entity Raum {}
+
+entity Dozent {}
+'' Beziehunngen 
+Teilnehmer "n" - "m" Kurs: besucht
+Kurs "n" - "1" Dozent: leitet
+Kurs "n" -- "1" Raum: belegt
+
+@endeuml

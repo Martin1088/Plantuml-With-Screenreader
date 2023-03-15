@@ -1,0 +1,16 @@
+@startuml name "Zusammenhänge zwischen Störung, Problem und Fehler beim Service Support"
+: Storungsmeldung;
+if (leer) then (Ja)
+: leer;
+else (Nein)
+: leer;
+repeat : Problemmanagment Wissensdaten;
+repeat while(leer) is (Nein) not (Ja)
+: leer;
+endif
+if (leer) then (Ja)
+: leer;
+else (Nein)
+endif
+: Störung beheben;
+@enduml

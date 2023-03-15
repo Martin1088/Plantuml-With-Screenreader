@@ -1,0 +1,72 @@
+@startuml name Service 
+split 
+    -[hidden]->
+    : Sensor überschreitet Schwellenwert;
+split again
+    -[hidden]->
+    : Datenblatt;
+split again 
+    -[hidden]->
+    : to_Sensordaten;
+end split
+' Kasten eins
+: Prüfen ob 
+Wartungsfall vorliegt;
+if (Wartungsfall) then (Nein)
+: leer>
+else (Ja)
+split 
+:leer>
+split again
+    -[hidden]->
+    :leer|
+split again
+    -[hidden]->
+    :leer|
+split again
+-[hidden]->
+    :leer|
+end split
+' Kasten zwei 
+: leer
+;
+if () then ()
+: leer;
+elseif () then ()
+:leer;
+else ()
+:leer;
+endif
+split 
+:leer>
+split again
+    -[hidden]->
+    :leer|
+split again
+    -[hidden]->
+    :leer|
+split again
+-[hidden]->
+    :leer|
+end split
+' Kasten drei 
+:leer
+;
+if (leer) then (leer)
+:leer;
+else
+:leer;
+endif
+' letzter Kasten vier
+: leer
+;
+endif
+split
+    : leer;
+    -[hidden]->
+split again
+    : leer |
+    -[hidden]->   
+end split 
+
+@enduml

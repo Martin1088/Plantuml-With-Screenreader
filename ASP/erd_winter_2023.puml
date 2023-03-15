@@ -1,0 +1,25 @@
+@startuml name Aufgabe4_1_Benutzer
+entity tblbenutzer {
+    * bid
+    --
+    * vorname
+    * nachname
+    * login
+    *password 
+}
+entity tblmeldung {
+    * mid 
+    --
+    * meldung
+    * erstellt
+    * fbid 
+    * fsid 
+}
+entity tblstatus {
+    * sid 
+    --
+    * beschreibung 
+}
+tblbenutzer "leer" - "leer" tblmeldung: leer
+tblmeldung "leer" - "leer" tblstatus: leer 
+@enduml
