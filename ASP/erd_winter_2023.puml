@@ -20,6 +20,6 @@ entity tblstatus {
     --
     * beschreibung 
 }
-tblbenutzer "leer" - "leer" tblmeldung: leer
-tblmeldung "leer" - "leer" tblstatus: leer 
+tblbenutzer "1" - "n" tblmeldung: erhält 
+tblmeldung "n" - "1" tblstatus: hat
 @enduml

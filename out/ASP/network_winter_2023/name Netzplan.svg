@@ -43,7 +43,7 @@ link Switch 2 to WLAN AP 6--><g id="link_Switch 2_WLAN AP 6"><path d="M1986.0737
 link Switch 2 to WLAN AP 7--><g id="link_Switch 2_WLAN AP 7"><path d="M2018.1937,94.5463 C2030.5137,112.2063 2047.4737,136.4863 2059.8537,154.2263 " fill="none" id="Switch 2-WLAN AP 7" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[582494713564dd9f00ec1cf6f97c59fb]
 link Switch 2 to WLAN AP 8--><g id="link_Switch 2_WLAN AP 8"><path d="M2048.4037,93.6363 C2085.6337,111.4163 2137.8037,136.3263 2175.6237,154.3863 " fill="none" id="Switch 2-WLAN AP 8" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c3c555c5b030c7c75ee75f65f1fd0a1a]
 link Switch 2 to WLAN AP 9--><g id="link_Switch 2_WLAN AP 9"><path d="M2048.1337,84.0163 C2106.4437,99.9263 2209.9737,128.4863 2298.1337,154.5463 C2303.8137,156.2263 2309.7237,158.0063 2315.6237,159.8063 " fill="none" id="Switch 2-WLAN AP 9" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a9442ceede0166052d354674ce98dd14]
-link Switch 2 to WLAN AP 10--><g id="link_Switch 2_WLAN AP 10"><path d="M2048.1637,78.5663 C2129.1537,91.2563 2302.2137,119.9663 2446.1337,154.5463 C2451.7637,155.8963 2457.5837,157.4063 2463.4037,158.9863 " fill="none" id="Switch 2-WLAN AP 10" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[24471477648ddbef209a89d3c4a91f54]
+link Switch 2 to WLAN AP 10--><g id="link_Switch 2_WLAN AP 10"><path d="M2048.1637,78.5663 C2129.1537,91.2563 2302.2137,119.9663 2446.1337,154.5463 C2451.7637,155.8963 2457.5837,157.4063 2463.4037,158.9863 " fill="none" id="Switch 2-WLAN AP 10" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a30d4adc0decde0b2db01b60c6e28981]
 @startuml name Netzplan
 cloud Internet {
     [Internet Service Provider ]
@@ -79,7 +79,7 @@ PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
 (GPL source distribution)
 Java Runtime: OpenJDK Runtime Environment
 JVM: OpenJDK 64-Bit Server VM
-Default Encoding: Cp1252
+Default Encoding: UTF-8
 Language: de
 Country: DE
 --></g></svg>

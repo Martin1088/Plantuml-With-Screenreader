@@ -13,10 +13,10 @@ end split
 : Prüfen ob 
 Wartungsfall vorliegt;
 if (Wartungsfall) then (Nein)
-: leer>
+: Wartungsfall liegt nicht vor>
 else (Ja)
 split 
-:leer>
+:Mitarbeiter prüft>
 split again
     -[hidden]->
     :leer|
@@ -28,14 +28,14 @@ split again
     :leer|
 end split
 ' Kasten zwei 
-: leer
-;
+: Dringlichkeit 
+    bewerten;
 if () then ()
-: leer;
+: hohe driglichkeit;
 elseif () then ()
-:leer;
+: mittlere Dringlichkeit;
 else ()
-:leer;
+: hohe Dringlichkeit;
 endif
 split 
 :leer>
@@ -47,10 +47,10 @@ split again
     :leer|
 split again
 -[hidden]->
-    :leer|
+    : leer;
 end split
 ' Kasten drei 
-:leer
+: leer
 ;
 if (leer) then (leer)
 :leer;

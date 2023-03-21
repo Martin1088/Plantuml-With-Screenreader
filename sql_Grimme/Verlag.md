@@ -1,3 +1,7 @@
+## Übungen zur Datenbankmodellierungen 
+
+Eine Agentur zur Vermittlung von Zeitschriftenabonnements möchte ihre Abonne¬ments mit Hilfe einer Datenbank verwalten. Zu deren Entwicklung wird folgendes ER- Diagramm benutzt.
+<!--
 @startuml Verlag
 entity Verlag{
     * VerlagsName primary key
@@ -23,3 +27,5 @@ Verlag "1" -- "n" Zeitschrift : verlegt
 Zeitschrift "n" -- "m" Abonent: bezieht | Dauer  | Beginn 
 '' Es gibt viele Abonenten diese können viele unterschiedliche Zeitschriften beziehen
 @endeuml
+ -->
+ ![] (Verlag.svg)

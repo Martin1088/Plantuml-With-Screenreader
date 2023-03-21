@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="598px" preserveAspectRatio="none" style="width:162px;height:598px;background:#FFFFFF;" version="1.1" viewBox="0 0 162 598" width="162px" zoomAndPan="magnify"><defs/><g><!--MD5=[8863db8d2181fc9a750a2bb3f986dc4e]
+class Kassetten--><g id="elem_Kassetten"><rect codeLine="1" fill="#F1F1F1" height="100.8281" id="Kassetten" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="23" y="7"/><ellipse cx="47.45" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M46.3094,23.7969 L46.3094,26.2969 L50.6375,26.2969 L50.6375,25.375 Q50.6375,24.7656 50.8719,24.5 Q51.1219,24.2344 51.4969,24.2344 Q51.8719,24.2344 52.1063,24.5 Q52.3406,24.7656 52.3406,25.375 L52.3406,28 L44.3406,28 Q43.7156,28 43.45,27.7656 Q43.2,27.5313 43.2,27.1406 Q43.2,26.7656 43.4656,26.5313 Q43.7313,26.2969 44.3406,26.2969 L44.6063,26.2969 L44.6063,19.6406 L44.3406,19.6406 Q43.7156,19.6406 43.45,19.4063 Q43.2,19.1719 43.2,18.7813 Q43.2,18.4063 43.45,18.1719 Q43.7156,17.9375 44.3406,17.9375 L51.9656,17.9375 L51.9656,20.5313 Q51.9656,21.1406 51.7313,21.4063 Q51.5125,21.6563 51.1219,21.6563 Q50.7469,21.6563 50.5125,21.4063 Q50.2781,21.1406 50.2781,20.5313 L50.2781,19.6406 L46.3094,19.6406 L46.3094,22.0938 L47.7938,22.0938 Q47.7938,21.4375 47.9188,21.25 Q48.1844,20.8438 48.6531,20.8438 Q49.0281,20.8438 49.2625,21.1094 Q49.4969,21.3594 49.4969,21.9688 L49.4969,23.9375 Q49.4969,24.4844 49.3719,24.6719 Q49.1063,25.0625 48.6531,25.0625 Q48.1844,25.0625 47.9188,24.6563 Q47.7938,24.4688 47.7938,23.7969 L46.3094,23.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="63.55" y="28.7285">Kassetten</text><line style="stroke:#181818;stroke-width:0.5;" x1="24" x2="138" y1="39" y2="39"/><ellipse cx="34" cy="53.3047" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="43" y="57.5332">ID primary key</text><line style="stroke:#181818;stroke-width:1.0;" x1="24" x2="138" y1="64.6094" y2="64.6094"/><ellipse cx="34" cy="78.9141" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="43" y="83.1426">Bezeichnung</text><ellipse cx="34" cy="96.5234" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="43" y="100.752">Länge</text></g><!--MD5=[8e95c13453fed63b2e6aa0fa1b4fbd98]
+class Film--><g id="elem_Film"><rect codeLine="7" fill="#F1F1F1" height="118.4375" id="Film" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="23" y="186"/><ellipse cx="64.1" cy="202" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M62.9594,202.7969 L62.9594,205.2969 L67.2875,205.2969 L67.2875,204.375 Q67.2875,203.7656 67.5219,203.5 Q67.7719,203.2344 68.1469,203.2344 Q68.5219,203.2344 68.7563,203.5 Q68.9906,203.7656 68.9906,204.375 L68.9906,207 L60.9906,207 Q60.3656,207 60.1,206.7656 Q59.85,206.5313 59.85,206.1406 Q59.85,205.7656 60.1156,205.5313 Q60.3812,205.2969 60.9906,205.2969 L61.2562,205.2969 L61.2562,198.6406 L60.9906,198.6406 Q60.3656,198.6406 60.1,198.4063 Q59.85,198.1719 59.85,197.7813 Q59.85,197.4063 60.1,197.1719 Q60.3656,196.9375 60.9906,196.9375 L68.6156,196.9375 L68.6156,199.5313 Q68.6156,200.1406 68.3813,200.4063 Q68.1625,200.6563 67.7719,200.6563 Q67.3969,200.6563 67.1625,200.4063 Q66.9281,200.1406 66.9281,199.5313 L66.9281,198.6406 L62.9594,198.6406 L62.9594,201.0938 L64.4438,201.0938 Q64.4438,200.4375 64.5688,200.25 Q64.8344,199.8438 65.3031,199.8438 Q65.6781,199.8438 65.9125,200.1094 Q66.1469,200.3594 66.1469,200.9688 L66.1469,202.9375 Q66.1469,203.4844 66.0219,203.6719 Q65.7563,204.0625 65.3031,204.0625 Q64.8344,204.0625 64.5688,203.6563 Q64.4438,203.4688 64.4438,202.7969 L62.9594,202.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="83.9" y="207.7285">Film</text><line style="stroke:#181818;stroke-width:0.5;" x1="24" x2="138" y1="218" y2="218"/><ellipse cx="34" cy="232.3047" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="43" y="236.5332">ID primary key</text><line style="stroke:#181818;stroke-width:1.0;" x1="24" x2="138" y1="243.6094" y2="243.6094"/><ellipse cx="34" cy="257.9141" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="43" y="262.1426">Titel</text><ellipse cx="34" cy="275.5234" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="43" y="279.752">Länge</text><ellipse cx="34" cy="293.1328" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="43" y="297.3613">Jahr</text></g><!--MD5=[ec869b572fba91614459f708e8cfae88]
+class Schauspieler--><g id="elem_Schauspieler"><rect codeLine="14" fill="#F1F1F1" height="100.8281" id="Schauspieler" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="114" x="24" y="491"/><ellipse cx="39" cy="507" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M37.8594,507.7969 L37.8594,510.2969 L42.1875,510.2969 L42.1875,509.375 Q42.1875,508.7656 42.4219,508.5 Q42.6719,508.2344 43.0469,508.2344 Q43.4219,508.2344 43.6563,508.5 Q43.8906,508.7656 43.8906,509.375 L43.8906,512 L35.8906,512 Q35.2656,512 35,511.7656 Q34.75,511.5313 34.75,511.1406 Q34.75,510.7656 35.0156,510.5313 Q35.2813,510.2969 35.8906,510.2969 L36.1563,510.2969 L36.1563,503.6406 L35.8906,503.6406 Q35.2656,503.6406 35,503.4063 Q34.75,503.1719 34.75,502.7813 Q34.75,502.4063 35,502.1719 Q35.2656,501.9375 35.8906,501.9375 L43.5156,501.9375 L43.5156,504.5313 Q43.5156,505.1406 43.2813,505.4063 Q43.0625,505.6563 42.6719,505.6563 Q42.2969,505.6563 42.0625,505.4063 Q41.8281,505.1406 41.8281,504.5313 L41.8281,503.6406 L37.8594,503.6406 L37.8594,506.0938 L39.3438,506.0938 Q39.3438,505.4375 39.4688,505.25 Q39.7344,504.8438 40.2031,504.8438 Q40.5781,504.8438 40.8125,505.1094 Q41.0469,505.3594 41.0469,505.9688 L41.0469,507.9375 Q41.0469,508.4844 40.9219,508.6719 Q40.6563,509.0625 40.2031,509.0625 Q39.7344,509.0625 39.4688,508.6563 Q39.3438,508.4688 39.3438,507.7969 L37.8594,507.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="53" y="512.7285">Schauspieler</text><line style="stroke:#181818;stroke-width:0.5;" x1="25" x2="137" y1="523" y2="523"/><ellipse cx="35" cy="537.3047" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="13" x="44" y="541.5332">ID</text><line style="stroke:#181818;stroke-width:1.0;" x1="25" x2="137" y1="548.6094" y2="548.6094"/><ellipse cx="35" cy="562.9141" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="44" y="567.1426">Vorname</text><ellipse cx="35" cy="580.5234" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="44" y="584.752">Nachname</text></g><!--MD5=[8837eebbfab779415a3297f9c34d3b21]
+class Film_Schauspieler--><g id="elem_Film_Schauspieler"><rect codeLine="20" fill="#F1F1F1" height="48" id="Film_Schauspieler" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="148" x="7" y="365"/><ellipse cx="22" cy="381" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M20.8594,381.7969 L20.8594,384.2969 L25.1875,384.2969 L25.1875,383.375 Q25.1875,382.7656 25.4219,382.5 Q25.6719,382.2344 26.0469,382.2344 Q26.4219,382.2344 26.6563,382.5 Q26.8906,382.7656 26.8906,383.375 L26.8906,386 L18.8906,386 Q18.2656,386 18,385.7656 Q17.75,385.5313 17.75,385.1406 Q17.75,384.7656 18.0156,384.5313 Q18.2813,384.2969 18.8906,384.2969 L19.1563,384.2969 L19.1563,377.6406 L18.8906,377.6406 Q18.2656,377.6406 18,377.4063 Q17.75,377.1719 17.75,376.7813 Q17.75,376.4063 18,376.1719 Q18.2656,375.9375 18.8906,375.9375 L26.5156,375.9375 L26.5156,378.5313 Q26.5156,379.1406 26.2813,379.4063 Q26.0625,379.6563 25.6719,379.6563 Q25.2969,379.6563 25.0625,379.4063 Q24.8281,379.1406 24.8281,378.5313 L24.8281,377.6406 L20.8594,377.6406 L20.8594,380.0938 L22.3438,380.0938 Q22.3438,379.4375 22.4688,379.25 Q22.7344,378.8438 23.2031,378.8438 Q23.5781,378.8438 23.8125,379.1094 Q24.0469,379.3594 24.0469,379.9688 L24.0469,381.9375 Q24.0469,382.4844 23.9219,382.6719 Q23.6563,383.0625 23.2031,383.0625 Q22.7344,383.0625 22.4688,382.6563 Q22.3438,382.4688 22.3438,381.7969 L20.8594,381.7969 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="36" y="386.7285">Film_Schauspieler</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="154" y1="397" y2="397"/><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="154" y1="405" y2="405"/></g><!--MD5=[cae6ea8cc70184ff500737bad669f5b0]
+link Kassetten to Film--><g id="link_Kassetten_Film"><path codeLine="24" d="M81,108.21 C81,132.14 81,160.99 81,185.92 " fill="none" id="Kassetten-Film" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="82" y="152.4951">hat</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="73.5516" y="129.2609">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="73.5734" y="175.2345">n</text></g><!--MD5=[755371bf0f5b8758d4f0e1a53332e868]
+link Film to Film_Schauspieler--><g id="link_Film_Film_Schauspieler"><path codeLine="25" d="M81,304.17 C81,325.46 81,348.34 81,364.82 " fill="none" id="Film-Film_Schauspieler" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="73.5734" y="325.8462">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="73.1031" y="354.114">n</text></g><!--MD5=[27308561163788a0793cd6f7916631c9]
+link Film_Schauspieler to Schauspieler--><g id="link_Film_Schauspieler_Schauspieler"><path codeLine="26" d="M81,413.19 C81,433.8 81,464.64 81,490.8 " fill="none" id="Film_Schauspieler-Schauspieler" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="31" x="82" y="457.4951">spielt</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="73.1469" y="434.5743">n</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="73.5078" y="480.0772">1</text></g><!--MD5=[36f3d4a057fb2792e84d12fe3ac34032]
+@startuml name Videodatenbank_Relation 
+entity Kassetten {
+    * ID primary key 
+    - -
+    * Bezeichnung 
+    * Länge 
+}
+entity Film {
+ * ID primary key 
+ - -
+ * Titel 
+ * Länge
+ * Jahr 
+}
+entity Schauspieler {
+ * ID
+ - -
+ * Vorname
+ * Nachname
+}
+entity Film_Schauspieler {
+
+}
+'' Relations
+Kassetten "1" - - "n" Film: hat
+Film "1" - - "n" Film_Schauspieler 
+Film_Schauspieler "n" - - "1" Schauspieler: spielt
+
+@enduml
+
+@startuml name Videodatenbank_Relation 
+entity Kassetten {
+    * ID primary key 
+    - -
+    * Bezeichnung 
+    * Länge 
+}
+entity Film {
+ * ID primary key 
+ - -
+ * Titel 
+ * Länge
+ * Jahr 
+}
+entity Schauspieler {
+ * ID
+ - -
+ * Vorname
+ * Nachname
+}
+entity Film_Schauspieler {
+
+}
+Kassetten "1" - - "n" Film: hat
+Film "1" - - "n" Film_Schauspieler 
+Film_Schauspieler "n" - - "1" Schauspieler: spielt
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>

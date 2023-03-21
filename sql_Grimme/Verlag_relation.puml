@@ -1,4 +1,4 @@
-@startuml Verlag
+@startuml name Verlag
 entity Verlag{
     * VerlagsName primary key
     * Vertragsleiter
@@ -17,9 +17,18 @@ entity Abonent {
     * Addresse 
 
 }
+entity Zeitschrift_Abo {
+    * AZ_id primary key 
+    --
+    * ANummer foreign key 
+    * ZTitel foreign key 
+    * Dauer 
+    * Beginn
+}
 
 Verlag "1" -- "n" Zeitschrift : verlegt
-'' Esgit einen Verlag und dieser hat Viele Zeitschriften im Angebot
-Zeitschrift "n" -- "m" Abonent: bezieht | Dauer  | Beginn 
-'' Es gibt viele Abonenten diese können viele unterschiedliche Zeitschriften beziehen
+
+Zeitschrift "1" -- "n" Zeitschrift_Abo
+Zeitschrift_Abo "n"  -- "1" Abonent: bezieht | | 
+
 @endeuml

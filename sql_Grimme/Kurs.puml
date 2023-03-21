@@ -1,11 +1,38 @@
 @startuml name Kurs 
-entity Teilnehmer {}
+entity Teilnehmer {
+    * tid 
+    --
+    * Vorname
+    * Nachname
+    * Straße
+    * Wohnort
+}
 
-entity Kurs {}
+entity Kurs {
+    * Kurs_id primary key 
+    --
+    * name
+    * Beschreibung 
+    * Zeitraum
+    * 
+}
 
-entity Raum {}
+entity Raum {
+    * Raumnummer primery key 
+    --
+    * Ort 
+    * größe
+    * Stock
 
-entity Dozent {}
+}
+
+entity Dozent {
+    * did primary key 
+    --
+    * vorname
+    * nachname
+    * 
+}
 '' Beziehunngen 
 Teilnehmer "n" - "m" Kurs: besucht
 Kurs "n" - "1" Dozent: leitet
