@@ -24,9 +24,7 @@ entity Abonent {
 }
 
 Verlag "1" -- "n" Zeitschrift : verlegt
-'' Esgit einen Verlag und dieser hat Viele Zeitschriften im Angebot
 Zeitschrift "n" -- "m" Abonent: bezieht | Dauer  | Beginn 
-'' Es gibt viele Abonenten diese können viele unterschiedliche Zeitschriften beziehen
 @enduml
 ```
 </div>
