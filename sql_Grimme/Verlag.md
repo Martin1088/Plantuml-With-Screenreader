@@ -26,3 +26,5 @@ Verlag "1" -- "n" Zeitschrift : verlegt
 Zeitschrift "n" -- "m" Abonent: bezieht | Dauer  | Beginn 
 @enduml
 ```
+
+ ![showing the diagram] (./Verlag.svg)
