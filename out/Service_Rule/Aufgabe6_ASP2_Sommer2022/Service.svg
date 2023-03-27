@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1060px" preserveAspectRatio="none" style="width:652px;height:1060px;background:#FFFFFF;" version="1.1" viewBox="0 0 652 1060" width="652px" zoomAndPan="magnify"><defs/><g><line style="stroke:none;stroke-width:1.5;" x1="130.5" x2="441.5" y1="10" y2="10"/><polygon fill="#F1F1F1" points="20,31.5,241,31.5,251,49.0469,241,66.5938,20,66.5938" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="198" x="33" y="53.957">Sensor überschreitet Schwellenwert</text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="279" y="31.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="292" y="53.957">Datenblatt</text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="386" y="31.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="399" y="53.957">to_Sensordaten</text><line style="stroke:#181818;stroke-width:1.5;" x1="130.5" x2="441.5" y1="86.5938" y2="86.5938"/><rect fill="#F1F1F1" height="50.1875" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="131" x="193" y="106.5938"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="206" y="129.0508">Prüfen ob</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="111" x="203" y="144.1445">Wartungsfall vorliegt</text><polygon fill="#F1F1F1" points="246.5,176.7813,270.5,176.7813,282.5,188.7813,270.5,200.7813,246.5,200.7813,234.5,188.7813,246.5,176.7813" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="22" x="247.5" y="193.2822">XOR</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="21" x="213.5" y="186.3643">Nein</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="11" x="282.5" y="186.3643">Ja</text><polygon fill="#F1F1F1" points="37.5,210.7813,155.5,210.7813,165.5,228.3281,155.5,245.875,37.5,245.875" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="95" x="50.5" y="233.2383">kein Wartungsfall</text><polygon fill="#F1F1F1" points="374.5,210.7813,466.5,210.7813,476.5,228.3281,466.5,245.875,374.5,245.875" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="69" x="387.5" y="233.2383">Wartungsfall</text><line style="stroke:#181818;stroke-width:1.5;" x1="199.5" x2="560" y1="265.875" y2="265.875"/><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="116" x="227.5" y="275.875"/><line style="stroke:#181818;stroke-width:0.5;" x1="232.5" x2="232.5" y1="275.875" y2="310.9688"/><line style="stroke:#181818;stroke-width:0.5;" x1="338.5" x2="338.5" y1="275.875" y2="310.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="93" x="240.5" y="298.332">Wartungsvorlage</text><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="79" x="371.5" y="275.875"/><line style="stroke:#181818;stroke-width:0.5;" x1="376.5" x2="376.5" y1="275.875" y2="310.9688"/><line style="stroke:#181818;stroke-width:0.5;" x1="445.5" x2="445.5" y1="275.875" y2="310.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="384.5" y="298.332">Datenblatt</text><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="163" x="478.5" y="275.875"/><line style="stroke:#181818;stroke-width:0.5;" x1="483.5" x2="483.5" y1="275.875" y2="310.9688"/><line style="stroke:#181818;stroke-width:0.5;" x1="636.5" x2="636.5" y1="275.875" y2="310.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="140" x="491.5" y="298.332">Tabelle "tb_Sensordaten"</text><line style="stroke:#181818;stroke-width:1.5;" x1="199.5" x2="560" y1="330.9688" y2="330.9688"/><rect fill="#F1F1F1" height="50.1875" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="375" y="350.9688"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="388" y="373.4258">Dringlichkeit</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="397" y="388.5195">einordnen</text><polygon fill="#F1F1F1" points="260,421.1563,284,421.1563,296,433.1563,284,445.1563,260,445.1563,248,433.1563,260,421.1563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="22" x="261" y="437.6572">XOR</text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="113" x="215.5" y="465.1563"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="90" x="228.5" y="487.6133">hohe driglichkeit</text><polygon fill="#F1F1F1" points="404,421.1563,428,421.1563,440,433.1563,428,445.1563,404,445.1563,392,433.1563,404,421.1563" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="22" x="405" y="437.6572">XOR</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="3" x="440" y="430.7393"> </text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="135" x="348.5" y="465.1563"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="112" x="361.5" y="487.6133">mittlere Dringlichkeit</text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="122" x="503.5" y="468.1563"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="99" x="516.5" y="490.6133">hohe Dringlichkeit</text><line style="stroke:#181818;stroke-width:1.5;" x1="226" x2="577" y1="543.25" y2="543.25"/><path d="M207,563.25 L202,580.7969 L207,598.3438 M245,563.25 L250,580.7969 L245,598.3438 " fill="#F1F1F1" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="25" x="215" y="585.707">XOR</text><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="102" x="278" y="563.25"/><line style="stroke:#181818;stroke-width:0.5;" x1="283" x2="283" y1="563.25" y2="598.3438"/><line style="stroke:#181818;stroke-width:0.5;" x1="375" x2="375" y1="563.25" y2="598.3438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="291" y="585.707">"tb_Techniker"</text><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="79" x="408" y="563.25"/><line style="stroke:#181818;stroke-width:0.5;" x1="413" x2="413" y1="563.25" y2="598.3438"/><line style="stroke:#181818;stroke-width:0.5;" x1="482" x2="482" y1="563.25" y2="598.3438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="421" y="585.707">Datenblatt</text><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="124" x="515" y="563.25"/><line style="stroke:#181818;stroke-width:0.5;" x1="520" x2="520" y1="563.25" y2="598.3438"/><line style="stroke:#181818;stroke-width:0.5;" x1="634" x2="634" y1="563.25" y2="598.3438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="528" y="585.707">Wartungskalender</text><line style="stroke:#181818;stroke-width:1.5;" x1="226" x2="577" y1="618.3438" y2="618.3438"/><rect fill="#F1F1F1" height="65.2813" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="358.5" y="638.3438"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="371.5" y="660.8008">Terminierung</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="44" x="371.5" y="675.8945">und ggf.</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="371.5" y="690.9883">Materialbestellung</text><polygon fill="#F1F1F1" points="408.5,723.625,432.5,723.625,444.5,735.625,432.5,747.625,408.5,747.625,396.5,735.625,408.5,723.625" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="8" x="416.5" y="740.126">V</text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="150" x="267" y="757.625"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="127" x="280" y="780.082">Terminierung ist erfolgt</text><rect fill="#F1F1F1" height="35.0938" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="124" x="437" y="757.625"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="450" y="780.082">Materialbestellung</text><polygon fill="#F1F1F1" points="420.5,798.7188,432.5,810.7188,420.5,822.7188,408.5,810.7188,420.5,798.7188" style="stroke:#181818;stroke-width:0.5;"/><rect fill="#F1F1F1" height="65.2813" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="369.5" y="842.7188"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="79" x="382.5" y="865.1758">Information an</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="60" x="382.5" y="880.2695">Kunde und</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="54" x="382.5" y="895.3633">Techniker</text><polygon fill="#F1F1F1" points="258.5,914,270.5,926,258.5,938,246.5,926,258.5,914" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:1.5;" x1="176" x2="329.5" y1="958" y2="958"/><polygon fill="#F1F1F1" points="124,978,228,978,238,1003.0938,228,1028.1875,124,1028.1875" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="137" y="1000.457">Personen sind</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="52" x="137" y="1015.5508">informiert</text><rect fill="#F1F1F1" height="35.0938" style="stroke:#181818;stroke-width:0.5;" width="127" x="266" y="985.5469"/><line style="stroke:#181818;stroke-width:0.5;" x1="271" x2="271" y1="985.5469" y2="1020.6406"/><line style="stroke:#181818;stroke-width:0.5;" x1="388" x2="388" y1="985.5469" y2="1020.6406"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="101" x="279" y="1008.0039">Wartungskalendar</text><line style="stroke:#181818;stroke-width:1.5;" x1="176" x2="329.5" y1="1048.1875" y2="1048.1875"/><line style="stroke:#181818;stroke-width:1.0;" x1="130.5" x2="130.5" y1="66.5938" y2="86.5938"/><polygon fill="#181818" points="126.5,76.5938,130.5,86.5938,134.5,76.5938,130.5,80.5938" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="318.5" x2="318.5" y1="66.5938" y2="86.5938"/><polygon fill="#181818" points="314.5,76.5938,318.5,86.5938,322.5,76.5938,318.5,80.5938" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="441.5" x2="441.5" y1="66.5938" y2="86.5938"/><polygon fill="#181818" points="437.5,76.5938,441.5,86.5938,445.5,76.5938,441.5,80.5938" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="258.5" x2="258.5" y1="88.0938" y2="106.5938"/><polygon fill="#181818" points="254.5,96.5938,258.5,106.5938,262.5,96.5938,258.5,100.5938" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="199.5" x2="199.5" y1="267.375" y2="330.9688"/><polygon fill="#181818" points="195.5,320.9688,199.5,330.9688,203.5,320.9688,199.5,324.9688" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="285.5" x2="285.5" y1="310.9688" y2="330.9688"/><polygon fill="#181818" points="281.5,320.9688,285.5,330.9688,289.5,320.9688,285.5,324.9688" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="411" x2="411" y1="310.9688" y2="330.9688"/><polygon fill="#181818" points="407,320.9688,411,330.9688,415,320.9688,411,324.9688" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="560" x2="560" y1="310.9688" y2="330.9688"/><polygon fill="#181818" points="556,320.9688,560,330.9688,564,320.9688,560,324.9688" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="245.875" y2="265.875"/><polygon fill="#181818" points="416.5,255.875,420.5,265.875,424.5,255.875,420.5,259.875" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="332.4688" y2="350.9688"/><polygon fill="#181818" points="416.5,340.9688,420.5,350.9688,424.5,340.9688,420.5,344.9688" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="272" x2="272" y1="445.1563" y2="465.1563"/><polygon fill="#181818" points="268,455.1563,272,465.1563,276,455.1563,272,459.1563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="272" x2="272" y1="500.25" y2="523.25"/><polygon fill="#181818" points="268,513.25,272,523.25,276,513.25,272,517.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="416" x2="416" y1="445.1563" y2="465.1563"/><polygon fill="#181818" points="412,455.1563,416,465.1563,420,455.1563,416,459.1563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="416" x2="416" y1="500.25" y2="523.25"/><polygon fill="#181818" points="412,513.25,416,523.25,420,513.25,416,517.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="296" x2="392" y1="433.1563" y2="433.1563"/><polygon fill="#181818" points="382,429.1563,392,433.1563,382,437.1563,386,433.1563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="401.1563" y2="406.1563"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="272" y1="406.1563" y2="406.1563"/><line style="stroke:#181818;stroke-width:1.0;" x1="272" x2="272" y1="406.1563" y2="421.1563"/><polygon fill="#181818" points="268,411.1563,272,421.1563,276,411.1563,272,415.1563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="440" x2="564.5" y1="433.1563" y2="433.1563"/><line style="stroke:#181818;stroke-width:1.0;" x1="564.5" x2="564.5" y1="433.1563" y2="468.1563"/><polygon fill="#181818" points="560.5,458.1563,564.5,468.1563,568.5,458.1563,564.5,462.1563" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="564.5" x2="564.5" y1="503.25" y2="523.25"/><polygon fill="#181818" points="560.5,513.25,564.5,523.25,568.5,513.25,564.5,517.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="272" x2="564.5" y1="523.25" y2="523.25"/><line style="stroke:#181818;stroke-width:1.0;" x1="226" x2="226" y1="544.75" y2="563.25"/><polygon fill="#181818" points="222,553.25,226,563.25,230,553.25,226,557.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="226" x2="226" y1="598.3438" y2="618.3438"/><polygon fill="#181818" points="222,608.3438,226,618.3438,230,608.3438,226,612.3438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="329" x2="329" y1="598.3438" y2="618.3438"/><polygon fill="#181818" points="325,608.3438,329,618.3438,333,608.3438,329,612.3438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="447.5" x2="447.5" y1="598.3438" y2="618.3438"/><polygon fill="#181818" points="443.5,608.3438,447.5,618.3438,451.5,608.3438,447.5,612.3438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="523.25" y2="543.25"/><polygon fill="#181818" points="416.5,533.25,420.5,543.25,424.5,533.25,420.5,537.25" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="619.8438" y2="638.3438"/><polygon fill="#181818" points="416.5,628.3438,420.5,638.3438,424.5,628.3438,420.5,632.3438" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="396.5" x2="342" y1="735.625" y2="735.625"/><line style="stroke:#181818;stroke-width:1.0;" x1="342" x2="342" y1="735.625" y2="757.625"/><polygon fill="#181818" points="338,747.625,342,757.625,346,747.625,342,751.625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="444.5" x2="499" y1="735.625" y2="735.625"/><line style="stroke:#181818;stroke-width:1.0;" x1="499" x2="499" y1="735.625" y2="757.625"/><polygon fill="#181818" points="495,747.625,499,757.625,503,747.625,499,751.625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="342" x2="342" y1="792.7188" y2="810.7188"/><line style="stroke:#181818;stroke-width:1.0;" x1="342" x2="408.5" y1="810.7188" y2="810.7188"/><polygon fill="#181818" points="398.5,806.7188,408.5,810.7188,398.5,814.7188,402.5,810.7188" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="499" x2="499" y1="792.7188" y2="810.7188"/><line style="stroke:#181818;stroke-width:1.0;" x1="499" x2="432.5" y1="810.7188" y2="810.7188"/><polygon fill="#181818" points="442.5,806.7188,432.5,810.7188,442.5,814.7188,438.5,810.7188" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="703.625" y2="723.625"/><polygon fill="#181818" points="416.5,713.625,420.5,723.625,424.5,713.625,420.5,717.625" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="822.7188" y2="842.7188"/><polygon fill="#181818" points="416.5,832.7188,420.5,842.7188,424.5,832.7188,420.5,836.7188" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="234.5" x2="96.5" y1="188.7813" y2="188.7813"/><line style="stroke:#181818;stroke-width:1.0;" x1="96.5" x2="96.5" y1="188.7813" y2="210.7813"/><polygon fill="#181818" points="92.5,200.7813,96.5,210.7813,100.5,200.7813,96.5,204.7813" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="282.5" x2="420.5" y1="188.7813" y2="188.7813"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="188.7813" y2="210.7813"/><polygon fill="#181818" points="416.5,200.7813,420.5,210.7813,424.5,200.7813,420.5,204.7813" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="96.5" x2="96.5" y1="245.875" y2="926"/><line style="stroke:#181818;stroke-width:1.0;" x1="96.5" x2="246.5" y1="926" y2="926"/><polygon fill="#181818" points="236.5,922,246.5,926,236.5,930,240.5,926" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="420.5" y1="908" y2="926"/><line style="stroke:#181818;stroke-width:1.0;" x1="420.5" x2="270.5" y1="926" y2="926"/><polygon fill="#181818" points="280.5,922,270.5,926,280.5,930,276.5,926" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="258.5" x2="258.5" y1="156.7813" y2="176.7813"/><polygon fill="#181818" points="254.5,166.7813,258.5,176.7813,262.5,166.7813,258.5,170.7813" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="176" x2="176" y1="959.5" y2="978"/><polygon fill="#181818" points="172,968,176,978,180,968,176,972" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="329.5" x2="329.5" y1="959.5" y2="985.5469"/><polygon fill="#181818" points="325.5,975.5469,329.5,985.5469,333.5,975.5469,329.5,979.5469" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="258.5" x2="258.5" y1="938" y2="958"/><polygon fill="#181818" points="254.5,948,258.5,958,262.5,948,258.5,952" style="stroke:#181818;stroke-width:1.0;"/><!--MD5=[6d89f41f0a73f35684576d134c22afc2]
+@startuml Service 
+split 
+    -[hidden]->
+    : Sensor überschreitet Schwellenwert>
+split again
+    -[hidden]->
+    : Datenblatt;
+split again 
+    -[hidden]->
+    : to_Sensordaten;
+end split
+' Kasten eins
+: Prüfen ob 
+Wartungsfall vorliegt;
+if (XOR) then (Nein)
+: kein Wartungsfall>
+else (Ja)
+: Wartungsfall>
+split 
+' übergang 
+split again
+    -[hidden]->
+    : Wartungsvorlage|
+split again
+    -[hidden]->
+    : Datenblatt|
+split again
+-[hidden]->
+    : Tabelle "tb_Sensordaten"|
+end split
+' Kasten zwei 
+: Dringlichkeit 
+    einordnen;
+if (XOR) then 
+: hohe driglichkeit;
+elseif (XOR) then
+: mittlere Dringlichkeit;
+else ()
+: hohe Dringlichkeit;
+endif
+split 
+: XOR}
+split again
+    -[hidden]->
+    : "tb_Techniker"|
+split again
+    -[hidden]->
+    : Datenblatt|
+split again
+    -[hidden]->
+    : Wartungskalender|
+    -[hidden]->
+end split
+' Kasten drei 
+: Terminierung 
+ und ggf.
+ Materialbestellung;
+if (V) then
+: Terminierung ist erfolgt;
+else
+: Materialbestellung;
+endif
+' letzter Kasten vier
+: Information an
+ Kunde und
+ Techniker;
+endif
+split
+    : Personen sind 
+     informiert>
+    -[hidden]->
+split again
+    : Wartungskalendar |
+    -[hidden]->   
+end split 
+
+@enduml
+
+@startuml Service 
+split 
+    -[hidden]->
+    : Sensor überschreitet Schwellenwert>
+split again
+    -[hidden]->
+    : Datenblatt;
+split again 
+    -[hidden]->
+    : to_Sensordaten;
+end split
+: Prüfen ob 
+Wartungsfall vorliegt;
+if (XOR) then (Nein)
+: kein Wartungsfall>
+else (Ja)
+: Wartungsfall>
+split 
+split again
+    -[hidden]->
+    : Wartungsvorlage|
+split again
+    -[hidden]->
+    : Datenblatt|
+split again
+-[hidden]->
+    : Tabelle "tb_Sensordaten"|
+end split
+: Dringlichkeit 
+    einordnen;
+if (XOR) then 
+: hohe driglichkeit;
+elseif (XOR) then
+: mittlere Dringlichkeit;
+else ()
+: hohe Dringlichkeit;
+endif
+split 
+: XOR}
+split again
+    -[hidden]->
+    : "tb_Techniker"|
+split again
+    -[hidden]->
+    : Datenblatt|
+split again
+    -[hidden]->
+    : Wartungskalender|
+    -[hidden]->
+end split
+: Terminierung 
+ und ggf.
+ Materialbestellung;
+if (V) then
+: Terminierung ist erfolgt;
+else
+: Materialbestellung;
+endif
+: Information an
+ Kunde und
+ Techniker;
+endif
+split
+    : Personen sind 
+     informiert>
+    -[hidden]->
+split again
+    : Wartungskalendar |
+    -[hidden]->   
+end split 
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

@@ -1,7 +1,7 @@
-@startuml name Service 
+@startuml Service 
 split 
     -[hidden]->
-    : Sensor überschreitet Schwellenwert;
+    : Sensor überschreitet Schwellenwert>
 split again
     -[hidden]->
     : Datenblatt;
@@ -12,60 +12,65 @@ end split
 ' Kasten eins
 : Prüfen ob 
 Wartungsfall vorliegt;
-if (Wartungsfall) then (Nein)
-: Wartungsfall liegt nicht vor>
+if (XOR) then (Nein)
+: kein Wartungsfall>
 else (Ja)
+: Wartungsfall>
 split 
-:Mitarbeiter prüft>
+' übergang 
 split again
     -[hidden]->
-    :leer|
+    : Wartungsvorlage|
 split again
     -[hidden]->
-    :leer|
+    : Datenblatt|
 split again
 -[hidden]->
-    :leer|
+    : Tabelle "tb_Sensordaten"|
 end split
 ' Kasten zwei 
 : Dringlichkeit 
-    bewerten;
-if () then ()
+    einordnen;
+if (XOR) then 
 : hohe driglichkeit;
-elseif () then ()
+elseif (XOR) then
 : mittlere Dringlichkeit;
 else ()
 : hohe Dringlichkeit;
 endif
 split 
-:leer>
+: XOR}
 split again
     -[hidden]->
-    :leer|
+    : "tb_Techniker"|
 split again
     -[hidden]->
-    :leer|
+    : Datenblatt|
 split again
--[hidden]->
-    : leer;
+    -[hidden]->
+    : Wartungskalender|
+    -[hidden]->
 end split
 ' Kasten drei 
-: leer
-;
-if (leer) then (leer)
-:leer;
+: Terminierung 
+ und ggf.
+ Materialbestellung;
+if (V) then
+: Terminierung ist erfolgt;
 else
-:leer;
+: Materialbestellung;
 endif
 ' letzter Kasten vier
-: leer
-;
+: Information an
+ Kunde und
+ Techniker;
 endif
 split
-    : leer;
+    : Personen sind 
+     informiert>
     -[hidden]->
 split again
-    : leer |
+    : Wartungskalendar |
     -[hidden]->   
 end split 
 
