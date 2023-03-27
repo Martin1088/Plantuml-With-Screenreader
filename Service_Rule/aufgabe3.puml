@@ -3,10 +3,10 @@
 if (Bekannte Ursache ) then (Ja)
 : First Level Support Suport ;
 else (Nein)
-: Problemmanagement;
-repeat : Ursache gefunden;
-repeat while(Problemmanagment Wissensdaten) is (Nein) not (Ja)
-: Ursache gefungenProblemmanagment Wissensdaten;
+: Problem;
+repeat : Problemmanagment Wissensdaten;
+repeat while(Ursache gefunden) is (Nein) not (Ja)
+: Fehler;
 endif
 if (Infrastrukturänderung nötig) then (Ja)
 : Change Management;
