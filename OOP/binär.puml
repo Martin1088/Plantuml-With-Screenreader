@@ -1,0 +1,12 @@
+@startuml binär
+
+start
+: Funktion String dez2bin(Integer);
+: String result;
+repeat: number / 2;
+: String result = number % 2 + result;
+repeat while(number != 0) is (true) not (false)
+: return result;
+stop
+
+@enduml
