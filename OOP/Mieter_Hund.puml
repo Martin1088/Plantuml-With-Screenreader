@@ -1,0 +1,22 @@
+@startuml
+class Mieter {
+	-String:name
+	-String:etage
+    --
+	+Mieter()
+	+GetName():String
+	+getEtage():String
+	+setName(String name): void
+	+setEtage(String etage): void
+}
+class Hund {
+	-name:String 
+    --
+    +Hund()
+	+getName(): String
+	+setName(String name) : void
+}
+
+Mieter "" --> "1" Hund : hatHund 
+
+@enduml
