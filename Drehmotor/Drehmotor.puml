@@ -1,0 +1,19 @@
+@startuml
+class Drehmotor {
+    - Stromstärke:double 
+    - Spannung:double
+    - Drehzahl:double
+    - Drehmoment:double
+    - cos_phi:double
+    - n_et:double
+    --
+    + Drehmotor()
+    + get und set
+    + Wirkungsgrad():double
+    + Leistungsabgabe():double
+    + Leistungsaufnahme():double
+    + Leistungsaufnahme():double
+    + showData():void
+
+}
+@enduml
