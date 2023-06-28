@@ -17,6 +17,6 @@ class Hund {
 	+setName(String name) : void
 }
 
-Mieter "" --> "1" Hund : hatHund 
+Mieter --> "1" Hund : hatHund 
 
 @enduml

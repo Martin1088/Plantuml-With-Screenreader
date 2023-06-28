@@ -1,0 +1,74 @@
+@startuml Drehmoment
+class SewMotor{
+    - drehzahl:double 
+    - drehmoment:double
+    - spannung:double
+    - strom:double
+    - cos:double
+    - uebersetzungDesGetriebes:double
+    --
+    + SewMotor(double drehzahl, double drehmoment, double spannung, double strom, double cos,double uebersetzungDesGetriebes)
+    + SewMotor()
+    + getDrehmoment() : double
+    + getCos() : double
+    + getDrehzahl(double drehzahl) : double
+    + getSpannung(double spannung) : double
+    + getStrom(double strom) : double
+    + uebersetzungDesGetriebes() : double
+    + setCos(double cos)
+    + setDrehmoment(double Drehmoment)
+    + setDrehzahl(double Drehzahl)
+    + setSpannung(double Spannung)
+    + setStrom(double Strom)
+    + setUebersetzungDesGetriebes(double UebersetzungDesGetriebes)
+}
+
+class Formeln{
+    - leistungsaufnahme:double 0.0
+    - leistungsabgabe:double 0.0
+    - verlustleistung:double 0.0
+    - wirkungsgrad:double 0.0
+    --
+    + berechneLeistungsaufnahme(double spannung, double strom): double
+    + berechneLeistungsabgabe(double drehmoment, double drehzahl, double uebersetzungGetriebe) : double
+    + berechneVerlustleistung() : double
+    + berechneWirkungsgradInProzent() : double
+    + berechneStromNeu(double drehmoment, double spannung, double cos) : String
+    + berechneDrehzahlNeu(double drehmoment, double spannung, double cos) : String
+    + getLeistungsaufnahme() : double
+    + setLeistungsaufnahme(double leistungsaufnahme) : void
+    + getLeistungsabgabe() : double
+    + setLeistungsabgabe(double leistungsabgabe) : void
+    + getVerlustleistung() : double
+    + setVerlustleistung(double verlustleistung) : verlustleistung
+    + getWirkungsgrad() : double
+    + setWirkungsgrad(double wirkungsgrad)
+    + getUebersetzungGetriebe() : double
+    + setUebersetzungGetriebe(double uebersetzungGetriebe) : double
+}
+ class DrehstrommotorGUI {
+    - {static} serialVersionUID : long
+    - contentPane : JPanel 
+    - txtAbgabe : JTextField
+    - txtAufnahme : JTextField
+    - txtVerlust : JTextField
+    - txtWirkungsgrad : JTextField
+    - txtNennwert : JTextField
+    - txtStromInAmpere : JTextField
+    - txtDrehzahl : JTextField
+    - inputStrom : JTextField
+    - inputSpannung : JTextField
+    - inputDrehzahl : JTextField
+    - inputDrehmoment : JTextField
+    - inputCos : JTextField
+    - inputGetriebe : JTextField
+    --
+    DrehstrommotorGUI() 
+ }
+ class JFrame {}
+ JFrame <-- DrehstrommotorGUI : <<extends>>
+ SewMotor  <-- Formeln 
+ DrehstrommotorGUI -> Formeln
+ DrehstrommotorGUI -> SewMotor
+
+@enduml
