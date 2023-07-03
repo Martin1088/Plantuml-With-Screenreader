@@ -1,0 +1,32 @@
+@startgantt
+[Entscheidung der Geschäftsführung] lasts 2 days
+[Angebot einholen ] lasts 14 days
+[Angebot einholen ] starts at [Entscheidung der Geschäftsführung]'s end 
+[Mitarbeiterinformation] lasts 1 day 
+[Mitarbeiterinformation] starts at [Entscheidung der Geschäftsführung]'s end
+[Testen des Gerätes 1 ] lasts 1 day 
+[Testen des Gerätes 1 ] starts at [Angebot einholen ]'s end
+[Testen des Gerätes 2 ] lasts 2 days
+[Testen des Gerätes 2 ] starts at [Angebot einholen ]'s end 
+[Testen des Gerätes 3 ] lasts 1 day 
+[Testen des Gerätes 3 ] starts at [Angebot einholen ]'s end 
+[Auswahl der Lieferanten] lasts 1 day
+[Auswahl der Lieferanten] starts at [Testen des Gerätes 3 ]'s end 
+[Auswahl der Lieferanten] starts at [Testen des Gerätes 2 ]'s end 
+[Auswahl der Lieferanten] starts at [Testen des Gerätes 1 ]'s end 
+[Lieferung] lasts 5 days 
+[Lieferung] starts at [Auswahl der Lieferanten]'s end 
+[Raumauswahl] lasts 2 days 
+[Raumauswahl] starts at [Auswahl der Lieferanten]'s end 
+[Elektroinstalation] lasts 2 days
+[Elektroinstalation] starts at [Raumauswahl]'s end 
+[Computer aufstellen] lasts 1 day 
+[Computer aufstellen] starts at [Elektroinstalation]'s end 
+[Computer aufstellen] starts at [Lieferung]'s end 
+[Mitarbeiterschulung] lasts 7 days
+[Mitarbeiterschulung] starts at [Computer aufstellen]'s end 
+[Mitarbeiterschulung] starts at [Mitarbeiterinformation]'s end 
+[Arbeitsaufnahme] lasts 1 day 
+[Arbeitsaufnahme] starts at [Mitarbeiterschulung]'s end 
+
+@endgantt

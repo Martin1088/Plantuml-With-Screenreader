@@ -1,0 +1,23 @@
+@startjson
+{
+    "PC__Data": {
+        "pcId": 494,
+        "Description": "PC in der Abteilung Software.",
+        "Purpose": "Development",
+        "MainUser": {
+            "userId": 12,
+            "userName": "Anita Scheurenbrandt"
+        },
+        "IPAddresses": [
+            {
+                "Value": "192.168.0.23/24",
+                "Type": "v4"
+            },
+            {
+                "Value": "2012:65:fd85:5712:fdf4:11ed:9aba:9e27",
+                "Type": "v6"
+            }
+        ]
+    } 
+}
+@endjson
