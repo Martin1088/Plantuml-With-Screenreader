@@ -1,0 +1,56 @@
+@startuml
+class Legende {
+    FAZ |               | FEZ |
+1   | Beispiel |     |
+D   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Entscheidung der Geschäftsführung" {
+FAZ |               | FEZ |
+1   | Entscheidung der Geschäftsführung|     |
+2   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Angebot einholen" {
+    FAZ |               | FEZ |
+1   | Angebot einholen|     |
+14   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Mitarbeiterinformation" {
+    FAZ |               | FEZ |
+1   | Mitarbeiterinformation|     |
+1   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Testen des Gerätes 1" {
+    FAZ |               | FEZ |
+1   | Testen des Gerätes 1 |     |
+1   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Testen des Gerätes 2" {
+    FAZ |               | FEZ |
+1   | Testen des Gerätes 2 |     |
+1   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Testen des Gerätes 3" {
+    FAZ |               | FEZ |
+1   | Testen des Gerätes 3 |     |
+1   | GP            | FP  |
+SAZ |               | SEZ |
+}
+class "Auswahl der Lieferanten" {
+    FAZ |               | FEZ |
+1   | Auswahl der Lieferanten|     |
+1   | GP            | FP  |
+SAZ |               | SEZ |
+}
+"Entscheidung der Geschäftsführung" --> "Angebot einholen" 
+"Entscheidung der Geschäftsführung"  --> "Mitarbeiterinformation"
+"Angebot einholen" --> "Testen des Gerätes 1"
+"Angebot einholen" --> "Testen des Gerätes 2"
+"Angebot einholen" --> "Testen des Gerätes 3"
+
+@enduml

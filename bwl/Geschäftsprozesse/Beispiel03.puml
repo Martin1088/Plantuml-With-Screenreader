@@ -1,8 +1,10 @@
 @startuml
 class Installation {
-FAZ |    | FEZ
-1 | Installation 
-D | GP | FP
-SAZ |   | SEZ
+* tt
+--
+FAZ |               | FEZ |
+1   | Installation  |     |
+D   | GP            | FP  |
+SAZ |               | SEZ |
 }
 @enduml
