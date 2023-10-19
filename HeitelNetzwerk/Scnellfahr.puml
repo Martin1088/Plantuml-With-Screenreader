@@ -1,0 +1,11 @@
+@startuml
+[Router1]
+cloud {
+    [Internet]
+}
+[Router2]
+
+[Internet] "IP 141.51.252.65/28" -- "IP 141.51.252.66/28" [Router1]
+[Router1] "IP 192.168.100.2/30" -- "IP 192.168.100.1/30 " [Router2]
+
+@enduml

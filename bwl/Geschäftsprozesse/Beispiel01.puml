@@ -1,8 +1,8 @@
 @startuml
 json Example {
-    "":{"FAZ","FEZ"},
+    "":{"FAZ":"FEZ"},
     "1":"Installation",
-    "D":{"GP", "FP"},
-    "": {"SAZ", "SEZ"}
+    "D":{"GP": "FP"},
+    "": {"SAZ": "SEZ"}
 }
 @enduml
