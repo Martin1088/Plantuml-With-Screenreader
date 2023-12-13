@@ -1,0 +1,6 @@
+@startuml
+[Wouter1]
+[Internet]
+[switch1]
+[]
+@enduml

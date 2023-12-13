@@ -1,0 +1,34 @@
+@startuml
+
+entity Product{
+    * product_id primary key
+    --
+    * product_name
+    * description
+    * color
+    * price 
+}
+entity User{
+    * costumer_id primary key 
+    --
+    * lastname 
+    * firstname
+    * password
+    * address
+    * postcode
+    * city 
+}
+entity Order {
+    * order_id primary key 
+    --
+    * product_id foreign key 
+    * costumer_id foreign key 
+    * amount 
+    * order_date 
+}
+
+'' Relationen 
+Product "1" -- "n" Order
+User "n" -- "m" Order
+
+@enduml

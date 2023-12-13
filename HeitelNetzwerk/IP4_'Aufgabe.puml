@@ -1,0 +1,7 @@
+@startuml
+[R1]
+[R2]
+[netzwer/8]
+[Netzwerk/24]
+
+@enduml

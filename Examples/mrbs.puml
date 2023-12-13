@@ -210,7 +210,7 @@ entity mrbs_zoneinfo {
 ' Beziehungen der tabellen
 mrbs_area"1"  --> "n" mrbs_room : "One Area can have many rooms"
 mrbs_room "1" --> "n" mrbs_entry : "one rooms can have many meetings(entry) only one at a time"
-mrbs_room "1" --> "n" mrbs_repeat : "one room can have many repeating meetings"
+mrbs_room "m" --> "n" mrbs_repeat : "one room can have many repeating meetings"
 mrbs_entry "1" --> "n" mrbs_participants : "a plant meeting can have many participants"
 mrbs_repeat "1" --> "1" mrbs_entry : "shows how the meeting is repeating"
 @enduml

@@ -1,0 +1,12 @@
+@startuml http2multi
+participant Client
+participant Host
+Client <-> Host: OpenConection
+Client -> Host: GET/index.html 
+Host -> Client: Response
+Client -> Host: GET/style.css
+Client -> Host: GET/script.js
+Host -> Client: Response 
+Host -> Client: Response 
+note left: Render Page 
+@enduml

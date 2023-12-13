@@ -3,9 +3,24 @@
 cloud {
     [Internet]
 }
-[Router2]
+[Switch1]
+[SwitchMulti]
+[PC1]
+[PC2]
+[PCVlan32]
+[PCVlan64]
+[PCVlan96]
+
 
 [Internet] "IP 141.51.252.65/28" -- "IP 141.51.252.66/28" [Router1]
-[Router1] "IP 192.168.100.2/30" -- "IP 192.168.100.1/30 " [Router2]
+[Router1] "192.168.100.2/30" -- "192.168.100.1/30" [SwitchMulti]
+[SwitchMulti] - [PCVlan32]
+[SwitchMulti] - [PCVlan64]
+[SwitchMulti] - [PCVlan96]
+
+
+[Router1] "192.168.200.254/24" - [Switch1]
+[PC1] -- [Switch1]
+[PC2] -- [Switch1]
 
 @enduml
