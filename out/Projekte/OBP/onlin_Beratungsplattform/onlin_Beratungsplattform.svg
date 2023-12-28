@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="691px" preserveAspectRatio="none" style="width:1248px;height:691px;background:#FFFFFF;" version="1.1" viewBox="0 0 1248 691" width="1248px" zoomAndPan="magnify"><defs/><g><!--MD5=[1eacc07f0f4868de8dafe39fe91f9518]
+cluster OBP--><g id="cluster_OBP"><rect fill="none" height="678.5" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="885" x="161" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="30" x="588.5" y="23.5332">OBP</text></g><!--MD5=[bab01af521d24b88aaa3644efc32809a]
+cluster KID-Website--><g id="cluster_KID-Website"><rect fill="none" height="610.5" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="453" x="185" y="51"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="86" x="368.5" y="67.5332">KID-Website</text></g><!--MD5=[52946ba11a7f0c7299417e1bf35315d4]
+cluster Wordpress-backend--><g id="cluster_Wordpress-backend"><rect fill="none" height="310.5" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="360" x="662" y="212"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="771" y="228.5332">Wordpress-backend</text></g><g id="elem_Anfrage stellen Formular"><ellipse cx="433.837" cy="108.9674" fill="#F1F1F1" rx="97.837" ry="21.9674" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="156" x="355.837" y="112.6959">Anfrage stellen Formular</text></g><g id="elem_PIN generieren "><ellipse cx="548.2427" cy="266.6485" fill="#F1F1F1" rx="73.7427" ry="17.1485" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="496.2427" y="271.1651">PIN generieren</text></g><g id="elem_individuellen Zugang generieren"><ellipse cx="320.165" cy="266.733" fill="#F1F1F1" rx="119.165" ry="26.233" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="218.665" y="270.4615">individuellen Zugang generieren</text></g><g id="elem_Status anzeigen"><ellipse cx="319.8525" cy="370.8705" fill="#F1F1F1" rx="74.8525" ry="17.3705" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="266.3525" y="375.3871">Status anzeigen</text></g><g id="elem_Antwort anzeigen"><ellipse cx="320.0069" cy="488.4014" fill="#F1F1F1" rx="77.5069" ry="17.9014" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="108" x="263.8567" y="492.716">Antwort anzeigen</text></g><g id="elem_Rückfrage stellen"><ellipse cx="319.7877" cy="627.5575" fill="#F1F1F1" rx="78.2877" ry="18.0575" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="263.0149" y="631.7774">Rückfrage stellen</text></g><g id="elem_Anfwort verfassen"><ellipse cx="757.9775" cy="266.2955" fill="#F1F1F1" rx="79.4775" ry="18.2955" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="700.256" y="270.3709">Anfwort verfassen</text></g><g id="elem_Redaktion"><ellipse cx="735.2132" cy="371.0613" fill="#F1F1F1" rx="57.2132" ry="15.5613" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="700.2132" y="375.5779">Redaktion</text></g><g id="elem_Recherche"><ellipse cx="944.9074" cy="371.0891" fill="#F1F1F1" rx="60.9074" ry="15.5891" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="907.4074" y="375.6057">Recherche</text></g><g id="elem_Antwort freigeben"><ellipse cx="757.1819" cy="488.6364" fill="#F1F1F1" rx="78.6819" ry="18.1364" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="700.0947" y="492.8083">Antwort freigeben</text></g><!--MD5=[d285ec5d2d209208abfb5e09279c7d73]
+entity Anfrager--><g id="elem_Anfrager"><ellipse cx="117" cy="78.5" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M117,86.5 L117,113.5 M104,94.5 L130,94.5 M117,113.5 L104,128.5 M117,113.5 L130,128.5 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="89.5" y="144.5332">Anfrager</text></g><!--MD5=[cfeaad59c83735bfd05c710edcc588a2]
+entity Email_Service--><g id="elem_Email_Service"><ellipse cx="1179" cy="597" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M1179,605 L1179,632 M1166,613 L1192,613 M1179,632 L1166,647 M1179,632 L1192,647 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="1134.5" y="663.0332">Email_Service</text></g><!--MD5=[780064e69f27b87358cb8faa547a77b3]
+entity Wissensmanagement--><g id="elem_Wissensmanagement"><ellipse cx="1130" cy="458" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M1130,466 L1130,493 M1117,474 L1143,474 M1130,493 L1117,508 M1130,493 L1143,508 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="1062.5" y="524.0332">Wissensmanagement</text></g><!--MD5=[5618250598c36d90b77dc329aa6221bc]
+link Anfrager to Anfrage stellen Formular--><g id="link_Anfrager_Anfrage stellen Formular"><path d="M144.55,109 C208.34,109 272.13,109 335.92,109 " fill="none" id="Anfrager-Anfrage stellen Formular" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d2ca5ea6a4e3332777b858a059dba07e]
+link Anfrage stellen Formular to PIN generieren --><g id="link_Anfrage stellen Formular_PIN generieren "><path d="M449.37,130.97 C472.47,162.47 515.61,221.32 536.32,249.57 " fill="none" id="Anfrage stellen Formular-PIN generieren " style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="495" y="192.4951">«include»</text></g><!--MD5=[e11ea2074d6ae10249c768c2754fddac]
+link Anfrage stellen Formular to individuellen Zugang generieren--><g id="link_Anfrage stellen Formular_individuellen Zugang generieren"><path d="M418.63,130.97 C397.72,159.49 360.38,210.41 338.13,240.76 " fill="none" id="Anfrage stellen Formular-individuellen Zugang generieren" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[19f2cbef7c337601005579f4f0d60369]
+link individuellen Zugang generieren to Status anzeigen--><g id="link_individuellen Zugang generieren_Status anzeigen"><path d="M320,292.57 C320,311.42 320,336.72 320,353.19 " fill="none" id="individuellen Zugang generieren-Status anzeigen" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[63a57073b227080199b9f1eb96b87309]
+link Status anzeigen to Antwort anzeigen--><g id="link_Status anzeigen_Antwort anzeigen"><path d="M320,388.55 C320,410.26 320,448.17 320,470.23 " fill="none" id="Status anzeigen-Antwort anzeigen" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[77037ffa6df7f46707ee751950df7ec1]
+link Antwort anzeigen to Rückfrage stellen--><g id="link_Antwort anzeigen_Rückfrage stellen"><path d="M320,506.57 C320,532.83 320,582.83 320,609.21 " fill="none" id="Antwort anzeigen-Rückfrage stellen" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f30a172179b97300e2f96732ea689027]
+link Anfrager to PIN generieren --><g id="link_Anfrager_PIN generieren "><path d="M144.52,127.92 C156.54,135.07 171.06,142.81 185,148 C300.67,191.05 343.26,156.09 457,204 C484.41,215.55 512.21,235.86 529.74,249.96 " fill="none" id="Anfrager-PIN generieren " style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[606923849eccbad664ee8e74f7a70e27]
+reverse link Anfrager to individuellen Zugang generieren--><g id="link_Anfrager_individuellen Zugang generieren"><path d="M148.87,134.41 C187.03,163.65 250.56,212.31 288.54,241.4 " fill="none" id="Anfrager-backto-individuellen Zugang generieren" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="144.8,131.3,149.531,139.9382,148.7758,134.3319,154.3821,133.5768,144.8,131.3" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f9e4727d29e0ef334eb0f8f52f4cf4a4]
+reverse link Anfrager to Status anzeigen--><g id="link_Anfrager_Status anzeigen"><path d="M124.11,153.39 C132.55,193.33 149.99,252.31 184,292.5 C209.54,322.68 249.98,343.59 280.14,356.02 " fill="none" id="Anfrager-backto-Status anzeigen" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="123.03,148.13,120.9373,157.754,124.0435,153.0262,128.7713,156.1324,123.03,148.13" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c865eec2df52771836bdeda9281b8520]
+reverse link Anfrager to Antwort anzeigen--><g id="link_Anfrager_Antwort anzeigen"><path d="M111.84,153.29 C109.14,191.63 109.83,248.24 130,292.5 C167.14,374.01 253.41,441.7 295.72,471.36 " fill="none" id="Anfrager-backto-Antwort anzeigen" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="112.22,148.23,107.5624,156.908,111.8485,153.2162,115.5403,157.5023,112.22,148.23" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7a15553c6e7e93cbe9d266b54501db31]
+link Anfrager to Rückfrage stellen--><g id="link_Anfrager_Rückfrage stellen"><path d="M89.28,130.58 C56.4,157.57 6,208.28 6,265.5 C6,265.5 6,265.5 6,489.5 C6,592.25 148.98,618.71 241.98,625.06 " fill="none" id="Anfrager-Rückfrage stellen" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ce750d98c67fbe9730882f6d649766bf]
+link Anfrage stellen Formular to Anfwort verfassen--><g id="link_Anfrage stellen Formular_Anfwort verfassen"><path d="M476.44,128.93 C517.87,147.56 582.59,177.05 638,204 C668.53,218.85 702.97,236.61 727.1,249.21 " fill="none" id="Anfrage stellen Formular-Anfwort verfassen" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[89c79c14965e75df0c58ae44736ce56a]
+link Anfwort verfassen to Redaktion--><g id="link_Anfwort verfassen_Redaktion"><path d="M753.99,285.35 C749.54,305.2 742.43,336.88 738.29,355.33 " fill="none" id="Anfwort verfassen-Redaktion" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7c0338fd0bbe5fad605b625c99ff9aec]
+link Redaktion to Recherche--><g id="link_Redaktion_Recherche"><path d="M792.11,371 C820.53,371 854.91,371 883.86,371 " fill="none" id="Redaktion-Recherche" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="810.5" y="364.4951">«include»</text></g><!--MD5=[6338db78f17c033a0f3a533128a480f0]
+link Redaktion to Antwort freigeben--><g id="link_Redaktion_Antwort freigeben"><path d="M737.79,386.63 C741.86,408 749.41,447.66 753.74,470.36 " fill="none" id="Redaktion-Antwort freigeben" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[aeb6ea41c5ac433a76f64e3bebdf15e9]
+link Status anzeigen to Recherche--><g id="link_Status anzeigen_Recherche"><path d="M369.53,357.74 C455.8,336.48 639.08,299.43 792.5,323 C835.3,329.58 882.56,345.96 912.96,357.76 " fill="none" id="Status anzeigen-Recherche" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[30d4658924bc78ed6b995953899b9f95]
+link Antwort anzeigen to Antwort freigeben--><g id="link_Antwort anzeigen_Antwort freigeben"><path d="M397.67,488.5 C491.25,488.5 584.82,488.5 678.4,488.5 " fill="none" id="Antwort anzeigen-Antwort freigeben" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[55edcf042de0d34d86884b734424157e]
+link Anfwort verfassen to Rückfrage stellen--><g id="link_Anfwort verfassen_Rückfrage stellen"><path d="M737.17,284.57 C663.13,345.26 413.22,550.09 340.2,609.95 " fill="none" id="Anfwort verfassen-Rückfrage stellen" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[66e91c4d5417a13fa72c77710c42e996]
+link Anfwort verfassen to Email_Service--><g id="link_Anfwort verfassen_Email_Service"><path d="M834.48,271.59 C942.24,282.04 1134.54,319.02 1215,449.5 C1241.25,492.07 1220.82,550.31 1201.68,588.16 " fill="none" id="Anfwort verfassen-Email_Service" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0d60981081bc0709aa578a69dc78077f]
+link Antwort freigeben to Email_Service--><g id="link_Antwort freigeben_Email_Service"><path d="M800.57,503.65 C881.23,529.83 1052.97,585.59 1134.4,612.02 " fill="none" id="Antwort freigeben-Email_Service" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[101bed8a0c5d68d2a5e2e1b7f96fdaef]
+link Recherche to Wissensmanagement--><g id="link_Recherche_Wissensmanagement"><path d="M966.95,385.7 C991.93,401.3 1033.81,427.45 1068.87,449.34 " fill="none" id="Recherche-Wissensmanagement" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6928f60213c9d6eb10ffe91025d10002]
+@startuml
+
+actor Anfrager
+rectangle OBP {
+rectangle KID-Website {
+  Anfrager - (Anfrage stellen Formular)
+  (Anfrage stellen Formular) .. (PIN generieren ) : <<include>>
+  (Anfrage stellen Formular) - - (individuellen Zugang generieren)
+  (individuellen Zugang generieren) - - (Status anzeigen)
+  (Status anzeigen) - - (Antwort anzeigen)
+  (Antwort anzeigen) - - (Rückfrage stellen)
+  '' Verbindungen zum Anfrager
+  Anfrager - (PIN generieren )
+  Anfrager <- (individuellen Zugang generieren)
+  Anfrager <- (Status anzeigen)
+  Anfrager <- (Antwort anzeigen)
+  Anfrager - - (Rückfrage stellen)
+}
+
+rectangle Wordpress-backend {
+  (Anfrage stellen Formular) - - (Anfwort verfassen)
+  (Anfwort verfassen) - - (Redaktion)
+  (Redaktion) . (Recherche) : <<include>>
+  (Redaktion) - - (Antwort freigeben)
+  '' verbindung zu Prozessen
+  (Status anzeigen) - (Recherche)
+  (Antwort anzeigen) - (Antwort freigeben)
+  (Anfwort verfassen) - - (Rückfrage stellen)
+}
+}
+'' Kid Team
+actor Email_Service
+actor Wissensmanagement
+'' verbindung zu anderen  Teilnehmern
+(Anfwort verfassen) - - Email_Service
+(Antwort freigeben) - - Email_Service
+(Recherche) - - Wissensmanagement
+
+@endumll
+
+@startuml
+
+actor Anfrager
+rectangle OBP {
+rectangle KID-Website {
+  Anfrager - (Anfrage stellen Formular)
+  (Anfrage stellen Formular) .. (PIN generieren ) : <<include>>
+  (Anfrage stellen Formular) - - (individuellen Zugang generieren)
+  (individuellen Zugang generieren) - - (Status anzeigen)
+  (Status anzeigen) - - (Antwort anzeigen)
+  (Antwort anzeigen) - - (Rückfrage stellen)
+  Anfrager - (PIN generieren )
+  Anfrager <- (individuellen Zugang generieren)
+  Anfrager <- (Status anzeigen)
+  Anfrager <- (Antwort anzeigen)
+  Anfrager - - (Rückfrage stellen)
+}
+
+rectangle Wordpress-backend {
+  (Anfrage stellen Formular) - - (Anfwort verfassen)
+  (Anfwort verfassen) - - (Redaktion)
+  (Redaktion) . (Recherche) : <<include>>
+  (Redaktion) - - (Antwort freigeben)
+  (Status anzeigen) - (Recherche)
+  (Antwort anzeigen) - (Antwort freigeben)
+  (Anfwort verfassen) - - (Rückfrage stellen)
+}
+}
+actor Email_Service
+actor Wissensmanagement
+(Anfwort verfassen) - - Email_Service
+(Antwort freigeben) - - Email_Service
+(Recherche) - - Wissensmanagement
+
+@endumll
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

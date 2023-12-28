@@ -1,0 +1,28 @@
+@startuml
+
+frame "Browser" {
+    [Client]
+}
+
+node "central Service" {
+    [OAuth]
+    [Spot]
+    [Broker]
+}
+
+package "central Server" {
+    [Samply_Proxy_Server]
+    cloud {
+        [Server_REST_API]
+    }
+    database "Mrbs" {
+        [Verbis_Raumplaner]
+    }
+}
+'' Verbindungen
+[Client] -- [Spot]
+[Spot] - [Broker]
+[Broker] - [Samply_Proxy_Server]
+[Samply_Proxy_Server] - [Server_REST_API]
+[Server_REST_API] -- [Verbis_Raumplaner]
+@enduml

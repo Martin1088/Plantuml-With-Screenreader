@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="425px" preserveAspectRatio="none" style="width:808px;height:425px;background:#FFFFFF;" version="1.1" viewBox="0 0 808 425" width="808px" zoomAndPan="magnify"><defs/><g><!--MD5=[8699c0c8e953ee53654a072cc875bfb4]
+cluster Browser--><g id="cluster_Browser"><rect fill="none" height="100" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="108" x="128" y="7"/><path d="M197,7 L197,17.6094 L187,27.6094 L128,27.6094 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="59" x="131" y="22.5332">Browser</text></g><!--MD5=[5166bb842ef0518b189718832e210401]
+cluster central Service--><g id="cluster_central Service"><polygon fill="none" points="16,160,26,150,350,150,350,245,340,255,16,255,16,160" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="340" x2="350" y1="160" y2="150"/><line style="stroke:#181818;stroke-width:1.0;" x1="16" x2="340" y1="160" y2="160"/><line style="stroke:#181818;stroke-width:1.0;" x1="340" x2="340" y1="160" y2="255"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="107" x="125.5" y="177.5332">central Service</text></g><!--MD5=[470ed74b7b165da1eff8dd4ca3f57bfb]
+cluster central Server--><g id="cluster_central Server"><path d="M376.5,131 L478.5,131 A3.75,3.75 0 0 1 481,133.5 L488,154.6094 L798.5,154.6094 A2.5,2.5 0 0 1 801,157.1094 L801,415.5 A2.5,2.5 0 0 1 798.5,418 L376.5,418 A2.5,2.5 0 0 1 374,415.5 L374,133.5 A2.5,2.5 0 0 1 376.5,131 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="374" x2="488" y1="154.6094" y2="154.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="378" y="147.5332">central Server</text></g><g id="cluster_##11"><path d="M597.2282,184.6959 C601.5231,178.2059 607.1479,177.5218 611.4324,184.7066 C613.7397,178.1098 619.5984,177.6984 623.3804,183.257 C627.3485,177.15 632.4182,178.4057 635.281,184.3486 C638.2912,177.7294 643.2026,177.77 647.6467,182.8304 C650.9524,176.4307 655.0541,176.8215 659.4944,181.6312 C664.2845,175.0328 669.0413,176.2606 672.6171,182.8404 C676.5319,177.0626 681.4042,176.4074 685.2321,182.9295 C688.5344,176.6958 692.9828,176.7143 696.615,182.6202 C700.3215,177.2834 705.3664,177.1426 708.161,183.519 C712.2764,176.7092 716.8623,176.4919 721.8982,182.5353 C725.5891,177.8894 729.2952,177.7032 733.1711,182.31 C737.6888,177.8359 741.9025,177.9884 744.9937,183.9292 C748.9791,178.2443 753.5433,178.2759 757.7194,183.711 C761.8543,179.2705 766.6051,179.9221 769.4531,185.2559 C776.961,188.8764 778.7864,193.9004 772.1429,200.0874 C782.3649,203.6091 782.3539,210.4064 775.3572,217.1684 C780.7858,223.4429 780.9224,228.831 772.4474,232.4598 C778.7497,239.3655 777.889,244.8465 769.4388,249.0819 C765.9168,255.1766 760.3118,253.8356 757.3913,248.4508 C753.0964,254.882 748.852,254.3432 744.4597,248.5538 C740.5688,253.9359 736.5158,254.0435 732.4297,248.7742 C728.3194,254.2832 724.4728,255.0357 719.9927,249.1789 C715.6225,253.7785 711.8655,254.0436 708.719,247.8953 C706.4482,253.3214 701.4622,253.9633 697.5521,249.8054 C692.8479,255.8335 687.8774,255.598 683.2994,249.6551 C680.0932,255.4713 675.726,254.8669 672.0281,250.1829 C667.309,255.8385 661.9313,254.7726 659.5088,247.8898 C656.5785,253.7897 650.9791,252.8798 647.7484,248.2244 C644.1945,255.307 639.8391,254.5194 634.8356,249.8121 C631.1576,254.4704 626.6074,253.9633 623.4234,249.2129 C619.2672,255.0394 614.4163,254.4449 610.8074,248.6203 C606.9349,255.044 601.1135,255.3415 597.8278,248.0643 C590.7764,244.5609 588.1612,238.0851 595.3173,232.3167 C587.3252,229.1214 585.5693,222.811 592.4972,216.8885 C585.9329,209.883 587.1602,204.4073 595.6008,200.1906 C588.708,194.3126 589.2966,189.0169 597.2282,184.6959 " fill="none" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[35416571f72b437e1b0191dcaf7d4da4]
+cluster Mrbs--><g id="cluster_Mrbs"><path d="M579,289 C579,279 678,279 678,279 C678,279 777,279 777,289 L777,384 C777,394 678,394 678,394 C678,394 579,394 579,384 L579,289 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M579,289 C579,299 678,299 678,299 C678,299 777,299 777,289 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="36" x="660" y="315.5332">Mrbs</text></g><!--MD5=[0ba5ee7700168656dc1b457c6fe9fdac]
+entity Client--><g id="elem_Client"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="144" y="43"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="200" y="48"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="198" y="50"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="198" y="54"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="159" y="77.5332">Client</text></g><!--MD5=[fcbe7c4c79f3d28870999aecd6f15576]
+entity OAuth--><g id="elem_OAuth"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="32" y="191"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="92" y="196"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="90" y="198"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="90" y="202"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="47" y="225.5332">OAuth</text></g><!--MD5=[58e779c6ff2a4894f52d28f7869c5d92]
+entity Spot--><g id="elem_Spot"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69" x="147.5" y="191"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="196.5" y="196"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="194.5" y="198"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="194.5" y="202"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="162.5" y="225.5332">Spot</text></g><!--MD5=[241b36de05534b6660b3ddf6e8766aa9]
+entity Broker--><g id="elem_Broker"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="252" y="191"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="314" y="196"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="312" y="198"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="312" y="202"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="267" y="225.5332">Broker</text></g><!--MD5=[a1b9d70e4213532ab7b518d54737a1bc]
+entity Samply_Proxy_Server--><g id="elem_Samply_Proxy_Server"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="179" x="390.5" y="191"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="549.5" y="196"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="547.5" y="198"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="547.5" y="202"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="405.5" y="225.5332">Samply_Proxy_Server</text></g><!--MD5=[76d4525ec49858fec3d316d6597b97fa]
+entity Server_REST_API--><g id="elem_Server_REST_API"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="156" x="605" y="191"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="741" y="196"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="739" y="198"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="739" y="202"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="620" y="225.5332">Server_REST_API</text></g><!--MD5=[aa670ab98ddb6c13b71b71b59872f278]
+entity Verbis_Raumplaner--><g id="elem_Verbis_Raumplaner"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="595.5" y="330"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="740.5" y="335"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="738.5" y="337"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="738.5" y="341"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="610.5" y="364.5332">Verbis_Raumplaner</text></g><!--MD5=[dd8bacd02b75001aabfb1f3b5faee0cf]
+link Client to Spot--><g id="link_Client_Spot"><path d="M182,91.13 C182,118.47 182,163.68 182,190.97 " fill="none" id="Client-Spot" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2cf0cdde0443ca5eabb31ff22b155778]
+link Spot to Broker--><g id="link_Spot_Broker"><path d="M216.69,215 C228.41,215 240.14,215 251.86,215 " fill="none" id="Spot-Broker" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ff0bcd878e9a4e92822be96669d6c88e]
+link Broker to Samply_Proxy_Server--><g id="link_Broker_Samply_Proxy_Server"><path d="M334.27,227.38 C352.96,231.4 371.65,233.27 390.34,232.97 " fill="none" id="Broker-Samply_Proxy_Server" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2dba2340578c58048ebfa2c8b985b42c]
+link Samply_Proxy_Server to Server_REST_API--><g id="link_Samply_Proxy_Server_Server_REST_API"><path d="M569.61,215 C581.27,215 592.93,215 604.6,215 " fill="none" id="Samply_Proxy_Server-Server_REST_API" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8eafb448d7de8113e3e19c01490b68bf]
+link Server_REST_API to Verbis_Raumplaner--><g id="link_Server_REST_API_Verbis_Raumplaner"><path d="M682.15,239.24 C681.23,264.43 679.77,304.41 678.85,329.65 " fill="none" id="Server_REST_API-Verbis_Raumplaner" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[96c43aa97f342f121ce4745da13d842e]
+@startuml
+
+frame "Browser" {
+    [Client]
+}
+
+node "central Service" {
+    [OAuth]
+    [Spot]
+    [Broker]
+}
+
+package "central Server" {
+    [Samply_Proxy_Server]
+    cloud {
+        [Server_REST_API]
+    }
+    database "Mrbs" {
+        [Verbis_Raumplaner]
+    }
+}
+'' Verbindungen
+[Client] - - [Spot]
+[Spot] - [Broker]
+[Broker] - [Samply_Proxy_Server]
+[Samply_Proxy_Server] - [Server_REST_API]
+[Server_REST_API] - - [Verbis_Raumplaner]
+@enduml
+
+@startuml
+
+frame "Browser" {
+    [Client]
+}
+
+node "central Service" {
+    [OAuth]
+    [Spot]
+    [Broker]
+}
+
+package "central Server" {
+    [Samply_Proxy_Server]
+    cloud {
+        [Server_REST_API]
+    }
+    database "Mrbs" {
+        [Verbis_Raumplaner]
+    }
+}
+[Client] - - [Spot]
+[Spot] - [Broker]
+[Broker] - [Samply_Proxy_Server]
+[Samply_Proxy_Server] - [Server_REST_API]
+[Server_REST_API] - - [Verbis_Raumplaner]
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

@@ -1,0 +1,31 @@
+@startuml
+
+
+package HandyApp <<Frame>>{
+    class Client {}
+    class OAuth{}
+    class Samply_Proxy_Client {}
+}
+
+package "central Service" <<Frame>>{
+    class Broker {}
+}
+
+
+package "central Server" <<Frame>>{
+    class Samply_Proxy_Server {}
+    package API <<Cloud>> {
+        class Server_REST_API {}
+    }
+    package "Mrbs" <<Frame>>{
+        class Verbis_Raumplaner {}
+    }
+}
+
+'' Verbindungen
+Client - Samply_Proxy_Client
+Samply_Proxy_Client -- Broker
+Broker -- Samply_Proxy_Server
+Samply_Proxy_Server - Server_REST_API
+
+@enduml

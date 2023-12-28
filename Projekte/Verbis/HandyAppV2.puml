@@ -1,0 +1,30 @@
+@startuml
+
+
+frame "mobile App"{
+    [Tauri]
+    [Samply_Proxy_Client]
+}
+
+node "central Service" {
+    [Broker]
+}
+
+
+package "central Server" {
+    [Samply_Proxy_Server]
+    cloud {
+        [Server_REST_API]
+    }
+    database "Mrbs" {
+        [Verbis_Raumplaner]
+    }
+}
+
+'' Verbindungen
+[Tauri] .. [Samply_Proxy_Client]
+[Samply_Proxy_Client] -- [Broker]
+[Broker] -- [Samply_Proxy_Server]
+[Samply_Proxy_Server] -- [Server_REST_API]
+[Server_REST_API] - [Verbis_Raumplaner]
+@enduml
