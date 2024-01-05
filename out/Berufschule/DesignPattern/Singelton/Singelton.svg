@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="128px" preserveAspectRatio="none" style="width:511px;height:128px;background:#FFFFFF;" version="1.1" viewBox="0 0 511 128" width="511px" zoomAndPan="magnify"><defs/><g><!--MD5=[2f4e497837a991172d40b04b7a7d0ca2]
+class Singleton--><g id="elem_Singleton"><rect codeLine="4" fill="#F1F1F1" height="114.0469" id="Singleton" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="213" x="7" y="7"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="84" y="26.5332">Singleton</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="219" y1="34.6094" y2="34.6094"/><rect fill="none" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="45.9141"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="27" y="53.1426">static instance: Singleton</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="219" y1="60.2188" y2="60.2188"/><rect fill="#F24D5C" height="6" style="stroke:#C82930;stroke-width:1.0;" width="6" x="15" y="71.5234"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="144" x="27" y="78.752">constructor Singleton()</text><ellipse cx="18" cy="92.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="27" y="96.3613">static getInstance(): Singleton</text><ellipse cx="18" cy="109.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="127" x="27" y="113.9707">doSomething(): void</text></g><path d="M334.5,19.5 L334.5,36.8516 L214,90.6328 L334.5,44.8516 L334.5,62.2031 A0,0 0 0 0 334.5,62.2031 L504.5,62.2031 A0,0 0 0 0 504.5,62.2031 L504.5,29.5 L494.5,19.5 L334.5,19.5 A0,0 0 0 0 334.5,19.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M494.5,19.5 L494.5,29.5 L504.5,29.5 L494.5,19.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="46" x="340.5" y="37.9951">«static»</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="149" x="340.5" y="54.3467">+ getInstance(): Singleton</text><path d="M334.5,72.2031 L334.5,81.3789 L154,108.2422 L334.5,89.3789 L334.5,98.5547 A0,0 0 0 0 334.5,98.5547 L481.5,98.5547 A0,0 0 0 0 481.5,98.5547 L481.5,82.2031 L471.5,72.2031 L334.5,72.2031 A0,0 0 0 0 334.5,72.2031 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M471.5,72.2031 L471.5,82.2031 L481.5,82.2031 L471.5,72.2031 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="340.5" y="90.6982">+ doSomething(): void</text><!--MD5=[606bfff5e731bbe500a8872b8636183b]
+link Singleton to Singleton--><g id="link_Singleton_Singleton"><path codeLine="11" d="M220.25,43.65 C240.61,46.08 255,52.87 255,64 C255,75.13 240.61,81.92 220.25,84.35 " fill="none" id="Singleton-Singleton" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="49" x="261" y="69.4951">instance</text></g><!--MD5=[57ccd1618d4d80d2330f01d9b81fdeca]
+@startuml
+hide circle
+hide empty members
+
+class Singleton {
+    - static instance: Singleton
+    - constructor Singleton()
+    + static getInstance(): Singleton
+    + doSomething(): void
+}
+
+Singleton - - Singleton : instance
+
+note right of Singleton::getInstance
+    <<static>>
+    + getInstance(): Singleton
+end note
+
+note right of Singleton::doSomething
+    + doSomething(): void
+end note
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 19:01:30 CEST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

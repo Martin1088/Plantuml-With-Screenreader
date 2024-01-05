@@ -1,7 +1,7 @@
 @startuml
 
 
-frame "HandyApp"{
+frame "mobile App"{
     [Client]
     [OAuth]
 }
@@ -13,7 +13,7 @@ node "central Service" {
 
 
 package "central Server" {
-    [Samply_Proxy_Server]
+    [Focus]
     cloud {
         [Server_REST_API]
     }
@@ -23,10 +23,10 @@ package "central Server" {
 }
 
 '' Verbindungen
-[Client] -- [OAuth]
+[Client] .. [OAuth]
 [Client] - [Spot]
 [Spot] -- [Broker]
-[Broker] -- [Samply_Proxy_Server]
-[Samply_Proxy_Server] -- [Server_REST_API]
+[Broker] -- [Focus]
+[Focus] -- [Server_REST_API]
 [Server_REST_API] - [Verbis_Raumplaner]
 @enduml

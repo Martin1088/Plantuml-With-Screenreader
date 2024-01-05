@@ -1,0 +1,23 @@
+@startuml
+hide circle
+hide empty members
+
+class Singleton {
+    - static instance: Singleton
+    - constructor Singleton()
+    + static getInstance(): Singleton
+    + doSomething(): void
+}
+
+Singleton -- Singleton : instance
+
+note right of Singleton::getInstance
+    <<static>>
+    + getInstance(): Singleton
+end note
+
+note right of Singleton::doSomething
+    + doSomething(): void
+end note
+
+@enduml

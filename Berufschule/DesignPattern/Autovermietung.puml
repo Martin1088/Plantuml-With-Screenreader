@@ -1,0 +1,25 @@
+@startuml
+class Buchung {
+  - ausleihDatum: String 
+  - uhrzeit: String 
+  - fahrer: String
+  --
+  + Buchung(ausleihDatum: String, uhrzeit: String, fahrer: String)            
+  + getAusleihDatum(): String
+  + getUhrzeit(): String
+  + getFahrer():String
+}
+
+class Pkw{
+  - kategorie: int
+  - modell: String
+  - farbe: String
+  - ertzulassungsJahr: int
+  - kmStand: int
+  --
+  + Pkw(kategorie: int, modell: String, farbe: String, erstzulassungsJahr: int, kmStand: int)
+  + mieten(ausleihDatum: String, uhrzeit: String, fahrer: String, kmStand: int): bool
+}
+
+Pkw *-- "- buchungen[] 0...*" Buchung
+@enduml

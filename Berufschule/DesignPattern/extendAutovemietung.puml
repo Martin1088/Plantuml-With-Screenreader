@@ -1,0 +1,44 @@
+@startuml
+interface Fahrzeug{
+  # kategorie: int
+  # modell: String
+  # ertzulassungsJahr: int
+  # kmStand: int
+    --
+  + Fahrzeug(kategorie: int, modell: String, erstzulassungsJahr: int, kmStand: int)
+  + mieten(ausleihDatum: String, uhrzeit: String, fahrer: String, kmStand: int): bool
+
+}
+class Buchung {
+  - ausleihDatum: String 
+  - uhrzeit: String 
+  - fahrer: String
+  --
+  + Buchung(ausleihDatum: String, uhrzeit: String, fahrer: String)            
+  + getAusleihDatum(): String
+  + getUhrzeit(): String
+  + getFahrer():String
+}
+
+class PKW{
+  - farbe: String
+  --
+  + Pkw(kategorie: int, modell: String, farbe: String, erstzulassungsJahr: int, kmStand: int)
+  + mieten(ausleihDatum: String, uhrzeit: String, fahrer: String, kmStand: int): bool
+}
+
+class LKW{
+-maxZuladung: Int
+--
+  + LKW(kategorie: int, modell: String, maxZuladung: Int, erstzulassungsJahr: int, kmStand: int)
+  + mieten(ausleihDatum: String, uhrzeit: String, fahrer: String, kmStand: int): bool
+}
+
+Fahrzeug -- LKW
+Fahrzeug -- PKW
+
+PKW *-- "- buchungen[] 0...*" Buchung
+LKW *-- "- buchungen[] 0...*" Buchung
+
+@enduml
+

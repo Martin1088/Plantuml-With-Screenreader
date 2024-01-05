@@ -11,7 +11,7 @@ node "central Service" {
 }
 
 package "central Server" {
-    [Samply_Proxy_Server]
+    [Focus]
     cloud {
         [Server_REST_API]
     }
@@ -21,8 +21,9 @@ package "central Server" {
 }
 '' Verbindungen
 [Client] -- [Spot]
+[Spot] .. [OAuth]
 [Spot] - [Broker]
-[Broker] - [Samply_Proxy_Server]
-[Samply_Proxy_Server] - [Server_REST_API]
+[Broker] - [Focus]
+[Focus] - [Server_REST_API]
 [Server_REST_API] -- [Verbis_Raumplaner]
 @enduml

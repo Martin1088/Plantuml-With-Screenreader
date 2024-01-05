@@ -1,0 +1,44 @@
+@startuml
+
+interface Fahrradcomputer {
+    --
+    + info : String 
+}
+package varianten_Fahrradcomputer {
+    class GPS_Computer {
+    --
+    + info() : String 
+}
+class Kabellos_Computer {
+    --
+    + info() : String 
+}
+class Easy_Computer {
+    --
+    + info() : String 
+}
+
+}
+
+class Fahrradcomputerherrsteller {
+    --
+    <<static>>
+    + produziertComputer(Eigenschaft: eigenschaft) : Fahrradcomputer
+}
+
+enum Eigenschaft {
+    GPS
+    KABELLOS
+    EINFACH
+}
+
+'' Verbindungen
+Fahrradcomputer . varianten_Fahrradcomputer
+Eigenschaft . Fahrradcomputerherrsteller
+
+Fahrradcomputerherrsteller -- GPS_Computer
+Fahrradcomputerherrsteller -- Kabellos_Computer
+Fahrradcomputerherrsteller -- Easy_Computer
+
+
+@enduml

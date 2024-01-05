@@ -1,25 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="489px" preserveAspectRatio="none" style="width:547px;height:489px;background:#FFFFFF;" version="1.1" viewBox="0 0 547 489" width="547px" zoomAndPan="magnify"><defs/><g><!--MD5=[92b2f7e05f52304794089d2cb145473c]
-cluster HandyApp--><g id="cluster_HandyApp"><rect fill="none" height="208" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="112" x="7" y="11"/><path d="M87,11 L87,21.6094 L77,31.6094 L7,31.6094 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="70" x="10" y="26.5332">HandyApp</text></g><!--MD5=[5166bb842ef0518b189718832e210401]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="489px" preserveAspectRatio="none" style="width:547px;height:489px;background:#FFFFFF;" version="1.1" viewBox="0 0 547 489" width="547px" zoomAndPan="magnify"><defs/><g><!--MD5=[fbd9d5635a2a61116c1734a766ba791c]
+cluster mobile App--><g id="cluster_mobile App"><rect fill="none" height="208" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="112" x="7" y="11"/><path d="M95,11 L95,21.6094 L85,31.6094 L7,31.6094 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="78" x="10" y="26.5332">mobile App</text></g><!--MD5=[5166bb842ef0518b189718832e210401]
 cluster central Service--><g id="cluster_central Service"><polygon fill="none" points="143,16,153,6,326,6,326,209,316,219,143,219,143,16" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="316" x2="326" y1="16" y2="6"/><line style="stroke:#181818;stroke-width:1.0;" x1="143" x2="316" y1="16" y2="16"/><line style="stroke:#181818;stroke-width:1.0;" x1="316" x2="316" y1="16" y2="219"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="107" x="177" y="33.5332">central Service</text></g><!--MD5=[470ed74b7b165da1eff8dd4ca3f57bfb]
 cluster central Server--><g id="cluster_central Server"><path d="M84.5,243 L186.5,243 A3.75,3.75 0 0 1 189,245.5 L196,266.6094 L537.5,266.6094 A2.5,2.5 0 0 1 540,269.1094 L540,479.5 A2.5,2.5 0 0 1 537.5,482 L84.5,482 A2.5,2.5 0 0 1 82,479.5 L82,245.5 A2.5,2.5 0 0 1 84.5,243 " fill="none" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="82" x2="196" y1="266.6094" y2="266.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="101" x="86" y="259.5332">central Server</text></g><g id="cluster_##11"><path d="M114.2282,387.6959 C118.5231,381.2059 124.1479,380.5218 128.4324,387.7066 C130.7397,381.1098 136.5984,380.6984 140.3804,386.257 C144.3485,380.15 149.4182,381.4057 152.281,387.3486 C155.2912,380.7294 160.2026,380.77 164.6467,385.8304 C167.9524,379.4307 172.0541,379.8215 176.4944,384.6312 C181.2845,378.0328 186.0413,379.2606 189.6171,385.8404 C193.5319,380.0626 198.4042,379.4074 202.2321,385.9295 C205.5344,379.6958 209.9828,379.7143 213.615,385.6202 C217.3215,380.2834 222.3664,380.1426 225.161,386.519 C229.2764,379.7092 233.8623,379.4919 238.8982,385.5353 C242.5891,380.8894 246.2952,380.7032 250.1711,385.31 C254.6888,380.8359 258.9025,380.9884 261.9937,386.9292 C265.9791,381.2443 270.5433,381.2759 274.7194,386.711 C278.8543,382.2705 283.6051,382.9221 286.4531,388.2559 C293.961,391.8764 295.7864,396.9004 289.1429,403.0874 C299.3649,406.6091 299.3539,413.4064 292.3572,420.1684 C297.7858,426.4429 297.9224,431.831 289.4474,435.4598 C295.7497,442.3655 294.889,447.8465 286.4388,452.0819 C282.9168,458.1766 277.3118,456.8356 274.3913,451.4508 C270.0964,457.882 265.852,457.3432 261.4597,451.5538 C257.5688,456.9359 253.5158,457.0435 249.4297,451.7742 C245.3194,457.2832 241.4728,458.0357 236.9927,452.1789 C232.6225,456.7785 228.8655,457.0436 225.719,450.8953 C223.4482,456.3214 218.4622,456.9633 214.5521,452.8054 C209.8479,458.8335 204.8774,458.598 200.2994,452.6551 C197.0932,458.4713 192.726,457.8669 189.0281,453.1829 C184.309,458.8385 178.9313,457.7726 176.5088,450.8898 C173.5785,456.7897 167.9791,455.8798 164.7484,451.2244 C161.1945,458.307 156.8391,457.5194 151.8356,452.8121 C148.1576,457.4704 143.6074,456.9633 140.4234,452.2129 C136.2672,458.0394 131.4163,457.4449 127.8074,451.6203 C123.9349,458.044 118.1135,458.3415 114.8278,451.0643 C107.7764,447.5609 105.1612,441.0851 112.3173,435.3167 C104.3252,432.1214 102.5693,425.811 109.4972,419.8885 C102.9329,412.883 104.1602,407.4073 112.6008,403.1906 C105.708,397.3126 106.2966,392.0169 114.2282,387.6959 " fill="none" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[35416571f72b437e1b0191dcaf7d4da4]
 cluster Mrbs--><g id="cluster_Mrbs"><path d="M318,353 C318,343 417,343 417,343 C417,343 516,343 516,353 L516,448 C516,458 417,458 417,458 C417,458 318,458 318,448 L318,353 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><path d="M318,353 C318,363 417,363 417,363 C417,363 516,363 516,353 " fill="none" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="36" x="399" y="379.5332">Mrbs</text></g><!--MD5=[0ba5ee7700168656dc1b457c6fe9fdac]
 entity Client--><g id="elem_Client"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="26" y="47"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="82" y="52"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="80" y="54"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="80" y="58"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="41" y="81.5332">Client</text></g><!--MD5=[fcbe7c4c79f3d28870999aecd6f15576]
 entity OAuth--><g id="elem_OAuth"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="23" y="155"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="83" y="160"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="81" y="162"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="81" y="166"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="38" y="189.5332">OAuth</text></g><!--MD5=[58e779c6ff2a4894f52d28f7869c5d92]
 entity Spot--><g id="elem_Spot"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="69" x="162.5" y="47"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="211.5" y="52"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="209.5" y="54"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="209.5" y="58"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="177.5" y="81.5332">Spot</text></g><!--MD5=[241b36de05534b6660b3ddf6e8766aa9]
-entity Broker--><g id="elem_Broker"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="159" y="155"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="221" y="160"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="219" y="162"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="219" y="166"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="174" y="189.5332">Broker</text></g><!--MD5=[a1b9d70e4213532ab7b518d54737a1bc]
-entity Samply_Proxy_Server--><g id="elem_Samply_Proxy_Server"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="179" x="110.5" y="279"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="269.5" y="284"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="267.5" y="286"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="267.5" y="290"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="125.5" y="313.5332">Samply_Proxy_Server</text></g><!--MD5=[76d4525ec49858fec3d316d6597b97fa]
+entity Broker--><g id="elem_Broker"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="159" y="155"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="221" y="160"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="219" y="162"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="219" y="166"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="174" y="189.5332">Broker</text></g><!--MD5=[c746395a6b9a78361d937adc1edc53c5]
+entity Focus--><g id="elem_Focus"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="79" x="160.5" y="279"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="219.5" y="284"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="217.5" y="286"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="217.5" y="290"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="175.5" y="313.5332">Focus</text></g><!--MD5=[76d4525ec49858fec3d316d6597b97fa]
 entity Server_REST_API--><g id="elem_Server_REST_API"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="156" x="122" y="394"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="258" y="399"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="256" y="401"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="256" y="405"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="137" y="428.5332">Server_REST_API</text></g><!--MD5=[aa670ab98ddb6c13b71b71b59872f278]
 entity Verbis_Raumplaner--><g id="elem_Verbis_Raumplaner"><rect fill="#F1F1F1" height="47.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="334.5" y="394"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="479.5" y="399"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="477.5" y="401"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="477.5" y="405"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="349.5" y="428.5332">Verbis_Raumplaner</text></g><!--MD5=[3fd681a3f0661b0b77bd7f457e00ae99]
-link Client to OAuth--><g id="link_Client_OAuth"><path d="M63.78,95 C63.62,112.66 63.39,136.94 63.22,154.68 " fill="none" id="Client-OAuth" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[dd8bacd02b75001aabfb1f3b5faee0cf]
+link Client to OAuth--><g id="link_Client_OAuth"><path d="M63.78,95 C63.62,112.66 63.39,136.94 63.22,154.68 " fill="none" id="Client-OAuth" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/></g><!--MD5=[dd8bacd02b75001aabfb1f3b5faee0cf]
 link Client to Spot--><g id="link_Client_Spot"><path d="M102.19,71 C122.19,71 142.19,71 162.19,71 " fill="none" id="Client-Spot" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2cf0cdde0443ca5eabb31ff22b155778]
-link Spot to Broker--><g id="link_Spot_Broker"><path d="M197.65,95 C198.15,112.66 198.84,136.94 199.34,154.68 " fill="none" id="Spot-Broker" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[ff0bcd878e9a4e92822be96669d6c88e]
-link Broker to Samply_Proxy_Server--><g id="link_Broker_Samply_Proxy_Server"><path d="M200,203.23 C200,224.94 200,257.17 200,278.85 " fill="none" id="Broker-Samply_Proxy_Server" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2dba2340578c58048ebfa2c8b985b42c]
-link Samply_Proxy_Server to Server_REST_API--><g id="link_Samply_Proxy_Server_Server_REST_API"><path d="M200,327.14 C200,346.64 200,374.4 200,393.89 " fill="none" id="Samply_Proxy_Server-Server_REST_API" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8eafb448d7de8113e3e19c01490b68bf]
-link Server_REST_API to Verbis_Raumplaner--><g id="link_Server_REST_API_Verbis_Raumplaner"><path d="M278.41,418 C297.09,418 315.76,418 334.44,418 " fill="none" id="Server_REST_API-Verbis_Raumplaner" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[a1086bc589a078c42ced8eb8d457b505]
+link Spot to Broker--><g id="link_Spot_Broker"><path d="M197.65,95 C198.15,112.66 198.84,136.94 199.34,154.68 " fill="none" id="Spot-Broker" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2e0391499c8ab8f8bba73d13b8d44b87]
+link Broker to Focus--><g id="link_Broker_Focus"><path d="M200,203.23 C200,224.94 200,257.17 200,278.85 " fill="none" id="Broker-Focus" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[55649a30d04f9a10c66e245ac5bc32b1]
+link Focus to Server_REST_API--><g id="link_Focus_Server_REST_API"><path d="M200,327.14 C200,346.64 200,374.4 200,393.89 " fill="none" id="Focus-Server_REST_API" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[8eafb448d7de8113e3e19c01490b68bf]
+link Server_REST_API to Verbis_Raumplaner--><g id="link_Server_REST_API_Verbis_Raumplaner"><path d="M278.41,418 C297.09,418 315.76,418 334.44,418 " fill="none" id="Server_REST_API-Verbis_Raumplaner" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[36aa9aa5ad7e348b0a8e38d412fa96ac]
 @startuml
 
 
-frame "HandyApp"{
+frame "mobile App"{
     [Client]
     [OAuth]
 }
@@ -31,7 +31,7 @@ node "central Service" {
 
 
 package "central Server" {
-    [Samply_Proxy_Server]
+    [Focus]
     cloud {
         [Server_REST_API]
     }
@@ -41,18 +41,18 @@ package "central Server" {
 }
 
 '' Verbindungen
-[Client] - - [OAuth]
+[Client] .. [OAuth]
 [Client] - [Spot]
 [Spot] - - [Broker]
-[Broker] - - [Samply_Proxy_Server]
-[Samply_Proxy_Server] - - [Server_REST_API]
+[Broker] - - [Focus]
+[Focus] - - [Server_REST_API]
 [Server_REST_API] - [Verbis_Raumplaner]
 @enduml
 
 @startuml
 
 
-frame "HandyApp"{
+frame "mobile App"{
     [Client]
     [OAuth]
 }
@@ -64,7 +64,7 @@ node "central Service" {
 
 
 package "central Server" {
-    [Samply_Proxy_Server]
+    [Focus]
     cloud {
         [Server_REST_API]
     }
@@ -73,11 +73,11 @@ package "central Server" {
     }
 }
 
-[Client] - - [OAuth]
+[Client] .. [OAuth]
 [Client] - [Spot]
 [Spot] - - [Broker]
-[Broker] - - [Samply_Proxy_Server]
-[Samply_Proxy_Server] - - [Server_REST_API]
+[Broker] - - [Focus]
+[Focus] - - [Server_REST_API]
 [Server_REST_API] - [Verbis_Raumplaner]
 @enduml
 
