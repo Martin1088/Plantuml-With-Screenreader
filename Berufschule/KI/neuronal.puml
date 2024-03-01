@@ -1,0 +1,9 @@
+@startuml
+input -> "dense(512)"
+"dense(512)" -> relu1
+relu1 -> "dense_2(512)"
+"dense_2(512)" -> relu2
+relu2 -> "dense_3(10)"
+"dense_3(10)" -> softmax
+softmax -> output 
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+class Area << (S, #FF7700) Struct>> {}
+enum Test {}
+interface Auto {}
+
+@enduml

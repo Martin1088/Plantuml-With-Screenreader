@@ -1,0 +1,24 @@
+@startuml
+package "Local" {
+    [Site1-DB1 (ADT)]
+    [Site1-DB2 (OMICS)]
+    [Site1-DB3 (CENTRAXX)]
+
+    frame "Bridgehead" {
+        database "Database" {
+            [Version1.0 SQL, Version2.0 FHIR]
+        }
+    }
+}
+package "Central" {
+    [Föderierte Suche (LENS, CCP-Explorer)]
+    [Pseudonymisierung]
+}
+'' Beziehung
+
+[Site1-DB1 (ADT)] --> [Version1.0 SQL, Version2.0 FHIR]
+[Site1-DB2 (OMICS)] --> [Version1.0 SQL, Version2.0 FHIR]
+[Site1-DB3 (CENTRAXX)] --> [Version1.0 SQL, Version2.0 FHIR]
+[Version1.0 SQL, Version2.0 FHIR] <-- [Föderierte Suche (LENS, CCP-Explorer)]
+
+@enduml
