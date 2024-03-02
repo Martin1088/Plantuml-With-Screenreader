@@ -1,7 +1,28 @@
 @startgantt
 
 [Konzeption der Hartware-Lösung] lasts 1 days
-[Verlegung der Netzwerk und Stromleitung] lasts 5 days 
-[Anschluss der Datendosen und APs] lasts 1 days
-
+[Verlegen neuer Netzwerk- und Stromleitungen für Netzinfrastruktur] starts D+1 
+[Verlegen neuer Netzwerk- und Stromleitungen für Netzinfrastruktur] lasts 5 days
+[Anschluss der Datendosen und APs.] starts D+6 
+[Anschluss der Datendosen und APs.] lasts 1 days
+[Aufbau Netzschrank, Einbau der Server-Racks und USV inkl. Sicherung und Entsorgung alter Hardware] starts D+1  
+[Aufbau Netzschrank, Einbau der Server-Racks und USV inkl. Sicherung und Entsorgung alter Hardware] lasts 2 days
+[Auflegen der Netzwerkleitungen im Netzschrank] starts D+3
+[Auflegen der Netzwerkleitungen im Netzschrank] lasts 1 days
+[Messung der Verkabelung] starts D+7
+[Messung der Verkabelung] lasts 1 days
+[Aufbau der Netzinfrastruktur (Switch, Router, Arbeitsplätze)] starts D+8
+[Aufbau der Netzinfrastruktur (Switch, Router, Arbeitsplätze)] lasts 2 days
+[Konfiguration des Netzwerks insbesondere der VLANs] starts D+10
+[Konfiguration des Netzwerks insbesondere der VLANs] lasts 2 days
+[Kontrolle des Netzes] starts D+12
+[Kontrolle des Netzes] lasts 1 days
+[Konfiguration der WLAN-Access-Points] starts D+12
+[Konfiguration der WLAN-Access-Points] lasts 2 days
+[Funktionalität der WLAN-Access-Points prüfen] starts D+14
+[Funktionalität der WLAN-Access-Points prüfen] lasts 1 days
+[Übergabe und Abnahme durch Geschäftsleitung und Arbeitssicherheit] starts D+15
+[Übergabe und Abnahme durch Geschäftsleitung und Arbeitssicherheit] lasts 2 days
+[Dokumentation erstellen] starts D+17
+[Dokumentation erstellen] lasts 2 days
 @endgantt
