@@ -1,4 +1,7 @@
 @startgantt
 
 [Konzeption der Hartware-Lösung] lasts 1 days
+[Verlegung der Netzwerk und Stromleitung] lasts 5 days 
+[Anschluss der Datendosen und APs] lasts 1 days
+
 @endgantt
