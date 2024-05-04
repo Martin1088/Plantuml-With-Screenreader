@@ -1,0 +1,18 @@
+@startuml
+start
+: Ticketpreis einlesen;
+: Rabatt deklarieren;
+if (Schwerbehinderun) then (yes)
+    : Rabatt = Behinderungsgrad;
+elseif (age < 18) then (yes)
+    : Rabatt = 35;
+elseif (Student-Freiwillig-Sozial) then (yes)
+    : Rabatt = 25;
+elseif (Rentner) then (yes)
+    : Rabatt = 15;
+else (nothing)
+    : return Ticketpreis;
+endif
+: return (Ticketpreis /100) * Rabatt;
+end
+@enduml

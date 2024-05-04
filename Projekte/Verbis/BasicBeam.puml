@@ -1,0 +1,24 @@
+@startuml
+
+
+frame "Komponente"{
+    [Client]
+    [SamplyProxy1]
+}
+
+node "central Service" {
+    [Broker]
+}
+
+
+package "central Server" {
+    [SamplyProxy2]
+    [Server]
+}
+
+'' Verbindungen
+[Client] - [SamplyProxy1]
+[SamplyProxy1] -- [Broker]
+[Broker] -- [SamplyProxy2]
+[SamplyProxy2] - [Server]
+@enduml

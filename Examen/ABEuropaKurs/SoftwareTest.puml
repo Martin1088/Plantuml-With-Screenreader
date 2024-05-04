@@ -1,0 +1,27 @@
+@startuml
+
+'' Vorgänge definieren
+Vorgang A : Planungsphase
+Vorgang B : Installation der nötigen Entwicklungssoftware
+Vorgang C : Erstellung des Entwurfs
+Vorgang D : Implementierung
+Vorgang E : Testen
+Vorgang F : Verfassen der Kundendokumentation
+Vorgang G : Verfassen der Testdokumentation
+
+' Vorgänge mit Dauer verbinden
+A is 5 Tage
+B is 4 Tage
+C is 2 Tage
+D is 16 Tage
+E is 3 Tage
+F is 5 Tage
+G is 3 Tage
+
+' Vorgänger definieren
+D depends on B, C
+E depends on D
+F depends on D
+G depends on E
+
+@enduml

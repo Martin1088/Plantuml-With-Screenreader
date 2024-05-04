@@ -1,0 +1,29 @@
+@startuml
+
+class Import
+class ImportController
+class SeriesCollection
+class DataSeries 
+class DataPoint 
+'' neue Klassen 
+abstract class ImportService {
+    + GetDataPath(): String 
+    + Read(): void 
+    + GetTraceStartTime(): timestamp
+    + GetDriveName(): String 
+    + GetAvailableValueTypes(): String[]
+    + EetData(valueType: Dtring): DataPoint[]
+}
+class Manufacturer1 {
+    --
+    +Manufacturer1(datapath: String)
+}
+class Manufacturer2 {
+    --
+    + Manufacturer2(datapath: String)
+}
+
+ImportController -- ImportService
+ImportService -- Manufacturer1
+ImportService -- Manufacturer2
+@enduml

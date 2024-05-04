@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            font-size: 25pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            font-size: 16pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>CarLos Online</h1>
+    <h2>Kontaktdaten</h2>
+    <form action="kontakt.php" method="post">
+        <label for="nachname">Nachname</label>
+        <input type="text" name="nachname"><br>
+        <label for="vorname">Vorname</label>
+        <input type="text" name="vorname" id="vorname"><br>
+        <label for="telefon">Telefon</label>
+        <input type="text" name="telefon"><br>
+        <label for="email">Email</label>
+        <input type="email" name="email"><br>
+
+        <h2>Fahrzeugdaten</h2>
+
+        <label for="herrsteller">Herrsteller</label>
+        <Select>
+            <option value="Volvo">Volvo</option>
+            <option value="VW">VW</option>
+        </Select><br>
+        <label for="modell">Modell</label>
+        <input type="text" name="modell"><br>
+        <label for="erstzulassung">Erstzulassung</label>
+        <input type="date" name="erstzulassung"><br>
+        <label for="zustand">Zustand</label><br>
+        <input type="checkbox" name="gut" id="gut">gut</input>
+        <input type="checkbox" name="gut" id="gut">leichte Schäden</input>
+        <input type="checkbox" name="def" id="def">defekt</input>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+    
+</body>
+</html>

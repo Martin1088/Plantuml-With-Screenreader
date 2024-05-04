@@ -1,0 +1,43 @@
+@startuml
+entity machine {
+    * machineID primary key
+    --
+    * description
+}
+
+entity drive {
+    * driveID primary key
+    --
+    * machineID foreign key
+    * manufacturerID foreign key 
+}
+
+entity manufacturer {
+    * manufacturerID primary key
+    --
+    * company 
+}
+
+entity controller_type {
+    * ctrltypeID primary key 
+    --
+    * manufacturerID foreign key 
+}
+
+entity trace_data {
+    * traceID primary key
+    --
+    * driveID foreign key 
+    * ctrltypeID foreign key 
+    * timestamp
+    * position 
+    * geschwindigkeit
+    * stromaufnahme 
+}
+
+machine "1" - "n" drive 
+drive "n" - "m" trace_data
+drive "n" -- "1" manufacturer
+manufacturer "1" - "n" controller_type
+trace_data "n" -- "m" controller_type
+@enduml

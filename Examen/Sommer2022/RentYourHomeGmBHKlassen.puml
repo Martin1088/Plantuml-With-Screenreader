@@ -1,0 +1,61 @@
+@startuml
+
+class Adresse{
+    - plz: String
+    - ort: String
+    - strasse: String
+    --
+    + Adresse(plz: String, ort: String, strasse: String)
+    + GetAdressdaten(): String 
+}
+
+class Wohngebaeude{
+    - baujahr: Date
+    - adresse: Adresse
+    --
+    + Wohngebaeude(baujahr: Date, adress: Adresse) 
+    + GetGebaeudedaten(): String
+    + BerechneMietpreis(): double
+}
+
+class Einfamilienhaus{
+    - wohneinheit: Wohneinheit
+    --
+    + Einfamielienhaus()
+    + BerechneMietpreis() double
+}
+
+class Mehrfamilienhaus {
+    - anzahlEtagen: int
+    - anzahlwohneinheiten int
+    - wohneinheitenListe: List<Wohneinheit>
+    --
+    + Mehrfamilienhaus()
+    + GetAnzahlEtagen(): int
+    + GetAnzahlWohneinheiten(): int 
+    + AddWohneinheit(etage: int, wohnung: Wohneinheit): void 
+}
+class Wohneinheit{
+    - anzahlZimmer: int 
+    - preisProQM: double- anzahlQM: double
+    --
+    + Wohneinheit()
+    + MietpreisWohneinheit(): double
+}
+class Gebaeudeverwaltung {
+    - name: String 
+    - gebaeudeListe: List<Wohngebaeude>
+    --
+    + Gebaeudeverwaltung()
+    + AddGebaeude(gebaeude: Wohngebaeude): void
+    + AusgabeMietGebaeudedaten(): void
+    + BerechneGesamtMiete(): double
+}
+
+Adresse "1" <-- "1" Wohngebaeude: -adresse
+Gebaeudeverwaltung "1" --> "1...*" Wohngebaeude: -gebaeudeListe
+Wohngebaeude <|-- Mehrfamilienhaus
+Wohngebaeude <|-- Einfamilienhaus
+Mehrfamilienhaus "1" *-- "1" Wohneinheit
+Einfamilienhaus "1...*" *-- "1" Wohneinheit
+@enduml

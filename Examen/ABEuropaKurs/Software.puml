@@ -1,0 +1,49 @@
+@startuml
+
+class Vorgang {
+    Vorgang: 
+    Dauer: 
+    FAZ:
+    FEZ:
+    SAZ:
+    SEZ:
+}
+class A {
+    Vorgang: Planungsphase
+    Dauer: 5
+    FAZ: 0
+    FEZ: 5 
+    SAZ: 0
+    SEZ: 5
+}
+class B {
+    Vorgang: Installation der nötigen Entwicklungssoftware
+    Dauer: 4
+    FAZ: 5
+    FEZ: 9
+    SAZ: 5
+    SEZ: 9
+}
+class C {
+    Vorgang: Erstelluen des Entwurfs
+    Dauer: 2
+    FAZ: 5
+    FEZ: 7
+    SAZ: 7
+    SEZ: 9
+}
+class D {
+    Vorgang: Implementierung
+    Dauer: 16
+    FAZ: 9
+    FEZ:25
+    SAZ: 9
+    SEZ: 25
+}
+
+A --> B
+A --> C
+B --> D
+C --> D
+
+@enduml

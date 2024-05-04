@@ -1,0 +1,36 @@
+@startuml
+@startuml
+entity Kunde{
+ID_Kunde primary key
+--
+K_Vorname,
+K_nachname,
+PLZ,
+Ort,
+Strasse,
+Hausnr,
+}
+
+entity Rad{
+ID_Rad,
+--
+Typ_Rad,
+}
+
+entity Kurierfahrt {
+ID primary key,
+--
+ID_Kunde foreign hey,
+Datum,
+Start_LAT_LON,
+Ziel_LAT_LON,
+ID_Rad foreign key,
+Tarif,
+StartZeit,
+zielZeit,
+}
+
+
+@enduml
+
+@enduml
