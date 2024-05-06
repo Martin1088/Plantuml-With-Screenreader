@@ -1,0 +1,23 @@
+@startuml
+start
+: Ausgabe Menüsteuerung;
+: Eingabe einer Zahl; 
+while (Zahl =! 0)
+    if (1) then (yes)
+        : Datensatz anlegen;
+    elseif (2) then (yes)
+        : Daten anzeigen;
+    elseif (3) then (yes)
+        : Daten korrigieren;
+    elseif (4) then (yes)
+        : Daten löschen;
+    else
+        : keine gültige Zahl;
+    endif 
+    : Menüsteuerung wieder anzeigen;
+    : Zahl einlesen;
+endwhile 
+stop
+
+
+@enduml
