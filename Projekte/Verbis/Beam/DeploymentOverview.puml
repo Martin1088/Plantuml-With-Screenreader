@@ -1,0 +1,28 @@
+@startuml
+actor User
+rectangle "Room Booking System over Samply.Beam" {
+    rectangle Client {
+        User -> (request day view)
+        (request day view) -- (join room): depends
+        (request day view) -- (delete participant) : depends
+        
+        rectangle "BeamRequestTask" {
+            (create task) <-- (request day view)
+            (create task) .. (ID)
+            (ID) .. (wait on result task)
+            (wait on result task) --> (request day view)
+            (wait on result task) --> (join room)
+            (wait on result task) --> (delete participant)
+        }
+        rectangle "Beam.Proxy" {
+            (create task) -> (receive task): forward task    
+        }
+    }
+    rectangle "Broker test-no-real-data.broker.samply.de" {
+        (receive task) -> (check destiny): send
+    }
+    rectangle Backend {
+
+    }
+}
+@enduml

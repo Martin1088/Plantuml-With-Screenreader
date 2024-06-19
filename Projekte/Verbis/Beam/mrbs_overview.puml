@@ -1,0 +1,152 @@
+@startjson
+
+            EntryRelatedData {
+                id: 1,
+                area_name: "Heidelberg",
+                rooms: [
+                    RoomsRelatedData {
+                        id: 8,
+                        room_name: "S2.109",
+                        description: "Büro",
+                        capacity: 2,
+                        entry_id: 19828,
+                        registration_limit: 2,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 9,
+                        room_name: "S2.110",
+                        description: "Büro Sekretariat",
+                        capacity: 2,
+                        entry_id: 18734,
+                        registration_limit: 2,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 10,
+                        room_name: "S2.111",
+                        description: "Büro-Martin",
+                        capacity: 1,
+                        entry_id: 19464,
+                        registration_limit: 0,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 11,
+                        room_name: "S2.112",
+                        description: "Büro",
+                        capacity: 4,
+                        entry_id: 20192,
+                        registration_limit: 4,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 12,
+                        room_name: "S2.123",
+                        description: "Büro",
+                        capacity: 4,
+                        entry_id: 20556,
+                        registration_limit: 4,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 13,
+                        room_name: "S2.124",
+                        description: "Büro",
+                        capacity: 3,
+                        entry_id: 21520,
+                        registration_limit: 4,
+                        participants: [
+                            ParticipantsList {
+                                id: 2573,
+                                username: "app1",
+                            },
+                        ],
+                    },
+                    RoomsRelatedData {
+                        id: 14,
+                        room_name: "S2.125",
+                        description: "Büro",
+                        capacity: 4,
+                        entry_id: 19100,
+                        registration_limit: 4,
+                        participants: [
+                            ParticipantsList {
+                                id: 2574,
+                                username: "martin.jurk",
+                            },
+                        ],
+                    },
+                    RoomsRelatedData {
+                        id: 15,
+                        room_name: "S2.126",
+                        description: "Büro",
+                        capacity: 4,
+                        entry_id: 21284,
+                        registration_limit: 4,
+                        participants: [],
+                    },
+                ],
+            },
+            EntryRelatedData {
+                id: 2,
+                area_name: "Mannheim",
+                rooms: [
+                    RoomsRelatedData {
+                        id: 2,
+                        room_name: "004",
+                        description: "Büro",
+                        capacity: 2,
+                        entry_id: 24318,
+                        registration_limit: 2,
+                        participants: [
+                            ParticipantsList {
+                                id: 2566,
+                                username: "monique.stenzel@medma.uni-heidelberg.de",
+                            },
+                        ],
+                    },
+                    RoomsRelatedData {
+                        id: 3,
+                        room_name: "006",
+                        description: "Büro Sekretariat",
+                        capacity: 2,
+                        entry_id: 22612,
+                        registration_limit: 2,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 4,
+                        room_name: "039",
+                        description: "Büro-Martin",
+                        capacity: 1,
+                        entry_id: 22976,
+                        registration_limit: 0,
+                        participants: [],
+                    },
+                    RoomsRelatedData {
+                        id: 5,
+                        room_name: "041",
+                        description: "Büro",
+                        capacity: 3,
+                        entry_id: 23340,
+                        registration_limit: 3,
+                        participants: [
+                            ParticipantsList {
+                                id: 2571,
+                                username: "martin.jurk@dkfz-heidelberg.de",
+                            },
+                        ],
+                    },
+                    RoomsRelatedData {
+                        id: 7,
+                        room_name: "045",
+                        description: "Büro",
+                        capacity: 2,
+                        entry_id: 24068,
+                        registration_limit: 3,
+                        participants: [],
+                    },
+                ],
+            }
+@endjson

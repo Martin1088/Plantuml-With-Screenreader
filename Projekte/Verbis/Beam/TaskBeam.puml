@@ -14,7 +14,7 @@
     }
   },
   "ttl": "30s",
-  "metadata": "The broker can read and use this field e.g., to apply filters on behalf of an app"
+  "metadata": ""
 }
 
 @endjson

@@ -1,0 +1,20 @@
+@startuml
+class servieces << (M, #6A3100) Module>> {
+    --
+    + front_public_route(): Router 
+    + back_token_route(): Router
+}
+package routes <<Modules>>{
+    package api_connect <<Modul>>{
+        class BeamRequestTask << (S, #FF7700) Struct>> {
+            --
+            + read_overview_day(Query(query_day): Query<GetTimestamp>): Result<Json<Vec<EntryRelatedData>>, Json<ErrorType>>
+            + joinroom(Path(id): Path<i32>): Result<Json<ResponseType>, Json<ErrorType>>
+            + joinrooms(Path(entry_id): Path<i32>, Json(payload): Json<Vec<String>>): Result<Json<ResponseType>, Json<ErrorType>>
+            + delete_participant(Path(entry_id): Path<i32>): Result<Json<ResponseType>, Json<ErrorType>>
+            + get_user(): Json<std::string::String>
+        }
+    }
+}
+servieces -- BeamRequestTask: use
+@enduml

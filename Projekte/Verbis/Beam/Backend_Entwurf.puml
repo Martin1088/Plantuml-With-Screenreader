@@ -1,0 +1,12 @@
+@startuml
+class Routes << (M, #6A3100) Module>> {
+    + db: DatabaseConection
+    + user_name: String 
+    --
+    + get_overview_day(db, customday: Option<String>)
+    + postjoinroom(db, entry_id: i32, user_name)
+    + post_joinrooms(db, room_id: i32, days: Vec<String>, user_name)
+    + delete_participant(db, entry_id: i32)
+}
+
+@enduml

@@ -1,0 +1,34 @@
+@startuml
+
+frame "Browser" {
+    [User]
+}
+
+frame "Komponente als Docker Container"{
+    [Client_Frontend]
+    [Client_Backend]
+    [SamplyProxy1]
+}
+
+node "central Service" {
+    [Broker]
+}
+
+
+package "Meeting Room Booking System Docker Container" {
+    [SamplyProxy2]
+    [Backend_Connector]
+    [MRBS]
+    [Database]
+}
+
+'' Verbindungen
+[User] . [Client_Frontend]
+[Client_Frontend] -- [Client_Backend]
+[Client_Backend] - [SamplyProxy1]
+[SamplyProxy1] -- [Broker]
+[Broker] -- [SamplyProxy2]
+[SamplyProxy2] - [Backend_Connector]
+[Backend_Connector] -- [Database]
+[MRBS] -- [Database]
+@enduml

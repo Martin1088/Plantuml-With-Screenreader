@@ -1,5 +1,6 @@
 @startuml
 class Area << (S, #FF7700) Struct>> {}
+class Routes << (M, #6A3100) Module>> {}
 enum Test {}
 interface Auto {}
 

@@ -1,0 +1,25 @@
+@startgantt
+
+Project starts 2024-04-15 
+saturday are closed 
+sunday are closed 
+2024/05/01 is closed
+2024/05/09 is closed
+2024/05/20 is closed
+
+[Projektinitialisierung und Planung] requires 1 days
+then [Analyse] requires 1 days
+then [Einführung Rust Error Handling] requires 1 days
+then [Prüfungsvorbereitung Teil1] requires 2 days
+then [Berufschule] requires 5 days
+then [Prüfungsvorbereitung Teil2] requires 4 days
+then [schriftliche Abschlußprüfung] requires 2 days
+then [Entwurf] requires 1 days
+then [Implementierung Datenbankanbindung] requires 1 days
+then [Implementierung Backend Schnittstelle] requires 1 days
+then [Implementierung Client Single Webpage] requires 1 days
+then [Implementierung Samply.Beam Middleware] requires 1 days
+then [Implementierung Anpassungen] requires 1 days
+then [Test und Abnahme]  requires 1 days
+then [Dokumentation] requires 4 days
+@endgantt

@@ -1,17 +1,18 @@
 @startuml
 
 frame "Browser" {
-    [Client]
+    [User]
 }
 
 node "central Service" {
+    [Client]
     [OAuth]
-    [Spot]
+    [Samply_Proxy_Client]
     [Broker]
 }
 
 package "central Server" {
-    [Focus]
+    [Samply_Proxy_Server]
     cloud {
         [Server_REST_API]
     }
@@ -20,10 +21,11 @@ package "central Server" {
     }
 }
 '' Verbindungen
-[Client] -- [Spot]
-[Spot] .. [OAuth]
-[Spot] - [Broker]
-[Broker] - [Focus]
-[Focus] - [Server_REST_API]
+[User] - [Client]
+[Client] -- [Samply_Proxy_Client]
+[Client] . [OAuth]
+[Samply_Proxy_Client] - [Broker]
+[Broker] - [Samply_Proxy_Server]
+[Samply_Proxy_Server] -- [Server_REST_API]
 [Server_REST_API] -- [Verbis_Raumplaner]
 @enduml

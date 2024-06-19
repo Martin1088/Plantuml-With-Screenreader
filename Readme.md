@@ -7,4 +7,3 @@
 * Tutorial PLANTUML overview
 
 # Testing UML
-

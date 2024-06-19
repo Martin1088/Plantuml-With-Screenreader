@@ -1,0 +1,34 @@
+[
+    {
+        "mrbs_area": "Heidelberg",
+        "id": 1,
+        "mrbs_room": {
+            "id": 8,
+            "room_name": "S2.109",
+            "description": "Büro",
+            "capacity": 2,
+            "entry_id": 19828,
+            "registration_limit": 2,
+            "participants":[
+                {"name": "erwin.müller", "id": 111},
+                {"name": "max.musterman", "id": 110}
+            ]
+        }
+    },
+    {
+        "mrbs_area": "Mannheim",
+        "id": 1,
+        "mrbs_room": {
+            "id": 12,
+            "room_name": "041",
+            "description": "Büro",
+            "capacity": 3,
+            "entry_id": 19827,
+            "registration_limit": 3,
+            "participants":[
+                {"name": "erwin.müller", "id": 11},
+                {"name": "max.musterman", "id": 10}
+            ]
+        }
+    }    
+]

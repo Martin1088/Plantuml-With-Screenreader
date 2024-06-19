@@ -1,0 +1,28 @@
+@startuml
+package planner_types{
+
+    class EntryRelatedData << (S, #FF7700) Struct>> {
+        + id: i32
+        + area_name: String
+        + rooms: Vec<RoomsRelatedData>
+    }
+
+    class RoomsRelatedData << (S, #FF7700) Struct>> {
+        + id: i32
+        + room_name: String
+        + description: String
+        + capacity: i32
+        + entry_id: i32
+        + registration_limit: i32
+        + participants: Vec<ParticipantsList>
+    }
+
+    class ParticipantsList << (S, #FF7700) Struct>> {
+        + id: i32
+        + username: String
+    }
+}
+EntryRelatedData *-- RoomsRelatedData
+RoomsRelatedData *-- ParticipantsList
+
+@enduml

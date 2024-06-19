@@ -1,0 +1,62 @@
+@startuml
+class servieces << (M, #6A3100) Module>> {
+    --
+    + front_public_route(): Router 
+    + back_token_route(): Router
+}
+package routes <<Modules>>{
+    package api_connect <<Modul>>{
+        class BeamRequestTask << (S, #FF7700) Struct>> {
+            --
+            + read_overview_day(Query(query_day): Query<GetTimestamp>): Result<Json<Vec<EntryRelatedData>>, Json<ErrorType>>
+            + joinroom(Path(id): Path<i32>): Result<Json<ResponseType>, Json<ErrorType>>
+            + joinrooms(Path(entry_id): Path<i32>, Json(payload): Json<Vec<String>>): Result<Json<ResponseType>, Json<ErrorType>>
+            + delete_participant(Path(entry_id): Path<i32>): Result<Json<ResponseType>, Json<ErrorType>>
+            + get_user(): Json<std::string::String>
+        }
+    }
+}
+package group <<Modules>> {
+    class read << (M, #6A3100) Module>> {
+    --
+    + get_overview_day(db, customday: Option<String>): Result<Vec<EntryRelatedData>, ErrorType>
+    
+    }
+    class create << (M, #6A3100) Module>> {
+    --
+    + post_joinroom(db, entry_id: i32, user_name): Result<ResponseType, ErrorType>
+    + post_joinrooms(db, room_id: i32, days: Vec<String>, user_name): Result<ResponseType, ErrorType>
+    }
+    class delete << (M, #6A3100) Module>> {
+    --
+    + delete_participant(db, entry_id: i32): Result<ResponseType, ErrorType>
+    }
+    package mod <<Modules>> {
+        class BeamBackendConnector << (S, #FF7700) Struct>> {
+            --
+            + process_task(db: &DatabaseConnection)
+        }
+    }
+
+}
+package entities {
+    class mrbs_area << (M, #6A3100) Module>> {}
+    class mrbs_room << (M, #6A3100) Module>> {}
+    class mrbs_entry << (M, #6A3100) Module>> {}
+    class mrbs_participants << (M, #6A3100) Module>> {}
+}
+
+'' Verbindung 
+BeamBackendConnector -- read: use
+BeamBackendConnector -- create: use
+BeamBackendConnector -- delete : use
+read -- mrbs_area
+read -- mrbs_room
+read -- mrbs_entry
+read -- mrbs_participants
+create -- mrbs_participants
+create -- mrbs_entry
+delete -- mrbs_participants
+servieces -- BeamRequestTask: use
+BeamBackendConnector .. BeamRequestTask: communication over Samply.Beam
+@enduml

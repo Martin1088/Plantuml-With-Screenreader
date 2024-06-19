@@ -1,0 +1,77 @@
+@startuml
+enum Result{
+    T: ResponseType
+    E: ErrorType
+}
+package planner_types{
+    class EntryRelatedData << (S, #FF7700) Struct>> {
+        + id: i32
+        + area_name: String
+        + rooms: Vec<RoomsRelatedData>
+    }
+    class RoomsRelatedData << (S, #FF7700) Struct>> {
+        + id: i32
+        + room_name: String
+        + description: String
+        + capacity: i32
+        + entry_id: i32
+        + registration_limit: i32
+        + participants: Vec<ParticipantsList>
+    }
+    class ParticipantsList << (S, #FF7700) Struct>> {
+        + id: i32
+        + username: String
+    }
+    class GetTimestamp << (S, #FF7700) Struct>> {
+        + day: Option<String>
+    }
+    class PlannerParams << (S, #FF7700) Struct>> {
+        + endpoint: Endpoints
+        + id: Option<i32>
+        + customday: Option<String>
+        + days: Option<Vec<String>>
+        --
+        + new()
+    }
+    enum Endpoints{
+        Overviewday
+        Joinroom
+        Joinrooms
+        Deletejoin
+        Room
+    }
+    enum ResponseType{
+        SuccessfulJoined
+        SuccessfulDelete
+        ResultOverviewday{ result: Vec<EntryRelatedData> }
+        ResultRoom{ result: RoomsRelatedData }
+    }
+    enum ErrorType {
+        FailedDelete
+        DBError
+        RoomIsFull
+        NoRoomLimitProvided
+        NoRoomWithThisID
+        GivenTimeIsNotRCF3339
+        NoEntryForThisRoom
+        NoEntryIDFound
+        NoRoomIDFound
+        NoDateFound
+        NoEntry{ message: String}
+        FailedJoinOn{ date: String}
+        NoBeamResult
+        BeamNoTaskCouldBeCreated
+        NoBeamResponse
+        BeamNotReachable
+        BeamError
+    }
+
+}
+ResponseType *-- EntryRelatedData
+EntryRelatedData *- RoomsRelatedData
+RoomsRelatedData *-- ParticipantsList
+ResponseType *- RoomsRelatedData
+PlannerParams *-- Endpoints
+Result -- ErrorType
+Result -- ResponseType
+@enduml

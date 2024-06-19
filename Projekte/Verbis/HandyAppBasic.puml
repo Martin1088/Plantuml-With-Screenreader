@@ -1,0 +1,32 @@
+@startuml
+
+
+frame "mobile App"{
+    [User]
+    [OAuth]
+}
+
+node "central Service" {
+    [Samply_Proxy_Client]
+    [Broker]
+}
+
+
+package "central Server" {
+    [Samply_Proxy_Server]
+    cloud {
+        [Server_REST_API]
+    }
+    database "Mrbs" {
+        [Verbis_Raumplaner]
+    }
+}
+
+'' Verbindungen
+[User] .. [OAuth]
+[User] - [Samply_Proxy_Client]
+[Samply_Proxy_Client] -- [Broker]
+[Broker] -- [Samply_Proxy_Server]
+[Samply_Proxy_Server] -- [Server_REST_API]
+[Server_REST_API] - [Verbis_Raumplaner]
+@enduml
