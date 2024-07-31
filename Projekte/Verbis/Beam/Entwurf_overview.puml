@@ -1,6 +1,6 @@
 @startuml
 
-class EntryRelatedData << (S, #FF7700) Struct>> {
+class AreaRelatedData << (S, #FF7700) Struct>> {
     + id: i32
     + area_name: String
     + rooms: Vec<RoomsRelatedData>
@@ -22,7 +22,7 @@ class ParticipantsList << (S, #FF7700) Struct>> {
     + username: String
 }
 
-EntryRelatedData *-- RoomsRelatedData
-RoomsRelatedData *-- ParticipantsList
+EntryRelatedData *- RoomsRelatedData
+RoomsRelatedData *- ParticipantsList
 
 @enduml

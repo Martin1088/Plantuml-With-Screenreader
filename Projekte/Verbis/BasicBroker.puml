@@ -1,7 +1,7 @@
 @startuml
 
-skinparam nodesep 100
-skinparam ranksep 500
+skinparam nodesep 200
+skinparam ranksep 100
 
 class Client{}
 
@@ -24,11 +24,11 @@ class Server {
     + RunService()
 }
 '' Connections 
-Client - Client_Proxy : 1 send Request >
+Client -- Client_Proxy : 1 send Request >
 Client_Proxy .> Broker: 2 send Message >
 Broker .> Client_Proxy: 7 return Result  >
-Broker .>"3 forward Request"  Server_Proxy 
-Server_Proxy "6 hand offer Request" .> Broker
+Broker .> "3 forward Request"  Server_Proxy 
+Server_Proxy "6 handover Request" .> Broker
 Server_Proxy -> Server: "4 call Service" >
 Server -> Server_Proxy:"5 send Result" >
 Broker <.. "0 register Service"  Server

@@ -3,7 +3,7 @@ enum Result{
     T: ResponseType
     E: ErrorType
 }
-package planner_types{
+package booking_types{
     class EntryRelatedData << (S, #FF7700) Struct>> {
         + id: i32
         + area_name: String
@@ -25,7 +25,7 @@ package planner_types{
     class GetTimestamp << (S, #FF7700) Struct>> {
         + day: Option<String>
     }
-    class PlannerParams << (S, #FF7700) Struct>> {
+    class BookingParams << (S, #FF7700) Struct>> {
         + endpoint: Endpoints
         + id: Option<i32>
         + customday: Option<String>

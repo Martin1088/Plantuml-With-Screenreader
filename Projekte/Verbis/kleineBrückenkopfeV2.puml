@@ -4,7 +4,7 @@ frame "Browser" {
     [User]
 }
 
-node "small Brückenkopf" {
+node "small Bridgehead" {
     frame "Docker Container" {
         [Client]
         [Samply_Proxy_Client]
@@ -21,8 +21,8 @@ package "central Server" {
     cloud {
         [Server_REST_API]
     }
-    database "Mrbs" {
-        [Verbis_planer]
+    database "MRBS" {
+        [Verbis_MRBS]
     }
 }
 
@@ -31,6 +31,6 @@ package "central Server" {
 [Samply_Proxy_Client] -- [Broker]
 [Broker] - [Samply_Proxy_Server]
 [Samply_Proxy_Server] -- [Server_REST_API]
-[Server_REST_API] - [Verbis_planer]
+[Server_REST_API] - [Verbis_MRBS]
 
 @enduml

@@ -3,26 +3,61 @@ actor User
 rectangle "Room Booking System over Samply.Beam" {
     rectangle Client {
         User -> (request day view)
-        (request day view) -- (join room): depends
-        (request day view) -- (delete participant) : depends
-        
+        User -> (request delete participant)
+        User -> (request join room)
+        User -> (request join rooms)
+        (request day view) .. (request join room): depends
+        (request day view) .. (request delete participant) : depends
+        (request day view) .. (request join rooms): depends
+        (request day view) <-- (update day view): set
+        (request delete participant) --> (update day view)
+        (request join room) --> (update day view)
+
         rectangle "BeamRequestTask" {
-            (create task) <-- (request day view)
-            (create task) .. (ID)
-            (ID) .. (wait on result task)
-            (wait on result task) --> (request day view)
-            (wait on result task) --> (join room)
-            (wait on result task) --> (delete participant)
+            (generate Task) <-- (request day view)
+            (generate Task) <-- (request delete participant)
+            (generate Task) <-- (request join room)
+            (generate Task) <-- (request join rooms)
+            (generate Task) . (ID): depends
+            (ID) . (waiting on Result): depends 
+            (waiting on Result) --> (request day view): return
+            (waiting on Result) --> (request join room): return
+            (waiting on Result) --> (request delete participant): return
+            (waiting on Result) -> (waiting on Result): waiting on incoming Result
         }
-        rectangle "Beam.Proxy" {
-            (create task) -> (receive task): forward task    
+        rectangle "Beam.Proxy Client" {
+            (generate Task) -> (create Task): init Task
+            (recieve Result) <- (waiting on Result): requesting Result
         }
     }
     rectangle "Broker test-no-real-data.broker.samply.de" {
-        (receive task) -> (check destiny): send
+        (create Task) -> (check registrated destinations): send
+        (recieve Result) <- (check registrated destinations): send
     }
-    rectangle Backend {
-
+    rectangle "Backend Connector" {
+        rectangle "Beam.Proxy Backend Connector" {
+            (check registrated destinations) -> (recieve Task): send
+            (create Result) -> (check registrated destinations): send
+        }
+        (recieve Task) <-- (process Tasks): reqesting Task
+        (process Tasks) -> (process Tasks): waiting on incoming Tasks
+        (process Tasks) --> (extracting endpoint)
+        (process Tasks) . (generate Result): depends
+        (extracting endpoint) --> (day overview): parameter day(default today)
+        (extracting endpoint) --> (join room): parameters room id and day(default today)
+        (extracting endpoint) --> (join rooms): parameters room id and days
+        (extracting endpoint) --> (delete participant): parameter participants id
+        (day overview) --> (generate Result)
+        (join room) --> (generate Result)
+        (join rooms) --> (generate Result)
+        (delete participant) --> (generate Result)
+        (generate Result) -> (create Result): init Task
+    }
+    database "MRBS database" {
+            (day overview) --> (MRBS): request
+            (join room) --> (MRBS): request
+            (join rooms) --> (MRBS): request
+            (delete participant) --> (MRBS): request
     }
 }
 @enduml

@@ -1,0 +1,29 @@
+@startuml
+
+rectangle "Room Booking System over Samply.Beam" {
+    rectangle Client {
+        rectangle "BeamRequestTask" {
+            (generate Task) . (ID): depends
+            (ID) . (waiting on Result): depends 
+            (waiting on Result) -> (waiting on Result): waiting on incoming Result
+        }
+        rectangle "Beam.Proxy Client" {
+            (generate Task) -> (create Task): init Task
+            (recieve Result) <- (waiting on Result): requesting Result
+        }
+    }
+    rectangle "Broker test-no-real-data.broker.samply.de" {
+        (create Task) -> (check registrated destinations): send
+        (recieve Result) <- (check registrated destinations): send
+    }
+    rectangle "Backend Connector" {
+        rectangle "Beam.Proxy Backend Connector" {
+            (check registrated destinations) -> (recieve Task): send
+            (create Result) -> (check registrated destinations): send
+        }
+        (recieve Task) <-- (process Tasks): reqesting Task
+        (process Tasks) -> (process Tasks): waiting on incoming Tasks
+        (generate Result) -> (create Result): init Task
+    }
+}
+@enduml

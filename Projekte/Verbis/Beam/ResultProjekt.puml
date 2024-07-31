@@ -1,0 +1,29 @@
+@startuml
+enum Result{
+    T: ResponseType
+    E: ErrorType
+}
+    enum ResponseType{
+        SuccessfulJoined
+        SuccessfulDelete
+        ResultOverviewday{ result: Vec<EntryRelatedData> }
+    }
+    enum ErrorType {
+        FailedDelete
+        DBError
+        RoomIsFull
+        NoRoomLimitProvided
+        NoRoomWithThisID
+        GivenTimeIsNotRCF3339
+    }
+        class EntryRelatedData << (S, #FF7700) Struct>> {
+        + id: i32
+        + area_name: String
+        + rooms: Vec<RoomsRelatedData>
+    }
+
+Result -- ErrorType
+Result -- ResponseType
+ResponseType -- EntryRelatedData
+
+@enduml

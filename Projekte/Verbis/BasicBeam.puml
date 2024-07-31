@@ -1,7 +1,7 @@
 @startuml
 
 
-frame "Komponente"{
+frame "Such-Komponente"{
     [Client]
     [SamplyProxy1]
 }
@@ -11,14 +11,29 @@ node "central Service" {
 }
 
 
-package "central Server" {
+package "Server Standort2" {
     [SamplyProxy2]
-    [Server]
+    [Server1]
 }
+
+package "Server Standort1" {
+    [SamplyProxy4]
+    [Server2]
+}
+
+package "Server Standort3" {
+    [SamplyProxy3]
+    [Server3]
+}
+
 
 '' Verbindungen
 [Client] - [SamplyProxy1]
 [SamplyProxy1] -- [Broker]
+[SamplyProxy3] -- [Broker]
 [Broker] -- [SamplyProxy2]
-[SamplyProxy2] - [Server]
+[Broker] -- [SamplyProxy4]
+[SamplyProxy2] - [Server1]
+[SamplyProxy4] - [Server2]
+[SamplyProxy3] - [Server3]
 @enduml

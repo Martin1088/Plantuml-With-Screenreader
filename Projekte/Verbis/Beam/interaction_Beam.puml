@@ -4,19 +4,20 @@ frame "Browser" {
     [User]
 }
 
-frame "Komponente als Docker Container"{
+frame "Client Komponente"{
     [Client_Frontend]
     [Client_Backend]
-    [SamplyProxy1]
+    [Samply.Proxy1]
 }
 
 node "central Service" {
-    [Broker]
+    [Samply.Broker]
+    [Public Key Infrastructure]
 }
 
 
-package "Meeting Room Booking System Docker Container" {
-    [SamplyProxy2]
+package "Server Meeting Room Booking" {
+    [Samply.Proxy2]
     [Backend_Connector]
     [MRBS]
     [Database]
@@ -25,10 +26,11 @@ package "Meeting Room Booking System Docker Container" {
 '' Verbindungen
 [User] . [Client_Frontend]
 [Client_Frontend] -- [Client_Backend]
-[Client_Backend] - [SamplyProxy1]
-[SamplyProxy1] -- [Broker]
-[Broker] -- [SamplyProxy2]
-[SamplyProxy2] - [Backend_Connector]
+[Client_Backend] - [Samply.Proxy1]
+[Samply.Proxy1] -- [Samply.Broker]
+[Samply.Broker] -- [Samply.Proxy2]
+[Samply.Broker] - [Public Key Infrastructure]
+[Samply.Proxy2] - [Backend_Connector]
 [Backend_Connector] -- [Database]
 [MRBS] -- [Database]
 @enduml
