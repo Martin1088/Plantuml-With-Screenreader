@@ -1,6 +1,8 @@
-**PlantUML**
+#PlantUML
 
-PlantUML is an open-source diagramming tool that allows users to create visual representations of software systems, processes, and concepts using a simple syntax and a wide range of pre-defined templates.
+PlantUML is an open-source diagramming tool that allows **blind and visually impaired users** to create visual representations of software systems, processes, and concepts using a simple syntax and a wide range of pre-defined templates.
+[PlantUML Einführung (PDF)](https://www.cooperate-project.de/umlschulung/2_1_PlantUML-Einführung.pdf)
+[ACCESS - Karlsruhe Institute of Technology (KIT)](https://www.access.kit.edu/index.php)
 
 **Key Features:**
 
@@ -30,30 +32,16 @@ PlantUML is an open-source diagramming tool that allows users to create visual r
 
 PlantUML has an active community of users, developers, and contributors who share knowledge, examples, and templates on various platforms, including:
 
-1. GitHub (official repository)
-2. PlantUML forums
-3. Twitter
-4. Reddit
+1. GitHub (official repository) [PlantUML GitHub Repository](https://github.com/plantuml/plantuml?tab=readme-ov-file)
+2. PlantUML [PlantUML Sitemap](https://plantuml.com/de/sitemap)
+3. PlantUML forums [Visit the PlantUML Forum](https://forum.plantuml.net)
 
 Overall, PlantUML is a powerful tool for creating visual representations of software systems, processes, and concepts, making it an excellent choice for developers, designers, and stakeholders alike.
 
-# Overview from my Projekts and school Examples
+# Overview from my projekts and school examples
 
-- projects
-- Classes
-- database
-- json
-- KI
-- calender
-- mindmap
-- process
-- deploy_diagram
-- Tutorial PLANTUML overview
-
-# Testing UML
-
-1. **Projects**: "Project Management and Development"
-   This theme focuses on the various aspects of project management, including planning, execution, and deployment.
+1. **Tutorial PLANTUML overview**: "PlantUML Tutorial Series and Overview"
+   This theme serves as an introduction to PlantUML, a diagramming tool for creating visual representations of software development concepts, including tutorials, examples, and project documentation.
 
 2. **Classes**: "Software Architecture and Design Patterns"
    This theme explores different software design patterns, architecture styles, and class relationships in object-oriented programming.
@@ -79,5 +67,8 @@ Overall, PlantUML is a powerful tool for creating visual representations of soft
 9. **Deploy Diagram**: "System Deployment Plans and Architecture Design"
    This theme discusses system deployment plans, architecture design principles, and best practices for deploying complex systems.
 
-10. **Tutorial PLANTUML overview**: "PlantUML Tutorial Series and Overview"
-    This theme serves as an introduction to PlantUML, a diagramming tool for creating visual representations of software development concepts, including tutorials, examples, and project documentation.
+10. **Network**: "Network Toplogy"
+    This theme examines possible representations and concepts for Network tasks.
+
+11. **Projects**: "real projects"
+    This theme focuses on the various aspects of my projects, including planning, execution, and deployment.
