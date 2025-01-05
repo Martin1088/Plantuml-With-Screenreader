@@ -1,8 +1,9 @@
 #PlantUML
 
 PlantUML is an open-source diagramming tool that allows **blind and visually impaired users** to create visual representations of software systems, processes, and concepts using a simple syntax and a wide range of pre-defined templates.
-[PlantUML Einführung (PDF)](https://www.cooperate-project.de/umlschulung/2_1_PlantUML-Einführung.pdf)
-[ACCESS - Karlsruhe Institute of Technology (KIT)](https://www.access.kit.edu/index.php)
+
+- [PlantUML Einführung (PDF)](https://www.cooperate-project.de/umlschulung/2_1_PlantUML-Einführung.pdf)
+- [ACCESS - Karlsruhe Institute of Technology (KIT)](https://www.access.kit.edu/index.php)
 
 **Key Features:**
 
