@@ -3,8 +3,9 @@ class BestellPosition{
     - nr: interface-anzahl: int
     --
 }
-class abstract Komponente {
-    -id: int
+
+abstract class Komponente {
+    - id: int
     - preis: double
     --
     + ToString(): string 
@@ -21,8 +22,10 @@ class HybridWechselrichter{
     --
 }
 class PvModul {
-    -leistung: double- spannung: double
-    - laenge: double- breite: doublle
+    - leistung: double
+    - spannung: double
+    - laenge: double
+    - breite: double
     - hoehe: double 
     --
 }
@@ -32,13 +35,13 @@ class Batteriespeicher{
     --
 }
 class DBVerbindungsManager {
-    -dbConneciton: SqlConnection
+    - dbConneciton: SqlConnection
     - connectionString: string
     --
     + GetDbConnection()
     + GetPvModule(): PvModul[]
     + GetWechselrichter(): Wechselrichter[]
     + GetHybridWechselrichter(): HybridWechselrichter[]
-)}
+}
 
 @enduml

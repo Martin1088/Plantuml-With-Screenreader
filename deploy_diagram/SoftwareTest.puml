@@ -1,6 +1,6 @@
 @startuml
 
-'' Vorgänge definieren
+' Vorgänge definieren
 Vorgang A : Planungsphase
 Vorgang B : Installation der nötigen Entwicklungssoftware
 Vorgang C : Erstellung des Entwurfs

@@ -1,6 +1,5 @@
 @startuml
-[Wouter1]
+[Router1]
 [Internet]
 [switch1]
-[]
 @enduml
