@@ -1,0 +1,16 @@
+@startuml
+
+package RechnungserstellungModul {
+    package "Basismodul" {
+        class Merhrwertsteuerberechnen
+        class Teilsummenbestimmen
+    }
+}
+
+    package DatenbankModul{
+        class SQL_Funktionen
+    }
+
+SQL_Funktionen -- RechnungserstellungModul: indirekter Zugriff
+
+@enduml

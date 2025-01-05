@@ -1,0 +1,34 @@
+@startuml
+entity Kunde {
+    idKunde INT primary key
+    --
+    Vorname varchar
+    Nachname
+}
+entity Verkauf {
+    idVK primary key
+    --
+    idKunde foreign 
+    idFahrzeug foreign key
+    Datum
+    Preis
+}
+entity Fahrzeug{
+    idFahrzeug primary key 
+    --
+    idModell foreign key
+}
+entity Model{
+    idModell primary key
+    --
+    ModellName
+    idMarke foreign key 
+}
+entity Marke{
+    idMarke primary key 
+    --
+    MarkeName
+}
+
+'' Beziehung 
+@enduml

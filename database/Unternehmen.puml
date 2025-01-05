@@ -1,0 +1,36 @@
+@startuml name Unternehmen
+entity "freie Mitarbeiter" {
+    * ID
+    --
+    * Name
+}
+entity Mitarbeiter {
+    * ID
+    --
+    * Name
+}
+entity Projekt {
+    * ID
+    --
+    * Name
+    * Beschreibung
+    * Anfang 
+    * Ende
+}
+entity Lohntabelle {
+    * ID
+    --
+    * Lohnbetrag
+}
+entity Honorar {
+    * ID
+    --
+    * Honorahöhe
+}
+
+Projekt "n" -- "m" Mitarbeiter: zugeteilt
+Projekt "n" -- "m" "freie Mitarbeiter": zugeteilt
+Mitarbeiter "n" -- "1" Lohntabelle: eingeordnet
+"freie Mitarbeiter" "n" -- "1" Honorar: vereinbart
+
+@enduml

@@ -1,0 +1,30 @@
+@startuml name Netzplan
+cloud Internet {
+    [Internet Service Provider ]
+}
+[Internet Service Provider ]- [Router ISP]
+[Router ISP] - [Firewall]
+rectangle IPv6_Netzwerkprefix{
+    Firewall - [Router fe80::1/64]
+    [Router fe80::1/64] - [Switch 1]
+    [Switch 1] -- [DHCPv6-Server]
+    [Switch 1] -- [DNS-Server fe80::5 /64]
+    [Switch 1] -- [Datei-Server fe80::6]
+    [Switch 1] - [Switch 2]
+    [Switch 2] -- [Computer 1]
+    [Switch 2] -- [Netzwerdrucker 1]
+    [Switch 2] -- [Netzwerdrucker 2]
+    [Switch 2] -- [WLAN AP 1]
+    [Switch 2] -- [WLAN AP 2]
+    [Switch 2] -- [WLAN AP 3]
+    [Switch 2] -- [WLAN AP 4]
+    [Switch 2] -- [WLAN AP 5]
+    [Switch 2] -- [WLAN AP 6]
+    [Switch 2] -- [WLAN AP 7]
+    [Switch 2] -- [WLAN AP 8]
+    [Switch 2] -- [WLAN AP 9]
+    [Switch 2] -- [WLAN AP 10]
+
+}
+
+@enduml

@@ -1,6 +1,0 @@
-@startuml
-: FAZ | FEZ
-1 | Installation 
-D | GP | FP
- SAZ | SEZ;
-@enduml

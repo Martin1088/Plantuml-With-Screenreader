@@ -1,0 +1,28 @@
+@startuml name Konto
+entity Kunden {
+    * Kunden_ID primary key 
+    --
+    * Vorname
+    * Name
+}
+entity Konto {
+    * Konto_ID primary key 
+    --
+    * Nummer 
+    * Art_ID 
+    * Datum 
+}
+entity Kontoarten {
+    * Art_ID primary key 
+    --
+    * Beschreibung 
+}
+entity Kunde_Konto {
+    * Kunden_ID foreign key 
+    --
+    * Konto_ID foreign key 
+}
+Konto "n" -- "1" Kontoarten
+Konto - Kunde_Konto
+Kunde_Konto- Kunden
+@enduml
