@@ -1,0 +1,21 @@
+@startuml
+class ClassName {
++ Attribute:
++ Methods()
+}
+class Book {
++ Title: String
++ ISBN: int
+}
+
+ClassName --> Book
+
+class Order {}
+Order --|> Book
+class Store {}
+class Shelf {}
+Store *- Shelf
+
+Shelf --* Book
+
+@enduml

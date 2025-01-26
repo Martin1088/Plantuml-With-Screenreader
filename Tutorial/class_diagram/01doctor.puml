@@ -1,0 +1,25 @@
+@startuml
+class Person {
++ Name: String
++ kaufen()
+}
+class PrivatePerson {}
+class Doctor {}
+
+Person <--> PrivatePerson
+Person <--> Doctor
+
+class DoctorSpecialty {
++ Name: String
+}
+class Disease {
++ Name: String
+}
+class Symptom {
++ Name: String
+}
+
+Disease <--> Symptom
+Person "1" - "0..50" DoctorSpecialty : buy >
+DoctorSpecialty "1" - "0..1" Disease : treat
+@enduml
