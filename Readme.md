@@ -18,7 +18,7 @@ Docker as cross-platform with a client script to install
 
 ### Tauri framework Extension
 
-![Tauri App](./projects/FederatedInformationSystems/HandyAppV2.swg)
+![Tauri App](./projects/FederatedInformationSystems/HandyAppV2.svg)
 
 - Tauri for building lightweight, secure desktop applications using
   web technologies
