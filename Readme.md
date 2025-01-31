@@ -6,8 +6,7 @@ Software via [Samply.Beam](https://github.com/samply/beam)
 
 ## Examen project
 
-### "Raumbelegungssoftware über Samply.Beam"
-
+"Raumbelegungssoftware über Samply.Beam"
 Docker as cross-platform with a client script to install
 
 - Client Axum(Rust Webframework) with Svelte(JavaScript
@@ -18,6 +17,8 @@ Docker as cross-platform with a client script to install
 - [Dokumentation] will follow
 
 ### Tauri framework Extension
+
+![Tauri App](./projects/FederatedInformationSystems/HandyAppV2.swg)
 
 - Tauri for building lightweight, secure desktop applications using
   web technologies

@@ -17,7 +17,7 @@ package "central Server" {
         [Server_REST_API]
     }
     database "Mrbs" {
-        [Verbis_Raumplaner]
+        [Internal_Roombooking_System]
     }
 }
 
@@ -26,5 +26,5 @@ package "central Server" {
 [Samply_Proxy_Client] -- [Broker]
 [Broker] -- [Samply_Proxy_Server]
 [Samply_Proxy_Server] -- [Server_REST_API]
-[Server_REST_API] - [Verbis_Raumplaner]
+[Server_REST_API] - [Internal_Roombooking_System]
 @enduml
