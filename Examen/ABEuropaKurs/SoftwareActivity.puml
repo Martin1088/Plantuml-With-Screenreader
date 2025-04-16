@@ -1,0 +1,23 @@
+@startuml
+
+start
+
+:Planungsphase;
+:Installation der nötigen Entwicklungssoftware;
+:Erstellung des Entwurfs;
+
+fork
+  :Implementierung;
+  --> [next]
+fork again
+  --> [wait for Implementierung]
+end fork
+
+:Testen;
+:Verfassen der Kundendokumentation;
+
+:Verfassen der Testdokumentation;
+
+stop
+
+@enduml

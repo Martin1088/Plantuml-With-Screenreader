@@ -1,27 +1,19 @@
 @startuml
 
-'' Vorgänge definieren
-Vorgang A : Planungsphase
-Vorgang B : Installation der nötigen Entwicklungssoftware
-Vorgang C : Erstellung des Entwurfs
-Vorgang D : Implementierung
-Vorgang E : Testen
-Vorgang F : Verfassen der Kundendokumentation
-Vorgang G : Verfassen der Testdokumentation
+rectangle "Planungsphase\n(5 Tage)" as A
+rectangle "Installation\n(4 Tage)" as B
+rectangle "Entwurf\n(2 Tage)" as C
+rectangle "Implementierung\n(16 Tage)" as D
+rectangle "Testen\n(3 Tage)" as E
+rectangle "Kundendoku\n(5 Tage)" as F
+rectangle "Testdoku\n(3 Tage)" as G
 
-' Vorgänge mit Dauer verbinden
-A is 5 Tage
-B is 4 Tage
-C is 2 Tage
-D is 16 Tage
-E is 3 Tage
-F is 5 Tage
-G is 3 Tage
-
-' Vorgänger definieren
-D depends on B, C
-E depends on D
-F depends on D
-G depends on E
+A --> B
+A --> C
+B --> D
+C --> D
+D --> E
+D --> F
+E --> G
 
 @enduml

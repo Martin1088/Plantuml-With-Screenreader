@@ -1,44 +1,55 @@
 @startuml
-class BestellPosition{
-    - nr: interface-anzahl: int
+
+class BestellPosition {
+    - nr: int
+    - interfaceAnzahl: int
     --
 }
-class abstract Komponente {
-    -id: int
+
+abstract class Komponente {
+    - id: int
     - preis: double
     --
-    + ToString(): string 
+    + toString(): string 
 }
+
 class Wechselrichter {
     - mppts: int 
-    - leistungMppt: double- spannungMppt: double
+    - leistungMppt: double
+    - spannungMppt: double
     --
 }
-class HybridWechselrichter{
-    - lagespannung: double
+
+class HybridWechselrichter {
+    - ladespannung: double
     - ladestrom: double
-    - mayKapazität: double
+    - maxKapazitaet: double
     --
 }
+
 class PvModul {
-    -leistung: double- spannung: double
-    - laenge: double- breite: doublle
+    - leistung: double
+    - spannung: double
+    - laenge: double
+    - breite: double
     - hoehe: double 
     --
 }
-class Batteriespeicher{
+
+class Batteriespeicher {
     - kapazitaet: double 
     - ladespannung: double
     --
 }
+
 class DBVerbindungsManager {
-    -dbConneciton: SqlConnection
+    - dbConnection: SqlConnection
     - connectionString: string
     --
     + GetDbConnection()
     + GetPvModule(): PvModul[]
     + GetWechselrichter(): Wechselrichter[]
     + GetHybridWechselrichter(): HybridWechselrichter[]
-)}
+}
 
 @enduml
