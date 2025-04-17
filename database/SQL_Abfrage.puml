@@ -1,4 +1,4 @@
-@startuml name Konto
+@startuml Konto
 entity Kunden {
     * Kunden_ID primary key 
     --

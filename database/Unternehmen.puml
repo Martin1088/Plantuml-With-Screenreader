@@ -1,4 +1,4 @@
-@startuml name Unternehmen
+@startuml Unternehmen
 entity "freie Mitarbeiter" {
     * ID
     --
