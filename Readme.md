@@ -91,11 +91,13 @@ Docker as cross-platform with a client script to install
 - Backend-Connector SeaORM (Rust Object Related Mapper)
 - Library from the Tokio developer group
 
-- [Dokumentation] will follow
+- [Dokumentation](examen_docu/overview.md)
 
 ### Tauri framework Extension
 
-![Tauri App](./projects/FederatedInformationSystems/HandyAppV2.svg)
+<p align="center">
+  <img src="/projects/FederatedInformationSystems/HandyAppV2.svg" alt="mobile App - central Service - central Server" width="600"/>
+</p>
 
 - Tauri for building lightweight, secure desktop applications using
   web technologies

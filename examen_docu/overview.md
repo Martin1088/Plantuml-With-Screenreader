@@ -1,22 +1,15 @@
-# Examen project Real-Time Room Booking and Occupancy Software via [Samply.Beam](https://github.com/samply/beam)
+# Examen Project: Real-Time Room Booking and Occupancy Software via [Samply.Beam](https://github.com/samply/beam)
 
-[examen documentation](./project_doc.pdf)
-
-## Application Design
-Overview today for all areas with there rooms and the current bookitn.
-booking.
-
-<p align="center">
-  <img src="./first_view.png" alt="First View" width="600"/>
-</p>
+📄 [View Project Documentation](./project_doc.pdf)
 
 ---
 
 ## GUI Preview
 
+### 🖥️ Real-Time Dashboard
+
 <div style="display: flex; align-items: center;">
   <div style="flex: 1; padding-right: 20px;">
-    <h3>Real-Time Dashboard</h3>
     <p>
       The dashboard gives an instant overview of room occupancy and bookings across all areas.
       It integrates real-time data from <a href="https://github.com/samply/beam">Samply.Beam</a>
@@ -29,6 +22,82 @@ booking.
     </ul>
   </div>
   <div style="flex: 1;">
-    <img src="./first_view.png" alt="First View" width="100%"/>
+    <img src="assets/first_view.png" alt="Real-Time Dashboard" width="100%"/>
+  </div>
+</div>
+
+---
+
+### 📅 Calendar View
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      Navigate through bookings using the interactive calendar. 
+      Changes are reflected in real-time when selecting different dates.
+    </p>
+  </div>
+  <div style="flex: 1;">
+    <img src="assets/calander_view.png" alt="Calendar View" width="100%"/>
+  </div>
+</div>
+
+---
+
+### 🏢 Room Selection
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      Easily bookings by selecting rooms from a dropdown menu.
+    </p>
+  </div>
+  <div style="flex: 1;">
+    <img src="assets/select_room.png" alt="Room Selection" width="100%"/>
+  </div>
+</div>
+
+---
+
+### 👤 User Selection
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      Users can be assigned using a dropdown interface.
+    </p>
+  </div>
+  <div style="flex: 1;">
+    <img src="assets/select_user.png" alt="User Selection" width="100%"/>
+  </div>
+</div>
+
+---
+
+### 🗓️ Subscribe Multiple Weeks
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      Users can subscribe to recurring slots over multiple weeks, based on selected weekdays.
+    </p>
+  </div>
+  <div style="flex: 1;">
+    <img src="assets/second_view.png" alt="Subscribe Weeks View" width="100%"/>
+  </div>
+</div>
+
+---
+
+### 📊 Room Overview Table
+
+<div style="display: flex; align-items: center;">
+  <div style="flex: 1; padding-right: 20px;">
+    <p>
+      A flexible table layout provides an overview of all rooms and their assigned subscribers.
+    </p>
+  </div>
+  <div style="flex: 1;">
+    <img src="assets/table_view.png" alt="Room Overview Table" width="100%"/>
   </div>
 </div>
