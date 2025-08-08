@@ -1,0 +1,16 @@
+@startmindmap
+* workspace_booking_system
+** config
+** docker
+** docu
+** frontend
+*** Angular App
+** migration
+*** MySQL Schema
+** src
+*** controllers
+*** initializers
+*** models
+*** response_type
+** tests
+@endmindmap

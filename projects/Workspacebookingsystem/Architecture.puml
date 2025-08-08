@@ -1,0 +1,15 @@
+@startuml
+title Workspace Booking System
+
+left to right direction
+
+rectangle "Angular Frontend" as A
+rectangle "Rust Loco Backend" as B
+database "MySQL Database" as C
+rectangle "OAuth Provider" as D
+
+A --> B : REST API
+B --> C : ORM
+B --> D : OAuth 2.0
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+actor U as "User"
+participant F as "Angular Frontend"
+participant B as "Rust Backend"
+participant O as "OAuth Provider"
+
+U ->> F : Click "Login with OAuth"
+F ->> O : Redirect to OAuth Provider
+O ->> U : Authenticate User
+O ->> F : Return Auth Code
+F ->> B : Exchange Auth Code for Token
+B ->> O : Validate Token
+O ->> B : Token Valid
+B ->> F : Session Token (JWT)
+F ->> U : Logged In
+@enduml
