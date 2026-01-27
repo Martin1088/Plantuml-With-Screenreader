@@ -1,0 +1,72 @@
+@startuml
+
+skinparam componentStyle rectangle
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+
+actor Partner as partner
+actor "Data Consumer\n(Beacon / cBioPortal / Analytics)" as consumer
+
+node "Partner Bridgehead" as bh_partner {
+  [MAF Receiver] as maf_rx
+  [Pseudonymization\n(streaming: record -> zstd)] as psn
+  artifact "pseudonymized.maf.zstd" as maf_pseudo
+  artifact "manifest\n(transfer metadata)" as manifest
+}
+
+cloud "Samply BEAM\n(secure transfer)" as beam
+
+node "Central Bridgehead" as bh_central {
+  folder "beam-file reciever" as raw {
+    artifact "raw/*.maf.gz" as raw_maf
+    artifact "raw/*.manifest.json" as raw_manifest
+  }
+
+  [Ingest Service (Rust)\nMAF -> Parquet] as ingest
+
+  folder "Curated Lakehouse\n(Iceberg tables on Parquet)" as curated {
+    database "Iceberg Catalog\n(REST: Lakekeeper)" as catalog
+    artifact "Iceberg Metadata\n(snapshots, manifests)" as iceberg_meta
+    artifact "Parquet Data Files\n(partitioned)" as parquet_files
+
+    database "variants" as tbl_variants
+    database "cancer_study_identifier" as tbl_samples
+    database "patients_identifier" as tbl_patients
+  }
+
+  [Exporters] as exporters
+  artifact "cBioPortal Study Dir\n(MAF + meta_*.txt)" as cbio_export
+  artifact "Beacon Index / Tables" as beacon_export
+}
+
+' Flows
+partner --> maf_rx : Deliver MAF (and optional sidecar)
+maf_rx --> psn : Validate + parse
+psn --> maf_pseudo : Write pseudonymized MAF\n(gzip/zstd)
+psn --> manifest : Write manifest (JSON)
+
+maf_pseudo --> beam
+manifest --> beam
+
+beam --> raw_maf : Store immutable artifacts
+beam --> raw_manifest
+
+raw_maf --> ingest
+raw_manifest --> ingest
+
+ingest --> parquet_files : Write Parquet (zstd)
+ingest --> iceberg_meta : Commit snapshot
+catalog --> iceberg_meta : Track table versions
+
+parquet_files --> tbl_variants
+parquet_files --> tbl_samples
+parquet_files --> tbl_patients
+
+curated --> exporters : Read curated tables
+exporters --> cbio_export : Generate cBioPortal import package
+exporters --> beacon_export : Generate Beacon-friendly projection
+
+consumer --> curated : Query (SQL/AST)
+consumer --> cbio_export : Load into cBioPortal
+consumer --> beacon_export : Serve Beacon API
+@enduml

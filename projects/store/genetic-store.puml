@@ -1,0 +1,47 @@
+@startuml
+title Genetic Store(Loco Rust Project)
+
+[omics data pipeline] as pipeline
+
+package "workflow" {
+   [Validator]
+   [Pseudonym]
+   [Data Mapping] as data
+   [Maf file backup] as maf
+}
+
+package "init (SeaORM)" {
+   [database Migration]
+}
+
+package "Genetic Store (Loco App)" {
+  [API Loco controler] as api
+  [Worker Loco] as work
+  [Query Parser] as parser
+  database "Postgres" as pg
+}
+
+[Beam]
+[Spot]
+actor "Lens Instance" as client
+actor "Export" as ex
+
+"init (SeaORM)" --> "Genetic Store (Loco App)"
+pipeline -> Validator
+Validator -> Pseudonym
+Pseudonym -> data
+Pseudonym --> maf
+data -> api
+data -> work
+
+api .. pg
+work . pg
+pg .. parser : build query SeaQL
+
+Beam - parser
+Beam - Spot
+Spot ..> client
+client --> Spot : produce AST
+
+api -> ex
+@enduml

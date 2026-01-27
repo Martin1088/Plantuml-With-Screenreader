@@ -1,0 +1,48 @@
+@startuml
+
+entity patient {
+  patient_id / pseudonym
+  sample_barcode
+}
+
+entity sample {
+    sample_id
+    sample_barcode
+    sample_type
+    project_id
+    UNIQUE (project_id, sample_barcode)
+}
+
+entity ingest_file {
+  ingest_id primary key
+  file_name
+  pipeline_version
+  reference_build
+}
+
+entity variant {
+    variant_id primary key
+    build
+    chrom
+    pos
+    ref
+    alt
+    UNIQUE (build, chrom, pos, ref, alt)
+}
+
+entity call {
+  call_id primary key
+  variant_id
+  sample_id
+  ingest_id
+  extras JSONB
+  UNIQUE (sample_id, variant_id, ingest_id)
+}
+
+patient "1" -- "n" sample
+
+sample "n" -- "m" call
+variant "n" -- "m" call
+ingest_file "n" -- "m" call
+
+@enduml

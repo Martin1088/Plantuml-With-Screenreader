@@ -1,0 +1,72 @@
+@startuml
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+
+
+' ----------------- Local site infra -----------------
+package "IT Infrastructure at each Program" {
+
+ rectangle "Clinical Data\n(EDC)" as EDC
+ database  "omics Data" as OMICS
+
+ rectangle "Custom ETL" as ETL
+ rectangle "ITCC\nPipeline" as PIPE
+
+ EDC --> ETL
+ OMICS --> ETL
+ ETL  --> PIPE : pipeline input
+}
+
+' ----------------- Bridgehead -----------------
+package "Bridgehead" {
+
+ rectangle "FHIR" as FHIR
+ rectangle "BioData" as BIOD
+
+ rectangle "Uploader" as UP
+ rectangle "Pseudonymization" as PSEUDO
+
+ PIPE --> FHIR : clinical data\n(HL7 FHIR / ITCC profiles)
+ PIPE --> BIOD : pipeline output\n(list of local pseudonyms)
+
+ FHIR --> UP : watch for\ncomplete dataset
+ BIOD --> UP : pull, combine
+
+ UP --> PSEUDO
+}
+
+' ----------------- Federation cloud -----------------
+cloud "Samply.Beam Federation" as FED
+
+PSEUDO --> FED
+' (FHIR/BioData contribute via uploader/pseudonymization)
+
+' ----------------- National / central systems -----------------
+package "(Inter-)National Programs\nITCC PedCanPortal" {
+
+ rectangle "Upload\nEndpoint" as UPLOAD
+ database  "Data Lake\n\"Central DWH\"" as DWH
+
+ FED --> UPLOAD
+ UPLOAD --> DWH
+
+ ' Downstream tools
+ rectangle "cBioPortal" as CBIO
+ rectangle "R2" as R2
+ rectangle "Anand\nPortal?" as ANAND
+ rectangle "Future\nTool" as FUT
+
+ UPLOAD --> CBIO : notify /\nfetch data (S3)
+ UPLOAD --> R2
+ UPLOAD --> ANAND
+ UPLOAD --> FUT
+
+ ' Federated exploration
+ rectangle "Federated\nExplorer" as EXPL
+ rectangle "Use &\nAccess" as USEACC
+
+ FED --> EXPL : federated query
+ EXPL --> USEACC
+}
+
+@enduml

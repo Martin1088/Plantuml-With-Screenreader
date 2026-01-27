@@ -1,0 +1,54 @@
+@startuml
+
+entity patient {
+  *patient_id : text  <<pseudonym>>
+}
+
+entity sample {
+  *sample_id : text
+  patient_id : text <<FK>>
+  sample_barcode : text
+  --
+  project_id : text
+  UNIQUE(project_id, sample_id)
+}
+
+entity ingest_file {
+  *id : bigserial
+  project_id : text
+  sample_id : text <<FK>>
+  --
+  s3_bucket : text
+  s3_key : text
+  sha256 : char(64)
+  content_encoding : text
+  size_bytes : bigint
+  genome_build : text
+  pipeline_version
+  created_at
+  --
+  UNIQUE(project_id, sample_id, sha256)
+  UNIQUE(s3_bucket, s3_key)
+}
+
+entity variant {
+  *id : bigserial
+  ingest_file_id : bigint <<FK>>
+  --
+  hugo_symbol : text
+  chromosome : text
+  start_position : int
+  end_position : int
+  reference_allele : text
+  tumor_seq_allele2 : text
+  variant_classification : text
+  variant_type : text
+  --
+  UNIQUE(ingest_file_id, chromosome, start_position, reference_allele, tumor_seq_allele2)
+}
+
+patient "1" -- "n" sample
+sample  "1" -- "n" ingest_file
+ingest_file "1" -- "n" variant
+
+@enduml
