@@ -1,0 +1,94 @@
+@startuml
+' ---------- Global style ----------
+top to bottom direction
+skinparam actorFontSize 30
+skinparam componentStyle rectangle
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+
+' ---------- Actors ----------
+actor "Partner" as partner
+actor "Data Consumer\n(cBioPortal / Analytics)" as consumer
+
+' ---------- Partner Bridgehead ----------
+node "Partner Bridgehead" as bh_partner {
+  [MAF Receiver] as maf_rx
+  [Blaze] as blaze
+  [Pseudonymization\nstreaming: record -> pseudonym -> zstd] as psn
+  artifact "pseudonymized.maf.zstd" as maf_pseudo
+  artifact "metadata.json\n(transfer metadata)" as manifest
+  artifact "bundle.json\n(transfer fhir)" as fhir
+}
+
+cloud "Samply BEAM\n(secure transfer)" as beam
+
+' ---------- Data Lake ----------
+node "Data Lake" as bh_central {
+
+  folder "FHIR Store" {
+    artifact "Blaze ?" as blaze_central
+  }
+  folder "Beam file receiver" as raw {
+    artifact "raw/*.maf.gz" as raw_maf
+    artifact "raw/*.metadata.json" as raw_manifest
+    [Ingest Service (Rust)\nMAF -> Parquet\n+ Generate cBioPortal import package] as ingest
+  }
+
+  folder "Data Lake\n(Iceberg tables on Parquet)\nS3" as curated {
+    database "Iceberg Catalog\n(REST)" as catalog
+    artifact "Iceberg Metadata\n(snapshots, manifests)" as iceberg_meta
+    artifact "Parquet Data Files\n(partitioned)" as parquet_files
+
+    database "variants" as tbl_variants
+    database "cancer_study_identifier" as tbl_samples
+    database "patients_identifier" as tbl_patients
+
+    database "Data quality report\n→ Analytics" as audit
+  }
+
+  folder "Exporter / API" as ex_api {
+    artifact "cBioPortal Export\n(MAF + meta_*.txt)" as cbio_export
+    cloud "cBioPortal" as cbioportal
+  }
+}
+
+' ---------- Flows (top -> bottom) ----------
+partner --> maf_rx : send MAF + cancer_study_id
+partner --> blaze : fhir upload
+maf_rx --> psn : validate + parse
+blaze --> psn
+psn --> maf_pseudo : write pseudonymized MAF (zstd)
+psn --> manifest : write metadata (JSON)
+psn --> fhir
+
+maf_pseudo --> beam
+manifest --> beam
+fhir --> beam
+
+beam --> raw_maf
+beam --> raw_manifest
+beam --> blaze_central
+
+raw_maf --> ingest
+raw_manifest --> ingest
+
+ingest --> parquet_files : write
+ingest --> iceberg_meta : commit snapshot
+catalog --> iceberg_meta : track table versions
+
+parquet_files --> tbl_variants
+parquet_files --> tbl_samples
+parquet_files --> tbl_patients
+
+tbl_variants --> audit
+tbl_samples --> audit
+tbl_patients --> audit
+
+curated --> ex_api : query / read
+blaze_central --> ex_api : query / read
+ex_api --> cbio_export : fetch files
+cbio_export --> cbioportal : import
+
+consumer --> ex_api
+
+@enduml
