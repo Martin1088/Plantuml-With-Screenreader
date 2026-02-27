@@ -1,0 +1,18 @@
+@startuml
+
+actor "Research Staff" as User
+
+node "LeMeDart" as Host {
+  rectangle "REDCap\n(PHP + Apache)\nEDOC_PATH=/data/edocs" as REDCap
+  folder "Local EDOC Folder\n./edocs-local" as LocalEDOCs
+  rectangle "Ingest Sync\n(rclone sync loop)" as Ingest
+}
+
+cloud "Garage S3\n(bucket: lemedart-edocs)" as GarageS3
+
+User --> REDCap : : Upload file
+REDCap --> LocalEDOCs : write EDOC files
+Ingest --> LocalEDOCs : read changes (every 30s / cron)
+Ingest --> GarageS3 : rclone sync\n(source of truth archive)
+
+@enduml

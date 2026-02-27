@@ -1,0 +1,60 @@
+@startuml
+title Coder External Auth (OAuth2/OIDC) -> Token for Genetics API
+
+actor Researcher as U
+participant "Browser" as B
+participant "Workspace\n(coder CLI)" as W
+participant "Coder Control Plane\n(Server)" as C
+participant "OAuth Provider\n(for Genetics API)" as OP
+participant "Genetics Store API" as API
+
+== Login to Coder (separate concern) ==
+U -> B : Open Coder UI
+B -> C : OIDC/OAuth Login (SSO)
+C --> B : Session established
+
+== First-time External Auth (Genetics) ==
+U -> W : coder external-auth access-token genetics
+W -> C : Request access token for provider=genetics
+C --> W : Not authorized yet\nReturn "Open this URL" link
+
+U -> B : Open External Auth URL
+B -> C : GET /external-auth/genetics/start
+C -> OP : Redirect to /authorize (client_id, scopes, redirect_uri, state, PKCE)
+OP --> B : Login + Consent screen
+U -> OP : Authenticate + Approve scopes
+OP --> B : Redirect back to Coder redirect_uri\nwith authorization code + state
+B -> C : GET /external-auth/genetics/callback?code=...&state=...
+
+C -> OP : POST /token (code + verifier)\nexchange code for tokens
+OP --> C : access_token (+ refresh_token, expires_in)
+
+C -> C : Store tokens securely\nbound to user + provider
+
+== Token retrieval inside Workspace ==
+U -> W : coder external-auth access-token genetics
+W -> C : Request access token (user=U, provider=genetics)
+alt Access token still valid
+ C --> W : access_token
+else Expired
+ C -> OP : POST /token (refresh_token)
+ OP --> C : new access_token
+ C --> W : new access_token
+end
+
+== API call ==
+W -> API : HTTPS request\nAuthorization: Bearer access_token
+API --> W : Response
+
+note over C
+Tokens are stored server-side (Coder control plane).
+Workspace fetches short-lived access tokens on demand.
+end note
+
+note over API
+To enforce "only from workspaces":
+- keep API private (VPC / firewall / NetworkPolicy)
+- optionally add mTLS / allowlist
+end note
+
+@enduml

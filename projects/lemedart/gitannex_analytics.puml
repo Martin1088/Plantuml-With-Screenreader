@@ -1,0 +1,20 @@
+@startuml
+title git-annex-first lake (query snapshots)
+
+folder "main instance(source of truth)" {
+component "Nextcloud" as NC
+component "git-annex repo" as GA
+}
+
+component "Snapshot export\n(git annex export)" as EXP
+
+folder "Analytics/API custom build" {
+component "Polars(Rust like Pandas, etc)" as Q
+folder "Snapshot\npatients/<pseudonym>/\nParquet/Avor" as SNAP
+}
+
+NC --> GA : sync files
+GA --> EXP : export commit
+EXP --> SNAP : materialize files
+Q --> SNAP : query files
+@enduml

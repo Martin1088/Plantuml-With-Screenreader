@@ -1,0 +1,44 @@
+@startuml
+
+actor "Scientist" as S
+component "Mainzelliste" as ML
+folder "ingest-lemedart" as IL {
+    component "RedCap" as RC
+    database "Redcap Mysql" as MYSQL
+}
+
+folder "Datalake LeMeDart" {
+    component "**Project** Ingest/Rust\ngitannex push/commit/controller\nCopyObject S3 Bucket A -> B(fast copy)" as ING
+    component "gitannex WebUI or Scout(tim table)" as WU
+    folder "S3/Garage" {
+        database "S3/gitannex Bucket A (source of truth) \n**/edocs** git-annex repo raw \npatients/<pseudonym>/" as A
+        database "S3 Bucket B (Analytics source)" as B
+    }
+}
+
+cloud "Coder as custom workspace" as C
+
+folder "Analytics/API" {
+    component "**Project** Iceberg(Rust) or Polaris(Rust)\nParquet/Avor/ORC" as DL
+    component "Iceberg tables" as ICE
+    component "DataFusion\n(Rust)\nSQL" as Q
+    component "API/Dashboard" as D
+}
+S -> ML
+ML --> RC: redirect
+S -> RC: upload \ndata/forms
+RC -- A: save files
+RC . MYSQL
+A . ING: watching
+ING --> A: gitannex add/commit/push
+ING .. B: trigger copyObject
+A -> B: copyObject
+A .. WU
+B .. DL: generate Dataformat
+B -> C
+DL .. ICE
+ICE . Q
+Q .. D
+D -> C
+
+@enduml

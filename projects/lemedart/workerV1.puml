@@ -1,0 +1,50 @@
+@startuml
+
+top to bottom direction
+skinparam actorFontSize 30
+skinparam componentStyle rectangle
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+
+actor Partner
+
+component "mainzelliste" as ml
+rectangle "redcap" as rc {
+    component "record\n pseudonym as record id " as r
+    component "record upload file" as rcu
+    database "REDCap MySQL" as db
+}
+
+rectangle "Worker Ingest" as WI {
+    component "Axum API\n(Handlers)" as api
+    component "SeaORM\n(MySQL)" as orm
+    component "S3 Client\n(Garage)" as s3
+    component "Worker\n(optional)" as worker
+}
+
+cloud "Garage S3\nBucket" as garage {
+    component "source of truth" as main
+    component "edocs" as ed
+    component "analytics" as a
+}
+
+Partner --> ml
+ml --> api : POST pseudonym
+ml --> r : Redirect
+r <- api : API create record
+r --> db
+r -> rcu
+
+orm --> db : read metadata\n(record_id, fields)
+rcu --> ed : upload files
+
+api --> worker : enqueue job (optional)
+worker --> orm
+worker --> s3
+s3 . orm : medadata
+
+s3 --> main : create files\npartner/pseudonym/file
+s3 --> ed : search new file
+s3 --> a : copy
+ed -> main : copy
+@enduml

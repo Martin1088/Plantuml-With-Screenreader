@@ -1,0 +1,60 @@
+@startuml
+' ---------- Global style ----------
+top to bottom direction
+skinparam actorFontSize 30
+skinparam componentStyle rectangle
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+skinparam BoldColor green
+!define B(x) <color:green><b>x</b></color>
+' ---------- Actors ----------
+
+actor "Data Consumer\n(Analytics)" as consumer
+
+cloud "Samply BEAM\n B(**beam-file transfer**)" as beam
+
+' ---------- Central DWH ----------
+node "Central DWH" as bh_central {
+
+  folder "Storage" as st {
+  database "FHIR Store" as blaze_central
+  database "B(**S3 central Store**)" as s3
+}
+  folder "Beam receiver" as raw {
+    artifact "B(**raw/*.maf.zstd**)" as raw_maf
+    artifact "B(**raw/*.metadata.json**)" as raw_manifest
+    artifact "bundle.json" as fhir_central
+    artifact "(Optional) Monitoring logs" as monitoring
+    artifact "B(**Storage Service**)" as ingest
+    [Notification] as notes
+    artifact "B(**MAF upload**)\nB(**MAF -> Parquet**)\nGenerate cBioPortal import package" as file_service
+    artifact "fhir create/update" as fhir_up
+  }
+  artifact "Iceberg tables(Parquet)\ngenomic API + fhir data" as curated
+  cloud "cBioPortal" as cbioportal
+}
+
+' ---------- Flows (top -> bottom) ----------
+beam --> raw_maf
+beam --> raw_manifest
+beam --> fhir_central
+beam --> monitoring
+fhir_central --> ingest
+raw_maf --> ingest
+raw_manifest --> ingest
+
+ingest . notes
+ingest --> file_service
+ingest --> fhir_up
+
+file_service --> s3
+fhir_up --> blaze_central
+s3 --> cbioportal: import as push \n(volumn/API)
+s3 .. curated
+
+blaze_central .. curated
+
+cbioportal <-- consumer
+curated <-- consumer
+
+@enduml

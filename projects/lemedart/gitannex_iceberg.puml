@@ -1,0 +1,22 @@
+@startuml
+title git-annex raw → Iceberg tables
+folder "main instance(source of truth)" {
+component "Nextcloud" as NC
+component "git-annex repo" as GA
+}
+component "Snapshot export\n(git annex export)" as EXP
+folder "raw Snapshot\npatients/<pseudonym>/" as RAW
+folder "Analytics/API" {
+component "Iceberg ingest\n(Rust)" as ING
+component "Iceberg tables\n(S3/Garage)\nParquet/Avor" as ICE
+component "DataFusion\n(Rust)\nSQL" as Q
+
+}
+
+NC --> GA : sync files
+GA --> EXP : export commit
+EXP --> RAW : materialize files
+ING --> RAW : read snapshot
+ING --> ICE : write tables
+Q --> ICE : query tables
+@enduml

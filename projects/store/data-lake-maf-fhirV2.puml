@@ -1,0 +1,82 @@
+@startuml
+' ---------- Global style ----------
+top to bottom direction
+skinparam actorFontSize 30
+skinparam componentStyle rectangle
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+skinparam BoldColor green
+!define B(x) <color:green><b>x</b></color>
+' ---------- Actors ----------
+actor "Partner" as partner
+actor "Data Consumer\n(Analytics)" as consumer
+
+' ---------- Partner Bridgehead ----------
+node "Partner Bridgehead" as bh_partner {
+  artifact "B(**MAF Receiver**)" as maf_rx
+  artifact "B(**Blaze**)" as blaze
+  artifact "B(**Pseudonymization**) \nstreaming: record -> pseudonym -> zstd/fhir" as psn
+  [(Optional) local raw Storage] as op
+  artifact "B(**pseudonymized.maf.zstd**)" as maf_pseudo
+  artifact "B(**metadata.json**)" as manifest
+  artifact "B(**bundle.json(fhir)**)" as fhir
+}
+
+cloud "Samply BEAM\n B(**beam-file transfer**)" as beam
+
+' ---------- Central DWH ----------
+node "Central DWH" as bh_central {
+
+  folder "Storage" as st {
+  database "FHIR Store" as blaze_central
+  database "B(**S3 central Store**)" as s3
+}
+  folder "Beam receiver" as raw {
+    artifact "B(**raw/*.maf.zstd**)" as raw_maf
+    artifact "B(**raw/*.metadata.json**)" as raw_manifest
+    artifact "bundle.json" as fhir_central
+    artifact "B(**Storage Service**)" as ingest
+    [Notification] as notes
+    artifact "B(**MAF upload**)\nB(**MAF -> Parquet**)\nGenerate cBioPortal import package" as file_service
+    artifact "fhir create/update" as fhir_up
+  }
+  artifact "Iceberg tables(Parquet)\nAPI genomic + fhir data" as curated
+  cloud "cBioPortal" as cbioportal
+}
+
+' ---------- Flows (top -> bottom) ----------
+partner --> maf_rx : send MAF + cancer_study_id
+partner --> blaze : fhir upload
+maf_rx --> psn : validate + parse
+op . psn
+blaze --> psn
+psn --> maf_pseudo : write pseudonymized MAF (zstd)
+psn --> manifest : write metadata (JSON)
+psn --> fhir
+
+maf_pseudo --> beam
+manifest --> beam
+fhir --> beam
+
+beam --> raw_maf
+beam --> raw_manifest
+beam --> fhir_central
+fhir_central --> ingest
+raw_maf --> ingest
+raw_manifest --> ingest
+
+ingest . notes
+ingest --> file_service
+ingest --> fhir_up
+
+file_service --> s3
+fhir_up --> blaze_central
+s3 .. cbioportal: import
+s3 .. curated
+blaze_central .. curated
+
+
+cbioportal <-- consumer
+curated <-- consumer
+
+@enduml

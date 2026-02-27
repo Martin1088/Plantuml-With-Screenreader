@@ -1,0 +1,42 @@
+@startuml
+' ---------- Global style ----------
+top to bottom direction
+skinparam actorFontSize 20
+skinparam nodeFontSize 20
+skinparam componentStyle rectangle
+skinparam wrapWidth 200
+skinparam maxMessageSize 200
+skinparam BoldColor green
+!define B(x) <color:green><b>x</b></color>
+' ---------- Actors ----------
+actor "Partner" as partner
+
+' ---------- Partner Bridgehead ----------
+node "Partner Bridgehead" as bh_partner {
+  artifact "B(**MAF Receiver**)" as maf_rx
+  database "B(**Blaze**)" as blaze
+  artifact "B(**Pseudonymization**) \nstreaming: record -> pseudonym -> zstd/fhir" as psn
+  [(Optional) local raw Storage] as op
+  artifact "B(**pseudonymized.maf.zstd**)" as maf_pseudo
+  artifact "B(**metadata.json**)" as manifest
+  artifact "B(**bundle.json(fhir)**)" as fhir
+}
+
+cloud "Samply BEAM\n B(**beam-file transfer**)" as beam
+
+' ---------- Flows (top -> bottom) ----------
+partner --> maf_rx : send MAF + (Optional) infos
+partner --> blaze : fhir upload
+maf_rx --> psn : validate + parse
+op . psn
+blaze <-- psn : pull patient
+psn --> maf_pseudo : pseudonymized
+psn --> manifest
+psn --> fhir: pseudonymized
+
+maf_pseudo --> beam
+manifest --> beam
+fhir --> beam
+
+
+@enduml
