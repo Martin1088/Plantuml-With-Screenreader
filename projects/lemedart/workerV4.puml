@@ -1,0 +1,51 @@
+@startuml
+
+actor Partner
+
+rectangle "Ingest" as i {
+  component "Mainzelliste" as ml
+  rectangle "REDCap" as rc {
+  component "Create record\nin project" as cr
+  component "Record data (form)\n+ uploaded files" as r
+  database "REDCap MySQL" as db
+  }
+}
+
+rectangle "Worker Ingest" as wi {
+  component "Axum API\n(Handlers)" as api
+  component "Worker -> checking db\ntasks:\nread table file update\read table form update" as w
+  component "SeaORM\n(MySQL) or API" as orm
+}
+
+cloud "Garage S3 Bucket" as garage {
+  component "main store\npartner/pseudonym/" as main
+  component "edocs" as ed
+  component "analytics" as a
+}
+
+rc -[hidden]-> ml
+i -[hidden]> wi
+wi -[hidden]> garage
+
+Partner --> cr: (1) create
+Partner --> r: (5) provide data
+
+r <. cr
+cr --> ml : (2) redirect
+ml --> cr : (3) pseudonym\n(= record id)
+
+ml --> api : (4) POST pseudonym
+api .> w : enqueue job\n(optional)
+
+orm .. db
+db . cr
+orm -[hidden]-> api
+orm <- w : read tables / find new file
+r --> ed : (6) upload files
+
+w --> main : write files
+w --> ed   : handle
+w --> a    : copy
+ed --> main : copy
+
+@enduml

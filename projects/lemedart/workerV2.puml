@@ -1,6 +1,5 @@
 @startuml
-' ---- Layout / style ----
-left to right direction
+top to bottom direction
 skinparam componentStyle rectangle
 skinparam linetype ortho
 skinparam shadowing false
@@ -8,40 +7,39 @@ skinparam wrapWidth 180
 skinparam maxMessageSize 120
 skinparam actorFontSize 20
 skinparam defaultFontSize 14
-skinparam nodesep 200
-skinparam ranksep 100
+
+skinparam nodesep 120
+skinparam ranksep 120
 
 actor Partner
 
 rectangle "REDCap" as rc {
-  together {
-    component "Create record\nin project" as cr
-    component "Mainzelliste" as ml
-    component "Record data (form)\n+ uploaded files" as r
-  }
+  component "Create record\nin project" as cr
+  component "Mainzelliste" as ml
+  component "Record data (form)\n+ uploaded files" as r
   database "REDCap MySQL" as db
 }
 
 rectangle "Worker Ingest" as wi {
-  together {
-    component "Axum API\n(Handlers)" as api
-    component "Worker" as w
-    component "SeaORM\n(MySQL)" as orm
-  }
+  component "Axum API\n(Handlers)" as api
+  component "Worker" as w
+  component "SeaORM\n(MySQL)" as orm
 }
 
 cloud "Garage S3 Bucket" as garage {
-  together {
-    component "source of truth" as main
-    component "edocs" as ed
-    component "analytics" as a
-  }
+  component "source of truth" as main
+  component "edocs" as ed
+  component "analytics" as a
 }
+
+rc -[hidden]-> wi
+wi -[hidden]-> garage
 
 ' ---- Flows ----
 Partner --> cr : create
 Partner --> r  : provide data
 
+r <. cr
 cr --> ml : redirect
 ml --> cr : pseudonym\n(= record id)
 
@@ -53,15 +51,9 @@ orm --> db
 
 r --> ed : upload files
 
-w --> main : write files\npartner/pseudonym/file
+w --> main : write files
 w --> ed   : find new file
 w --> a    : copy
 ed --> main : copy
-
-note right of orm
-reads metadata:
-- record_id
-- fields
-end note
 
 @enduml
