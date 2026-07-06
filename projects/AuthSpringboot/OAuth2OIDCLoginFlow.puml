@@ -1,0 +1,45 @@
+@startuml
+
+actor User
+participant "Browser" as Browser
+participant "OAuth2AuthorizationRequestRedirectFilter" as RedirectFilter
+participant "OAuth2LoginAuthenticationFilter" as LoginFilter
+participant "Authentik\n(Authorization Server)" as Authentik
+participant "OAuth2LoginAuthenticationProvider\n/ OidcAuthorizationCodeAuthenticationProvider" as Provider
+participant "JwtDecoder /\nOidcUserService" as UserService
+participant "SecurityContext" as Context
+participant "Controller" as Controller
+
+== 1. Geschützte Ressource ==
+User -> Browser : Ruft geschützte URL auf
+Browser -> RedirectFilter : Request
+RedirectFilter -> RedirectFilter : Baut Authorization Request\n(client_id, scope, state, PKCE)
+RedirectFilter -> Browser : 302 Redirect zu Authentik
+
+== 2. Authentifizierung beim Provider ==
+Browser -> Authentik : /authorize?response_type=code...
+User -> Authentik : Login + Consent
+Authentik -> Browser : 302 Redirect zu redirect_uri\n(?code=...&state=...)
+
+== 3. Code Exchange ==
+Browser -> LoginFilter : GET /login/oauth2/code/authentik?code=...
+LoginFilter -> Provider : authenticate(OAuth2LoginAuthenticationToken)
+Provider -> Authentik : POST /token\n(code, client_secret, PKCE verifier)
+Authentik -> Provider : access_token + id_token
+
+== 4. Token-Validierung & UserInfo ==
+Provider -> UserService : id_token validieren / loadUser
+UserService -> Authentik : (optional) /userinfo
+Authentik -> UserService : Claims (sub, email, ...)
+UserService -> Provider : OidcUser / OAuth2User
+
+== 5. Authentifizierung abschliessen ==
+Provider -> LoginFilter : Authentication (authenticated)
+LoginFilter -> Context : SecurityContext speichern\n(SecurityContextRepository)
+LoginFilter -> Browser : 302 Redirect zur Ziel-URL
+
+== 6. Zugriff auf Ressource ==
+Browser -> Controller : Request mit Session
+Controller -> Browser : Antwort (geschützte Ressource)
+
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+title Spring Security - Authentifizierungsablauf (1:1 zum Bild)
+
+actor Client
+participant "Authentication Filter" as Filter
+participant "Authentication Manager" as Manager
+participant "Authentication Provider" as Provider
+participant "JdbcUserDetailsManager" as UserDetails
+participant "Password Encoder" as Encoder
+database "MySQL" as DB
+participant "Security Context" as Context
+participant "Hello Controller" as Controller
+
+== Schritt 1 ==
+Client -> Filter : 1. Der Authentication Filter faengt\nden vom Client gesendeten Request ab.
+
+== Schritt 2 ==
+Filter -> Manager : 2. Die Authentifizierungs-Verantwortung\nwird an den Authentication Manager delegiert.
+
+== Schritt 3 ==
+Manager -> Provider : 3. Der Authentication Manager nutzt einen\nAuthentication Provider, der die\nAuthentifizierungslogik implementiert.
+
+== Schritt 4 ==
+Provider -> UserDetails : 4. Der Authentication Provider ruft einen\nJdbcUserDetailsManager auf, um die\nUserDetails per Username zu erhalten.
+
+== Schritt 5 ==
+UserDetails -> DB : 5. Die JdbcUserDetailsManager-Instanz sucht\nden User in der Datenbank...
+DB -> UserDetails : ...und gibt dessen Details zurueck.
+
+== Schritt 6 ==
+Provider -> Encoder : 6. Wenn der User gefunden wird, prueft ein\nPassword Encoder, ob das vom User gesendete\nPasswort mit dem aus der Datenbank uebereinstimmt.
+Encoder -> Provider : Ergebnis (Match / kein Match)
+
+== Schritt 7 ==
+Provider -> Manager : Authentifizierung erfolgreich
+Manager -> Filter : Authentifizierung erfolgreich
+Filter -> Context : 7. Nach erfolgreicher Authentifizierung werden\ndie Details der authentifizierten Entitaet\nim Session Context gespeichert.
+
+== Schritt 8 ==
+Filter -> Controller : 8. Der Request wird an den Controller weitergeleitet.
+Controller -> Client : Antwort
+
+@enduml

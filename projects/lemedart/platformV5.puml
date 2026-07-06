@@ -1,0 +1,47 @@
+@startuml
+
+actor Partner
+
+rectangle "data ingest" as i {
+  component "Mainzelliste" as ml
+  rectangle "REDCap" as rc {
+  component "Create record\nin project" as cr
+  component "Record data (form)\n+ upload file (field)" as r
+  database "REDCap MySQL" as db
+  }
+}
+
+rectangle "data process" as wi {
+  component "enrollment-agent\ntasks:\nhandle new file\nread table -> file + form update" as w
+}
+
+cloud "Garage S3 Buckets" as garage {
+  component "main + edocs store\npseudonym/files" as main
+}
+
+rectangle "data access" as da {
+  component "meta-cache\nAPI secure access" as meta
+  component "data portal\npatient tables + infos" as dp
+}
+
+rc -[hidden]-> ml
+i -[hidden]> wi
+wi -[hidden]> garage
+
+Partner --> cr: (1) create
+Partner --> r: (5) provide data
+
+r <. cr
+cr --> ml : (2) redirect
+ml --> cr : (3) pseudonym\n(= record id)
+
+db . r
+db . w : read tables or API
+r --> main : (6) upload files
+
+w --> main : (7) save data
+
+main --> meta
+meta --> dp
+
+@enduml

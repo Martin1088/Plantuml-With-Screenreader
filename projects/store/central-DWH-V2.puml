@@ -17,21 +17,23 @@ cloud "Samply BEAM\n B(**beam-file transfer**)" as beam
 node "Central DWH" as bh_central {
 
   folder "Storage" as st {
-  database "FHIR Store" as blaze_central
+  database "B(FHIR Store)" as blaze_central
   database "B(**S3 central Store**)" as s3
 }
   folder "Beam receiver" as raw {
-    artifact "B(**raw/*.maf.zstd**)" as raw_maf
-    artifact "B(**raw/*.metadata.json**)" as raw_manifest
-    artifact "bundle.json" as fhir_central
+    artifact "B(**.maf.zstd**)" as raw_maf
+    artifact "B(**.metadata.json**)" as raw_manifest
+    artifact "B(bundle.json)" as fhir_central
     artifact "(Optional) Monitoring logs" as monitoring
     artifact "B(**Storage Service**)" as ingest
-    [Notification] as notes
-    artifact "B(**MAF upload**)\nB(**MAF -> Parquet**)\nGenerate cBioPortal import package" as file_service
-    artifact "fhir create/update" as fhir_up
+    artifact "(Optional) Notification" as notes
+    artifact "B(**MAF upload**)" as file_service
+    artifact "B(FHIR create/update)" as fhir_up
   }
-  artifact "Iceberg tables(Parquet)\ngenomic API + fhir data" as curated
-  cloud "cBioPortal" as cbioportal
+  artifact "(Optional) Apache Iceberg\nmeta table + genomic tables + FHIR" as curated
+  cloud "B(cBioPortal)\nvisualization + analysis" as cbioportal
+  artifact "B(Meta-cache API)\nmeta data + MAF pull + FHIR pull" as api
+  artifact "(Optional) API\n SQL queries" as iceberg_connect
 }
 
 ' ---------- Flows (top -> bottom) ----------
@@ -49,12 +51,14 @@ ingest --> fhir_up
 
 file_service --> s3
 fhir_up --> blaze_central
-s3 --> cbioportal: import as push \n(volumn/API)
+api <-- cbioportal: import process
 s3 .. curated
+s3 -- api
 
 blaze_central .. curated
 
 cbioportal <-- consumer
-curated <-- consumer
+iceberg_connect <-- consumer
+curated .. iceberg_connect
 
 @enduml
